@@ -47,11 +47,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="131"/>
         </scene>
-        <!--View Controller-->
+        <!--Regras View Controller-->
         <scene sceneID="jjl-QW-z33">
             <objects>
-                <viewController id="M8F-XQ-oes" sceneMemberID="viewController">
+                <viewController id="M8F-XQ-oes" customClass="RegrasViewController" customModule="Julgamento" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jQx-g1-6ca"/>
                         <viewControllerLayoutGuide type="bottom" id="9b9-Zy-hoK"/>
@@ -64,12 +65,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOg-tb-2SH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="280" y="2053"/>
+            <point key="canvasLocation" x="280" y="2065"/>
         </scene>
-        <!--View Controller-->
+        <!--Play View Controller-->
         <scene sceneID="SQ4-E9-NVa">
             <objects>
-                <viewController id="UR6-f9-KfD" sceneMemberID="viewController">
+                <viewController id="UR6-f9-KfD" customClass="PlayViewController" customModule="Julgamento" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1d4-sR-Cnq"/>
                         <viewControllerLayoutGuide type="bottom" id="Beu-34-OEK"/>
@@ -82,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkB-Fs-qGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3151" y="69"/>
+            <point key="canvasLocation" x="3151" y="131"/>
         </scene>
     </scenes>
 </document>
