@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 class PerfilDoPersonagem{
-   
+    
     let nome: String
     let personalidade: String
     var papel: String
     let image: UIImage
-
+    
     
     init(nome: String, personalidade: String, papel: String,image: UIImage) {
         self.nome = nome

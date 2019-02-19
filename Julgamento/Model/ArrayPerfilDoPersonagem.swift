@@ -22,7 +22,7 @@ var arrayPerfilDoPersonagem: [PerfilDoPersonagem] = [
     PerfilDoPersonagem(nome: "Bruxa", personalidade: "Ainda vou escrever", papel: "Promotora", image: <#T##UIImage#>),
     
     PerfilDoPersonagem(nome: "Diabrete", personalidade: "Ainda vou escrever", papel: "testemunha", image: <#T##UIImage#>),
-
+    
     
     
 ]
