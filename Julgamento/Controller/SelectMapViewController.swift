@@ -14,11 +14,20 @@ class SelectMapViewController: UIViewController, UICollectionViewDelegate, UICol
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        
+        return arrayPerfilDoPersonagem.count
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storyCell", for: indexPath) as! storyCell
+        
+        cell.storyImage.image = arrayPerfilDoPersonagem[indexPath.row].image
+        
+        cell.titleStoryLabel.text = arrayPerfilDoPersonagem[indexPath.row].nome
+        
+        return cell
     }
     
     
