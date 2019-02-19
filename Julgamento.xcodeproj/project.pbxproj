@@ -39,7 +39,6 @@
 		1DC822E7221C556F00D56F00 /* storyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = storyCell.xib; sourceTree = "<group>"; };
 		1DC822E9221C55D200D56F00 /* storyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCell.swift; sourceTree = "<group>"; };
 		1DC822ED221C58C800D56F00 /* personagemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = personagemCell.xib; sourceTree = "<group>"; };
-		1F500E1D221C58C200BC3139 /* PersonagemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonagemCell.swift; path = ../PersonagemCell.swift; sourceTree = "<group>"; };
 		1F500E1D221C58C200BC3139 /* PersonagemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemCell.swift; sourceTree = "<group>"; };
 		1F500E1F221C59C200BC3139 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeEstorias.swift; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		1DC822DB221C394600D56F00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1DC822F0221C5C1400D56F00 /* MidiasFake */,
 				1DC822CF221C384300D56F00 /* Main.storyboard */,
 				1DC822D2221C384400D56F00 /* Assets.xcassets */,
 				1DC822EB221C56EE00D56F00 /* Cells */,
@@ -136,6 +136,13 @@
 				1F500E1D221C58C200BC3139 /* PersonagemCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		1DC822F0221C5C1400D56F00 /* MidiasFake */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MidiasFake;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
