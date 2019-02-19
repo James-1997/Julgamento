@@ -28,7 +28,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="JOGAR"/>
                                 <connections>
-                                    <segue destination="UR6-f9-KfD" kind="show" id="V9f-jY-49p"/>
+                                    <segue destination="94B-qC-9Os" kind="show" id="j7I-ug-rkj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-Za-rhH">
@@ -67,10 +67,28 @@
             </objects>
             <point key="canvasLocation" x="280" y="2065"/>
         </scene>
-        <!--Play View Controller-->
+        <!--Select Map View Controller-->
+        <scene sceneID="dmE-de-c4g">
+            <objects>
+                <viewController id="94B-qC-9Os" customClass="SelectMapViewController" customModule="Julgamento" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fgM-WV-tSi"/>
+                        <viewControllerLayoutGuide type="bottom" id="6wd-q2-Fru"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PFi-9k-eJh">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="78b-OP-dpv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neI-ua-dPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3610" y="131"/>
+        </scene>
+        <!--Select Players View Controller-->
         <scene sceneID="SQ4-E9-NVa">
             <objects>
-                <viewController id="UR6-f9-KfD" customClass="PlayViewController" customModule="Julgamento" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UR6-f9-KfD" customClass="SelectPlayersViewController" customModule="Julgamento" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1d4-sR-Cnq"/>
                         <viewControllerLayoutGuide type="bottom" id="Beu-34-OEK"/>
@@ -113,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkB-Fs-qGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3151" y="131"/>
+            <point key="canvasLocation" x="3610" y="2065"/>
         </scene>
     </scenes>
 </document>

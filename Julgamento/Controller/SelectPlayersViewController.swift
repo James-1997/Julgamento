@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlayViewController: UIViewController {
+class SelectPlayersViewController: UIViewController {
     
     @IBOutlet weak var numDePlayerLabel: UILabel!
     
