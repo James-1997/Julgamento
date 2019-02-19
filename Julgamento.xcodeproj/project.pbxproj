@@ -17,6 +17,7 @@
 		1DC822E6221C52A200D56F00 /* SelectMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC822E5221C52A200D56F00 /* SelectMapViewController.swift */; };
 		1DC822E8221C556F00D56F00 /* storyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC822E7221C556F00D56F00 /* storyCell.xib */; };
 		1DC822EA221C55D200D56F00 /* storyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC822E9221C55D200D56F00 /* storyCell.swift */; };
+		1DC822EE221C58C800D56F00 /* personagemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC822ED221C58C800D56F00 /* personagemCell.xib */; };
 		1F500E1E221C58C200BC3139 /* PersonagemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E1D221C58C200BC3139 /* PersonagemCell.swift */; };
 		1F500E20221C59C200BC3139 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E1F221C59C200BC3139 /* StoryModel.swift */; };
 		1F500E22221C5A7200BC3139 /* ArrayDeEstorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */; };
@@ -37,6 +38,8 @@
 		1DC822E5221C52A200D56F00 /* SelectMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMapViewController.swift; sourceTree = "<group>"; };
 		1DC822E7221C556F00D56F00 /* storyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = storyCell.xib; sourceTree = "<group>"; };
 		1DC822E9221C55D200D56F00 /* storyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCell.swift; sourceTree = "<group>"; };
+		1DC822ED221C58C800D56F00 /* personagemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = personagemCell.xib; sourceTree = "<group>"; };
+		1F500E1D221C58C200BC3139 /* PersonagemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonagemCell.swift; path = ../PersonagemCell.swift; sourceTree = "<group>"; };
 		1F500E1D221C58C200BC3139 /* PersonagemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemCell.swift; sourceTree = "<group>"; };
 		1F500E1F221C59C200BC3139 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeEstorias.swift; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 				1DC822DF221C3FCF00D56F00 /* SelectPlayersViewController.swift */,
 				1DC822E5221C52A200D56F00 /* SelectMapViewController.swift */,
 				1DC822EC221C56FC00D56F00 /* Cells */,
-				1F500E1D221C58C200BC3139 /* PersonagemCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				1DC822E7221C556F00D56F00 /* storyCell.xib */,
+				1DC822ED221C58C800D56F00 /* personagemCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				1DC822E9221C55D200D56F00 /* storyCell.swift */,
+				1F500E1D221C58C200BC3139 /* PersonagemCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -192,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC822EE221C58C800D56F00 /* personagemCell.xib in Resources */,
 				1DC822D3221C384400D56F00 /* Assets.xcassets in Resources */,
 				1DC822D1221C384300D56F00 /* Main.storyboard in Resources */,
 				1DC822E8221C556F00D56F00 /* storyCell.xib in Resources */,
