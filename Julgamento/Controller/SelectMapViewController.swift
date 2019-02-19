@@ -8,7 +8,19 @@
 
 import UIKit
 
-class SelectMapViewController: UIViewController {
+class SelectMapViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet weak var collectionStoriesView: UICollectionView!
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
     
     
     // MARK: viewDidLoad
