@@ -14,6 +14,8 @@
 		1DC822D3221C384400D56F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC822D2221C384400D56F00 /* Assets.xcassets */; };
 		1DC822DE221C3FB400D56F00 /* RegrasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC822DD221C3FB400D56F00 /* RegrasViewController.swift */; };
 		1DC822E0221C3FCF00D56F00 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC822DF221C3FCF00D56F00 /* PlayViewController.swift */; };
+		1FDE02ED221C4EA1003B4636 /* PerfilPersonagemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDE02EC221C4EA1003B4636 /* PerfilPersonagemModel.swift */; };
+		1FDE02EF221C4FF7003B4636 /* ArrayPerfilDoPersonagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDE02EE221C4FF7003B4636 /* ArrayPerfilDoPersonagem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1DC822D4221C384500D56F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DC822DD221C3FB400D56F00 /* RegrasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegrasViewController.swift; sourceTree = "<group>"; };
 		1DC822DF221C3FCF00D56F00 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		1FDE02EC221C4EA1003B4636 /* PerfilPersonagemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilPersonagemModel.swift; sourceTree = "<group>"; };
+		1FDE02EE221C4FF7003B4636 /* ArrayPerfilDoPersonagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayPerfilDoPersonagem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				1DC822CC221C384300D56F00 /* Julgamento.xcdatamodeld */,
+				1FDE02EC221C4EA1003B4636 /* PerfilPersonagemModel.swift */,
+				1FDE02EE221C4FF7003B4636 /* ArrayPerfilDoPersonagem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DC822DE221C3FB400D56F00 /* RegrasViewController.swift in Sources */,
+				1FDE02EF221C4FF7003B4636 /* ArrayPerfilDoPersonagem.swift in Sources */,
 				1DC822E0221C3FCF00D56F00 /* PlayViewController.swift in Sources */,
+				1FDE02ED221C4EA1003B4636 /* PerfilPersonagemModel.swift in Sources */,
 				1DC822CB221C384300D56F00 /* ViewController.swift in Sources */,
 				1DC822C9221C384300D56F00 /* AppDelegate.swift in Sources */,
 				1DC822CE221C384300D56F00 /* Julgamento.xcdatamodeld in Sources */,
