@@ -9,6 +9,10 @@
 import UIKit
 
 class storyCell: UICollectionViewCell {
+   
+    @IBOutlet weak var storyImage: UIImageView!
+    
+    @IBOutlet weak var titleStoryLabel: UILabel!
     
     
 }

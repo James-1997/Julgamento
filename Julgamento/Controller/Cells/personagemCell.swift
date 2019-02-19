@@ -10,5 +10,9 @@ import UIKit
 
 class personagemCell: UICollectionViewCell {
     
+    @IBOutlet weak var personImage: UIImageView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
     
 }

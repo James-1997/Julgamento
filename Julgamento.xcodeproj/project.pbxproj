@@ -84,8 +84,7 @@
 				1DC822DD221C3FB400D56F00 /* RegrasViewController.swift */,
 				1DC822DF221C3FCF00D56F00 /* SelectPlayersViewController.swift */,
 				1DC822E5221C52A200D56F00 /* SelectMapViewController.swift */,
-				1DC822E3221C4FCF00D56F00 /* personagemCell.swift */,
-				1DC822E9221C55D200D56F00 /* storyCell.swift */,
+				1DC822EC221C56FC00D56F00 /* Cells */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,8 +94,7 @@
 			children = (
 				1DC822CF221C384300D56F00 /* Main.storyboard */,
 				1DC822D2221C384400D56F00 /* Assets.xcassets */,
-				1DC822E1221C4F7A00D56F00 /* personagemCell.xib */,
-				1DC822E7221C556F00D56F00 /* storyCell.xib */,
+				1DC822EB221C56EE00D56F00 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +105,24 @@
 				1DC822CC221C384300D56F00 /* Julgamento.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1DC822EB221C56EE00D56F00 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1DC822E1221C4F7A00D56F00 /* personagemCell.xib */,
+				1DC822E7221C556F00D56F00 /* storyCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1DC822EC221C56FC00D56F00 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1DC822E3221C4FCF00D56F00 /* personagemCell.swift */,
+				1DC822E9221C55D200D56F00 /* storyCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="Aye-s2-MSb">
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="storyCell" id="Aye-s2-MSb" customClass="storyCell" customModule="Julgamento" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="216" height="307"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -34,6 +34,10 @@
             </view>
             <viewLayoutGuide key="safeArea" id="H3e-dl-3RL"/>
             <size key="customSize" width="216" height="307"/>
+            <connections>
+                <outlet property="storyImage" destination="ar4-vn-Xqd" id="Zec-jB-2HQ"/>
+                <outlet property="titleStoryLabel" destination="aGT-zN-Ozl" id="BR9-8n-djK"/>
+            </connections>
             <point key="canvasLocation" x="117" y="-783.5"/>
         </collectionViewCell>
     </objects>
