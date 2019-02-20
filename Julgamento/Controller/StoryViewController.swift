@@ -15,10 +15,12 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var storyText: UILabel!
     
     var históriaSelecionada: Story = arrayDeEstórias[0]
-    
+    var numJogadores: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(numJogadores!)
 
         backgroundImage.image = históriaSelecionada.image
         
@@ -27,6 +29,7 @@ class StoryViewController: UIViewController {
         
     }
 
+  
 
 
 }

@@ -29,16 +29,24 @@ class SelectPlayersViewController: UIViewController {
             numDePlayerLabel.text = "\(quantJogadores)"
             
         }
+        
+      
     }
     
     
-    
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let numJogadores = quantJogadores
+        let storyViewController = segue.destination as! StoryViewController
+        storyViewController.numJogadores = numJogadores
+        
+    }
     
     // MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     
