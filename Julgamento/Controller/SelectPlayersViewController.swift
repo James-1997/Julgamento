@@ -12,12 +12,23 @@ class SelectPlayersViewController: UIViewController {
     
     @IBOutlet weak var numDePlayerLabel: UILabel!
     
+    var quantJogadores = 4
+    
+    
     @IBAction func addPlayers(_ sender: Any) {
-        
+        if quantJogadores > 3 && quantJogadores < 8{
+            quantJogadores = quantJogadores + 1
+            numDePlayerLabel.text = "\(quantJogadores)"
+            
+        }
     }
     
     @IBAction func removePlayers(_ sender: Any) {
-        
+        if quantJogadores > 4 && quantJogadores < 9{
+            quantJogadores = quantJogadores - 1
+            numDePlayerLabel.text = "\(quantJogadores)"
+            
+        }
     }
     
     
@@ -32,4 +43,5 @@ class SelectPlayersViewController: UIViewController {
     
     
 }
+
 
