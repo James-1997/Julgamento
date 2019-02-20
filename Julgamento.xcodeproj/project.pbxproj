@@ -100,7 +100,6 @@
 		1DC822DB221C394600D56F00 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1DC822F0221C5C1400D56F00 /* MidiasFake */,
 				1DC822CF221C384300D56F00 /* Main.storyboard */,
 				1DC822D2221C384400D56F00 /* Assets.xcassets */,
 				1DC822EB221C56EE00D56F00 /* Cells */,
@@ -136,13 +135,6 @@
 				1F500E1D221C58C200BC3139 /* PersonagemCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		1DC822F0221C5C1400D56F00 /* MidiasFake */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MidiasFake;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
