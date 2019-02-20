@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectMapViewController: UIViewController {
+class GameViewController: UIViewController {
     
     
     // MARK: viewDidLoad
