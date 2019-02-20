@@ -46,8 +46,17 @@ class SelectPlayersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let _StrQtdPlayer = "\(quantJogadores)"
+        numDePlayerLabel.text = _StrQtdPlayer
     }
+   
+    
+// PRESS PLAY
+    
+//    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+//        print(presses)
+//    }
+    
     
     
 }
