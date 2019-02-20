@@ -11,23 +11,22 @@ import UIKit
 class StoryViewController: UIViewController {
 
     @IBOutlet weak var backgroundImage: UIImageView!
-    
+    @IBOutlet weak var storyTitle: UILabel!
     @IBOutlet weak var storyText: UILabel!
     
     var históriaSelecionada: Story = arrayDeEstórias[0]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
         backgroundImage.image = históriaSelecionada.image
         
-        storyText.text = históriaSelecionada.titulo
+        storyTitle.text = históriaSelecionada.titulo
+        storyText.text = históriaSelecionada.história
         
     }
 
 
-   
 
 }

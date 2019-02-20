@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Splatch.ttf">
+            <string>Splatch</string>
+        </array>
+        <array key="sagesans-Regular.ttf">
+            <string>sagesans-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -184,67 +192,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RDJ-3K-R6b">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RDJ-3K-R6b">
+                                <rect key="frame" x="0.0" y="0.0" width="1938" height="1080"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iR-hW-80Y">
-                                <rect key="frame" x="815" y="192" width="290" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="T">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Splatch"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="itulo">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="LucidaGrande"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Splatch"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="da">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="LucidaGrande"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" H">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Splatch"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="istória">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="LucidaGrande"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDz-9j-cNM">
                                 <rect key="frame" x="1670" y="934" width="188" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Ready"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sc-fB-Xw6">
-                                <rect key="frame" x="872" y="436" width="176" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Historinha"/>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAAAAAA" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sc-fB-Xw6">
+                                <rect key="frame" x="825" y="206" width="270" height="82"/>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="40"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HISTORIAAAA" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iR-hW-80Y">
+                                <rect key="frame" x="478" y="339" width="983" height="479"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="479" id="3Nm-B1-txI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="1iR-hW-80Y" firstAttribute="top" secondItem="2sc-fB-Xw6" secondAttribute="bottom" constant="51" id="06r-gS-cP2"/>
+                            <constraint firstItem="2sc-fB-Xw6" firstAttribute="top" secondItem="KgY-Bw-gdS" secondAttribute="bottom" constant="146" id="20D-gk-knO"/>
+                            <constraint firstItem="ray-tP-abo" firstAttribute="trailing" secondItem="1iR-hW-80Y" secondAttribute="trailing" constant="369" id="Lkr-rT-C2b"/>
+                            <constraint firstItem="1iR-hW-80Y" firstAttribute="leading" secondItem="ray-tP-abo" secondAttribute="leading" constant="388" id="OwO-zW-ZGc"/>
+                            <constraint firstItem="2sc-fB-Xw6" firstAttribute="centerX" secondItem="Ihb-tx-rZc" secondAttribute="centerX" id="RLW-GA-hfT"/>
+                            <constraint firstItem="1iR-hW-80Y" firstAttribute="centerX" secondItem="RDJ-3K-R6b" secondAttribute="centerX" id="pm9-TF-csX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ray-tP-abo"/>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="RDJ-3K-R6b" id="hP0-vg-L9h"/>
                         <outlet property="storyText" destination="1iR-hW-80Y" id="31m-ng-KPd"/>
+                        <outlet property="storyTitle" destination="2sc-fB-Xw6" id="PzI-8c-kLO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="He9-MF-7HO" userLabel="First Responder" sceneMemberID="firstResponder"/>
