@@ -19,6 +19,7 @@
 		1DC822EA221C55D200D56F00 /* storyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC822E9221C55D200D56F00 /* storyCell.swift */; };
 		1DC822EE221C58C800D56F00 /* personagemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DC822ED221C58C800D56F00 /* personagemCell.xib */; };
 		1F17385E221D8D150076C84F /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F17385D221D8D150076C84F /* StoryViewController.swift */; };
+		1F173861221D96460076C84F /* sage_sans in Resources */ = {isa = PBXBuildFile; fileRef = 1F173860221D96460076C84F /* sage_sans */; };
 		1F500E1E221C58C200BC3139 /* PersonagemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E1D221C58C200BC3139 /* PersonagemCell.swift */; };
 		1F500E20221C59C200BC3139 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E1F221C59C200BC3139 /* StoryModel.swift */; };
 		1F500E22221C5A7200BC3139 /* ArrayDeEstorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */; };
@@ -41,6 +42,8 @@
 		1DC822E9221C55D200D56F00 /* storyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCell.swift; sourceTree = "<group>"; };
 		1DC822ED221C58C800D56F00 /* personagemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = personagemCell.xib; sourceTree = "<group>"; };
 		1F17385D221D8D150076C84F /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		1F173860221D96460076C84F /* sage_sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sage_sans; sourceTree = "<group>"; };
+		1F173863221D965F0076C84F /* Splatch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splatch.ttf; sourceTree = "<group>"; };
 		1F500E1D221C58C200BC3139 /* PersonagemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonagemCell.swift; sourceTree = "<group>"; };
 		1F500E1F221C59C200BC3139 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeEstorias.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		1DC822C7221C384300D56F00 /* Julgamento */ = {
 			isa = PBXGroup;
 			children = (
+				1F17385F221D96340076C84F /* Fonts */,
 				1DC822DC221C395200D56F00 /* Model */,
 				1DC822DA221C393500D56F00 /* Controller */,
 				1DC822DB221C394600D56F00 /* View */,
@@ -140,6 +144,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		1F17385F221D96340076C84F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1F173863221D965F0076C84F /* Splatch.ttf */,
+				1F173860221D96460076C84F /* sage_sans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,6 +213,7 @@
 			files = (
 				1DC822EE221C58C800D56F00 /* personagemCell.xib in Resources */,
 				1DC822D3221C384400D56F00 /* Assets.xcassets in Resources */,
+				1F173861221D96460076C84F /* sage_sans in Resources */,
 				1DC822D1221C384300D56F00 /* Main.storyboard in Resources */,
 				1DC822E8221C556F00D56F00 /* storyCell.xib in Resources */,
 			);

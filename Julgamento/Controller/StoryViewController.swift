@@ -14,15 +14,16 @@ class StoryViewController: UIViewController {
     
     @IBOutlet weak var storyText: UILabel!
     
-    var históriaSelecionada: Story!
+    var históriaSelecionada: Story = arrayDeEstórias[0]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
-        backgroundImage.image = históriaSelecionada?.image
         
-        storyText.text = históriaSelecionada?.titulo
+        backgroundImage.image = históriaSelecionada.image
+        
+        storyText.text = históriaSelecionada.titulo
         
     }
 
