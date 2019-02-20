@@ -152,6 +152,15 @@
                                     <action selector="removePlayers:" destination="UR6-f9-KfD" eventType="primaryActionTriggered" id="xCT-vt-mWQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqn-xj-qzH">
+                                <rect key="frame" x="1657" y="966" width="129" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <segue destination="953-0a-MHY" kind="show" id="se4-3Q-245"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Vh-hm-QIC"/>
                     </view>
@@ -161,7 +170,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkB-Fs-qGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="280" y="3808"/>
+            <point key="canvasLocation" x="-427" y="3729"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="pea-X4-8Sy">
+            <objects>
+                <viewController id="953-0a-MHY" customClass="StoryViewController" customModule="Julgamento" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KgY-Bw-gdS"/>
+                        <viewControllerLayoutGuide type="bottom" id="OCF-cJ-7YK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ihb-tx-rZc">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RDJ-3K-R6b">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDz-9j-cNM">
+                                <rect key="frame" x="1670" y="934" width="188" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Ready"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iR-hW-80Y">
+                                <rect key="frame" x="914" y="445" width="93" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ray-tP-abo"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="RDJ-3K-R6b" id="hP0-vg-L9h"/>
+                        <outlet property="storyText" destination="1iR-hW-80Y" id="31m-ng-KPd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="He9-MF-7HO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-427" y="5211"/>
         </scene>
     </scenes>
 </document>
