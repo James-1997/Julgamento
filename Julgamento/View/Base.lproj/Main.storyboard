@@ -207,6 +207,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKb-BM-zze">
+                                <rect key="frame" x="840" y="339" width="240" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-ul-ASm">
+                                <rect key="frame" x="880" y="497" width="161" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="start:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="Qq4-o6-guz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="HXU-Xe-rRk" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="0CI-w9-4gp"/>
@@ -237,6 +253,7 @@
                         <outlet property="playerThree" destination="HXU-Xe-rRk" id="gwE-Zl-FR5"/>
                         <outlet property="playerTwo" destination="bad-Dm-xWE" id="A9K-Ky-L1q"/>
                         <outlet property="resumStory" destination="AhP-M3-qYS" id="EZc-U4-ufU"/>
+                        <outlet property="timerLabel" destination="oKb-BM-zze" id="1mz-np-Gh7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKf-7x-4Uv" userLabel="First Responder" sceneMemberID="firstResponder"/>
