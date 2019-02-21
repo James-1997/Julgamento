@@ -11,42 +11,53 @@ import Foundation
 
 class GameViewController: UIViewController {
     
-    
-    
     @IBOutlet weak var playerOne: UIImageView!
-    
     
     @IBOutlet weak var playerTwo: UIImageView!
     
     @IBOutlet weak var playerThree: UIImageView!
-    
    
     @IBOutlet weak var playerFour: UIImageView!
     
-    
     @IBOutlet weak var playerFive: UIImageView!
     
-    
     @IBOutlet weak var resumStory: UILabel!
-    
     
     @IBOutlet weak var backGroudImage: UIImageView!
     
     @IBOutlet weak var timerLabel: UILabel!
     
-     var históriaSelecionada: Story = arrayDeEstórias[0]
+    @IBOutlet weak var startButton: UIButton!
+    
+    @IBOutlet weak var namePerson: UILabel!
+    
+    @IBOutlet weak var funcPerson: UILabel!
     
     
-    var time = 10
+    var históriaSelecionada: Story = arrayDeEstórias[0]
+    
+    var time = 65
     
     var timer = Timer()
+    
+    var activeButton: Bool = false
+    
     @IBAction func start(_ sender: Any) {
+        if activeButton == false {
+            activeButton = true
+            timerGame()
+        }
+    }
+    
+    
+    func timerGame(){
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.action), userInfo: nil, repeats: true)
     }
     
+    
     // funcao usada p/ dizer o que vai acontecer durante o decorrer do timer
-    @objc func action (){
-        
+    @objc func action () {
+        startButton.isHidden = true
         temporizador()
         
     }
@@ -66,7 +77,7 @@ class GameViewController: UIViewController {
         }
             
         else if time == 60{
-            timerLabel.text = "0:00"
+            timerLabel.text = "1:00"
             time -= 1
         }
         else if time < 60 && time >= 10{
@@ -82,6 +93,8 @@ class GameViewController: UIViewController {
             timer.invalidate()
         }
     }
+    
+    
     // MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,8 +102,19 @@ class GameViewController: UIViewController {
         resumStory.text = históriaSelecionada.história
         backGroudImage.image = históriaSelecionada.image
         
+        namePerson.text = "Diabrete"
+        
+        funcPerson.text = "Testemunha"
+        
     }
     
+    // MARK: PRESS PLAY
+    
+    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        if activeButton == false {
+            activeButton = true
+            timerGame()
+        }
+    }
     
 }
-
