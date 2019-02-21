@@ -285,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKf-7x-4Uv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-861" y="7367"/>
+            <point key="canvasLocation" x="-846" y="6627"/>
         </scene>
         <!--Story View Controller-->
         <scene sceneID="pea-X4-8Sy">
@@ -351,6 +351,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="He9-MF-7HO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1484" y="4822"/>
+        </scene>
+        <!--End Pop Up View Controller-->
+        <scene sceneID="YcM-HM-Ksr">
+            <objects>
+                <viewController id="BIr-7p-seN" customClass="EndPopUpViewController" customModule="Julgamento" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="byQ-0Y-TGM"/>
+                        <viewControllerLayoutGuide type="bottom" id="b9S-NF-NVr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lae-3K-CHG">
+                        <rect key="frame" x="0.0" y="0.0" width="474" height="192"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9JK-4Y-lJn">
+                                <rect key="frame" x="0.0" y="0.0" width="474" height="192"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END OF TURN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PA-xg-j9G">
+                                        <rect key="frame" x="85" y="64" width="304" height="65"/>
+                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="32"/>
+                                        <color key="textColor" red="0.9980261922" green="0.76167261600000002" blue="0.05828843266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.067111030220000006" green="0.0011678881709999999" blue="0.18406236170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1PA-xg-j9G" firstAttribute="centerY" secondItem="9JK-4Y-lJn" secondAttribute="centerY" id="0yY-bt-Vvr"/>
+                                    <constraint firstItem="1PA-xg-j9G" firstAttribute="centerX" secondItem="9JK-4Y-lJn" secondAttribute="centerX" id="Arj-Ow-hiJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9980261922" green="0.76167261600000002" blue="0.05828843266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9JK-4Y-lJn" secondAttribute="trailing" id="8rl-4o-qAL"/>
+                            <constraint firstItem="9JK-4Y-lJn" firstAttribute="centerY" secondItem="lae-3K-CHG" secondAttribute="centerY" id="DXg-sE-beh"/>
+                            <constraint firstItem="9JK-4Y-lJn" firstAttribute="top" secondItem="lae-3K-CHG" secondAttribute="top" id="HNR-sQ-PaW"/>
+                            <constraint firstItem="9JK-4Y-lJn" firstAttribute="centerX" secondItem="lae-3K-CHG" secondAttribute="centerX" id="HPi-62-YlS"/>
+                            <constraint firstItem="9JK-4Y-lJn" firstAttribute="leading" secondItem="lae-3K-CHG" secondAttribute="leading" id="cDM-KO-eKy"/>
+                            <constraint firstAttribute="bottom" secondItem="9JK-4Y-lJn" secondAttribute="bottom" id="sjA-7b-VAo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="owj-ex-jmg"/>
+                    </view>
+                    <size key="freeformSize" width="474" height="192"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEi-98-L5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="6627"/>
         </scene>
     </scenes>
 </document>
