@@ -47,6 +47,11 @@ class GameViewController: UIViewController {
     // funcao usada p/ dizer o que vai acontecer durante o decorrer do timer
     @objc func action (){
         
+        temporizador()
+        
+    }
+    
+    func temporizador (){
         let min =  time/60
         let seg = time%60
         
@@ -76,7 +81,6 @@ class GameViewController: UIViewController {
         if time < 0{
             timer.invalidate()
         }
-        
     }
     // MARK: viewDidLoad
     override func viewDidLoad() {
