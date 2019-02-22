@@ -13,13 +13,14 @@ class SelectPlayersViewController: UIViewController {
     @IBOutlet weak var numDePlayerLabel: UILabel!
     
     var quantJogadores = 4
-    
+    var juri: Int?
+    var test: Int?
     
     @IBAction func addPlayers(_ sender: Any) {
         if quantJogadores > 3 && quantJogadores < 8{
             quantJogadores = quantJogadores + 1
             numDePlayerLabel.text = "\(quantJogadores)"
-            
+            divPersons()
         }
     }
     
@@ -27,7 +28,9 @@ class SelectPlayersViewController: UIViewController {
         if quantJogadores > 4 && quantJogadores < 9{
             quantJogadores = quantJogadores - 1
             numDePlayerLabel.text = "\(quantJogadores)"
-            
+            if quantJogadores > 4 {
+                divPersons()
+            }
         }
         
       
@@ -46,17 +49,21 @@ class SelectPlayersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         let _StrQtdPlayer = "\(quantJogadores)"
         numDePlayerLabel.text = _StrQtdPlayer
+        
     }
    
     
-// PRESS PLAY
-    
-//    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
-//        print(presses)
-//    }
-    
+    func divPersons() {
+        let qtdJuriTest = quantJogadores - 3
+        let restDiv = DivForGame(qtdJogadores: qtdJuriTest)
+        self.juri = restDiv[0]
+        self.test = restDiv[1]
+        print("J - \(juri)")
+        print("T - \(test)")
+    }
     
     
 }
