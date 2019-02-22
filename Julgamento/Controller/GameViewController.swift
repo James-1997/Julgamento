@@ -36,14 +36,14 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var funcPerson: UILabel!
     
+
+    //MARK: Variáveis
     
     var históriaSelecionada: Story = arrayDeEstórias[0]
-    
     var time = 3
-    
     var timer = Timer()
-    
     var activeButton: Bool = false
+    var numDeJogadores: Int?
     
     @IBAction func start(_ sender: Any) {
         if activeButton == false {
@@ -110,6 +110,8 @@ class GameViewController: UIViewController {
         namePerson.text = "Diabrete"
         
         funcPerson.text = "Testemunha"
+        
+        print(numDeJogadores!)
         
     }
     
