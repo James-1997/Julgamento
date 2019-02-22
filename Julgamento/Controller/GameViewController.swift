@@ -42,7 +42,7 @@ class GameViewController: UIViewController {
     var históriaSelecionada: Story = arrayDeEstórias[0]
 
     
-    var rounds: Int = 0
+    var rounds: Int = 1
     
     var indexArray = 0
     
@@ -75,27 +75,193 @@ class GameViewController: UIViewController {
         
     }
     
-    // MARK: ROUNDS
+    
+    func gerRound () {
+        
+        switch rounds {
+        case 1:
+            round1()
+            
+        case 2:
+            round2()
+            
+        case 3:
+            round3()
+            
+        case 4:
+            round4()
+           
+        case 5:
+            round5()
+            
+            
+        default:
+            return
+        }
+        
+    }
+    
+    
+    // MARK: ROUND 1
     
     func round1 (){
         
         namePerson.text = "APRESENTAÇÃO"
         funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
         time = tempoDosJogadores[indexArray]
+        activeButton = false
         if indexArray == 1{
             namePerson.text = "Promotoria"
             funcPerson.text = "apresente sua acusação"
+            timerLabel.text = ("1:30")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+        }
+        else if indexArray == 2{
+            
+            namePerson.text = "defesa"
+            funcPerson.text = "apresente-se"
+            timerLabel.text = ("1:30")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+            rounds += 1
+            
+        }
+    }
+    
+    // MARK: ROUND 2
+        
+        func round2(){
+            activeButton = false
+            if indexArray == 3{
+                namePerson.text = "Promotoria"
+                funcPerson.text = "sua vez"
+                timerLabel.text = ("1:30")
+                startButton.isHidden = false
+                time = tempoDosJogadores[indexArray]
+            }
+            else if indexArray == 4{
+                
+                namePerson.text = "defesa"
+                funcPerson.text = "SUA VEZ"
+                timerLabel.text = ("1:30")
+                startButton.isHidden = false
+                time = tempoDosJogadores[indexArray]
+                
+            }
+            else if indexArray == 5{
+                
+                namePerson.text = "juri"
+                funcPerson.text = "PODE FAZER UMA PERGUNTA"
+                timerLabel.text = ("0:00")
+                startButton.isHidden = false
+                time = tempoDosJogadores[indexArray]
+                rounds += 1
+            }
+           
+        }
+    
+    func round3(){
+        activeButton = false
+        if indexArray == 6{
+            namePerson.text = "TESTEMUNHA"
+            funcPerson.text = "TESTEMUNHE"
+            timerLabel.text = ("0:30")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+        }
+        else if indexArray == 7{
+            
+            namePerson.text = "PROMOTORIA"
+            funcPerson.text = "SUA VEZ"
+            timerLabel.text = ("1:30")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+            
+        }
+        else if indexArray == 8{
+            
+            namePerson.text = "DEFESA"
+            funcPerson.text = "SUA VEZ"
+            timerLabel.text = ("0:00")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+            
+        }
+        else if indexArray == 9{
+            
+            namePerson.text = "JURI"
+            funcPerson.text = "PODE FAZER UMA PERGUNTA"
+            timerLabel.text = ("0:00")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+            rounds += 1
+            
         }
         
     }
     
+    func round4(){
+        activeButton = false
+        if indexArray == 9{
+            namePerson.text = "Promotoria"
+            funcPerson.text = "sua vez"
+            timerLabel.text = ("1:30")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+        }
+        else if indexArray == 10{
+            
+            namePerson.text = "defesa"
+            funcPerson.text = "SUA VEZ"
+            timerLabel.text = ("1:30")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+            
+        }
+        else if indexArray == 11{
+            
+            namePerson.text = "juri"
+            funcPerson.text = "PODE FAZER UMA PERGUNTA"
+            timerLabel.text = ("0:00")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+            rounds += 1
+            
+        }
+        
+    }
     
-    
-    
-    
-    
-    
-    
+    func round5(){
+        activeButton = false
+        if indexArray == 12{
+            namePerson.text = "Promotoria"
+            funcPerson.text = "sua vez"
+            timerLabel.text = ("0:30")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+        }
+        else if indexArray == 13{
+            
+            namePerson.text = "defesa"
+            funcPerson.text = "SUA VEZ"
+            timerLabel.text = ("0:30")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+            
+        }
+        else if indexArray == 14{
+            
+            namePerson.text = "juri"
+            funcPerson.text = "VOTA"
+            timerLabel.text = ("0:00")
+            startButton.isHidden = false
+            time = tempoDosJogadores[indexArray]
+            rounds += 1
+            
+        }
+        
+    }
     
     // MARK: TEMPORIZADOR
     
@@ -127,8 +293,10 @@ class GameViewController: UIViewController {
             timerLabel.text = "0:0\(String(seg))"
             time -= 1
         }
-        if time == 0{
+        if time < 0{
             indexArray += 1
+            self.timer.invalidate()
+            gerRound()
           //  turnEndFeedback()
         }
     }
@@ -163,11 +331,12 @@ class GameViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         resumStory.text = históriaSelecionada.história
         backGroudImage.image = históriaSelecionada.image
-        
+        rounds = 1
         
         time = tempoDosJogadores[indexArray]
+        indexArray = 0
         
-        round1()
+        gerRound()
         
         //        namePerson.text = "Diabrete"
         //
