@@ -8,4 +8,4 @@
 
 import Foundation
 
-let tempoDosJogadores = [15,90,90,90,60,30,90,90,60,90,90,60,30,30]
+let tempoDosJogadores = [15,30,30,90,90,30,90,90,90,90,30,30,]

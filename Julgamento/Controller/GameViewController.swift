@@ -10,9 +10,9 @@ import UIKit
 import Foundation
 
 class GameViewController: UIViewController {
-
     
-  
+    
+    
     
     @IBOutlet weak var playerOne: UIImageView!
     
@@ -39,34 +39,64 @@ class GameViewController: UIViewController {
     
     var históriaSelecionada: Story = arrayDeEstórias[0]
     
-    var time = 3
+    var rounds: Int = 0
+    
+    var indexArray = 0
     
     var timer = Timer()
+    
+    var time: Int = 0
     
     var activeButton: Bool = false
     
     @IBAction func start(_ sender: Any) {
         if activeButton == false {
             activeButton = true
-            timerGame()
+           timerGame()
+           
         }
     }
     
     
     func timerGame(){
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.action), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.action1), userInfo: nil, repeats: true)
     }
     
     
     // funcao usada p/ dizer o que vai acontecer durante o decorrer do timer
-    @objc func action () {
- 
+    @objc func action1 () {
+        
         startButton.isHidden = true
         temporizador()
         
     }
     
+    // MARK: ROUNDS
+    
+    func round1 (){
+        
+        namePerson.text = "APRESENTAÇÃO"
+        funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
+        time = tempoDosJogadores[indexArray]
+        if indexArray == 1{
+            namePerson.text = "Promotoria"
+            funcPerson.text = "apresente sua acusação"
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // MARK: TEMPORIZADOR
+    
     func temporizador (){
+        
         let min =  time/60
         let seg = time%60
         
@@ -94,10 +124,30 @@ class GameViewController: UIViewController {
             time -= 1
         }
         if time == 0{
-            
-            turnEndFeedback()
+            indexArray += 1
+          //  turnEndFeedback()
         }
     }
+    
+    
+    
+    //MARK: POP-UP FUNCTIONS
+    
+    func turnEndFeedback(){
+        
+        //      print("savedFeedback")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let test = storyboard.instantiateViewController(withIdentifier: "EndPopUpViewController")
+        
+        self.present(test, animated: true) {
+            self.timer.invalidate()
+            self.timerLabel.text = "0:00"
+        }
+        
+    }
+    
+    
     
     
     // MARK: viewDidLoad
@@ -107,9 +157,14 @@ class GameViewController: UIViewController {
         resumStory.text = históriaSelecionada.história
         backGroudImage.image = históriaSelecionada.image
         
-        namePerson.text = "Diabrete"
         
-        funcPerson.text = "Testemunha"
+        time = tempoDosJogadores[indexArray]
+        
+        round1()
+        
+        //        namePerson.text = "Diabrete"
+        //
+        //        funcPerson.text = "Testemunha"
         
     }
     
@@ -122,22 +177,5 @@ class GameViewController: UIViewController {
         }
     }
     
-    
-    //MARK: POP-UP FUNCTIONS
-    
-    func turnEndFeedback(){
-
-        //      print("savedFeedback")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
-        let test = storyboard.instantiateViewController(withIdentifier: "EndPopUpViewController")
-
-        self.present(test, animated: true) {
-            self.timer.invalidate()
-            self.timerLabel.text = "0:00"
-        }
-
-    }
-    
-    
 }
+
