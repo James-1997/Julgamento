@@ -28,7 +28,9 @@ class SelectPlayersViewController: UIViewController {
         if quantJogadores > 4 && quantJogadores < 9{
             quantJogadores = quantJogadores - 1
             numDePlayerLabel.text = "\(quantJogadores)"
-            divPersons()
+            if quantJogadores > 4 {
+                divPersons()
+            }
         }
         
       
@@ -50,17 +52,17 @@ class SelectPlayersViewController: UIViewController {
         
         let _StrQtdPlayer = "\(quantJogadores)"
         numDePlayerLabel.text = _StrQtdPlayer
-        divPersons()
+        
     }
    
     
     func divPersons() {
         let qtdJuriTest = quantJogadores - 3
         let restDiv = DivForGame(qtdJogadores: qtdJuriTest)
-        self.juri = restDiv[0] ?? 0
-        self.test = restDiv[1] ?? 0
-        print("J - \(juri ?? 0)")
-        print("T - \(test ?? 0)")
+        self.juri = restDiv[0]
+        self.test = restDiv[1]
+        print("J - \(juri)")
+        print("T - \(test)")
     }
     
     
