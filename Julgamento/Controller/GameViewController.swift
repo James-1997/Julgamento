@@ -10,13 +10,16 @@ import UIKit
 import Foundation
 
 class GameViewController: UIViewController {
+
+    
+  
     
     @IBOutlet weak var playerOne: UIImageView!
     
     @IBOutlet weak var playerTwo: UIImageView!
     
     @IBOutlet weak var playerThree: UIImageView!
-   
+    
     @IBOutlet weak var playerFour: UIImageView!
     
     @IBOutlet weak var playerFive: UIImageView!
@@ -36,7 +39,7 @@ class GameViewController: UIViewController {
     
     var históriaSelecionada: Story = arrayDeEstórias[0]
     
-    var time = 65
+    var time = 3
     
     var timer = Timer()
     
@@ -57,6 +60,7 @@ class GameViewController: UIViewController {
     
     // funcao usada p/ dizer o que vai acontecer durante o decorrer do timer
     @objc func action () {
+ 
         startButton.isHidden = true
         temporizador()
         
@@ -89,8 +93,9 @@ class GameViewController: UIViewController {
             timerLabel.text = "0:0\(String(seg))"
             time -= 1
         }
-        if time < 0{
-            timer.invalidate()
+        if time == 0{
+            
+            turnEndFeedback()
         }
     }
     
@@ -116,5 +121,23 @@ class GameViewController: UIViewController {
             timerGame()
         }
     }
+    
+    
+    //MARK: POP-UP FUNCTIONS
+    
+    func turnEndFeedback(){
+
+        //      print("savedFeedback")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let test = storyboard.instantiateViewController(withIdentifier: "EndPopUpViewController")
+
+        self.present(test, animated: true) {
+            self.timer.invalidate()
+            self.timerLabel.text = "0:00"
+        }
+
+    }
+    
     
 }

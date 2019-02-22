@@ -10,10 +10,20 @@ import UIKit
 
 class EndPopUpViewController: UIViewController {
 
+    @IBOutlet weak var EndOfTurnView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        EndOfTurnView.layer.cornerRadius = 16
+        EndOfTurnView.clipsToBounds = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.dismiss(animated: false)
+        }
 
-        // Do any additional setup after loading the view.
+        
     }
 
 
