@@ -8,8 +8,13 @@
 
 import Foundation
 import UIKit
+// Legenda
+// 5 -> 15 seg
+// 7 -> 30 seg
+// 10 -> 90 seg
+// 0 -> é o juri (que nao tem tempo)
 
-let tempoDosJogadores = [15,90,90,90,60,30,90,90,60,90,90,60,30,30]
+let tempoDosJogadores = [5,7,7, 10,10,0 ,7,10,10,0, 10,10,0, 7,7,0]
 
 func DivForGame (qtdJogadores: Int) -> [Int?] {
     let juriAndTest = qtdJogadores
