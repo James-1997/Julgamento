@@ -24,6 +24,7 @@
 		1F500E22221C5A7200BC3139 /* ArrayDeEstorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */; };
 		1FE35E81221C567F004C7390 /* PerfilPersonagemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE35E80221C567F004C7390 /* PerfilPersonagemModel.swift */; };
 		1FE35E83221C5694004C7390 /* ArrayPerfilDoPersonagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE35E82221C5694004C7390 /* ArrayPerfilDoPersonagem.swift */; };
+		5E562F2D221F8DB200FF26FB /* ConfiguracoesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeEstorias.swift; sourceTree = "<group>"; };
 		1FE35E80221C567F004C7390 /* PerfilPersonagemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilPersonagemModel.swift; sourceTree = "<group>"; };
 		1FE35E82221C5694004C7390 /* ArrayPerfilDoPersonagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayPerfilDoPersonagem.swift; sourceTree = "<group>"; };
+		5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracoesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				1FE35E82221C5694004C7390 /* ArrayPerfilDoPersonagem.swift */,
 				1F500E1F221C59C200BC3139 /* StoryModel.swift */,
 				1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */,
+				5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				1FE35E81221C567F004C7390 /* PerfilPersonagemModel.swift in Sources */,
 				1D3B42E5221DADD2008489BF /* GameViewController.swift in Sources */,
 				1F4C14A1221F13C100D8099A /* EndPopUpViewController.swift in Sources */,
+				5E562F2D221F8DB200FF26FB /* ConfiguracoesModel.swift in Sources */,
 				1DC822CB221C384300D56F00 /* ViewController.swift in Sources */,
 				1DC822E6221C52A200D56F00 /* SelectMapViewController.swift in Sources */,
 				1F17385E221D8D150076C84F /* StoryViewController.swift in Sources */,
