@@ -36,8 +36,11 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var funcPerson: UILabel!
     
+
+    //MARK: Variáveis
     
     var históriaSelecionada: Story = arrayDeEstórias[0]
+
     
     var rounds: Int = 0
     
@@ -48,7 +51,8 @@ class GameViewController: UIViewController {
     var time: Int = 0
     
     var activeButton: Bool = false
-    
+    var numDeJogadores: Int?
+   
     @IBAction func start(_ sender: Any) {
         if activeButton == false {
             activeButton = true
@@ -136,13 +140,16 @@ class GameViewController: UIViewController {
     func turnEndFeedback(){
         
         //      print("savedFeedback")
+      
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let test = storyboard.instantiateViewController(withIdentifier: "EndPopUpViewController")
         
         self.present(test, animated: true) {
-            self.timer.invalidate()
+            
             self.timerLabel.text = "0:00"
+            self.timer.invalidate()
         }
         
     }

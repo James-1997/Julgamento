@@ -28,8 +28,15 @@ class StoryViewController: UIViewController {
         storyText.text = históriaSelecionada.história
         
     }
-
-  
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let numDeJogadores = numJogadores
+        let gameViewController = segue.destination as! GameViewController
+        gameViewController.numDeJogadores = numDeJogadores
+        
+    }
+ 
 
 
 }
