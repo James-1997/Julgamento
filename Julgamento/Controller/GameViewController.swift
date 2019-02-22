@@ -96,8 +96,7 @@ class GameViewController: UIViewController {
             time -= 1
         }
         if time == 0{
-            
-            turnEndFeedback()
+                turnEndFeedback()
         }
     }
     
