@@ -128,13 +128,16 @@ class GameViewController: UIViewController {
     func turnEndFeedback(){
 
         //      print("savedFeedback")
+      
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
         let test = storyboard.instantiateViewController(withIdentifier: "EndPopUpViewController")
 
         self.present(test, animated: true) {
-            self.timer.invalidate()
+            
             self.timerLabel.text = "0:00"
+            self.timer.invalidate()
         }
 
     }

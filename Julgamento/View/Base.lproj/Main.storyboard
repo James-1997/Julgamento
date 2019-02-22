@@ -30,18 +30,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
-                                <rect key="frame" x="859" y="497" width="204" height="86"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_menu" translatesAutoresizingMaskIntoConstraints="NO" id="qjz-MW-qFu">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1080" id="fAc-NT-AGD"/>
+                                    <constraint firstAttribute="width" constant="1920" id="pNL-Ll-ZGM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
+                                <rect key="frame" x="1281" y="354" width="529" height="167"/>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="JOGAR"/>
+                                <state key="normal" title="JOGAR" backgroundImage="botao_menu">
+                                    <color key="titleColor" red="0.0" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" backgroundImage="Selcted"/>
+                                <state key="focused" backgroundImage="Selcted"/>
                                 <connections>
                                     <segue destination="UR6-f9-KfD" kind="show" id="VkZ-f6-pMV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-Za-rhH">
-                                <rect key="frame" x="848" y="670" width="226" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-Za-rhH">
+                                <rect key="frame" x="1281" y="574" width="529" height="167"/>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="REGRAS"/>
+                                <state key="normal" title="REGRAS" backgroundImage="botao_menu">
+                                    <color key="titleColor" red="0.0" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" backgroundImage="Selcted"/>
+                                <state key="focused" backgroundImage="Selcted"/>
                                 <connections>
                                     <segue destination="M8F-XQ-oes" kind="showDetail" id="nPc-2q-Hhi"/>
                                 </connections>
@@ -50,9 +67,11 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JXi-Nr-o13" firstAttribute="centerX" secondItem="YoF-Za-rhH" secondAttribute="centerX" id="8Dl-Jp-48a"/>
-                            <constraint firstItem="JXi-Nr-o13" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="859" id="Gu9-wk-SNv"/>
-                            <constraint firstItem="JXi-Nr-o13" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OjE-oZ-0WB"/>
-                            <constraint firstItem="YoF-Za-rhH" firstAttribute="top" secondItem="JXi-Nr-o13" secondAttribute="bottom" constant="87" id="z4c-nb-928"/>
+                            <constraint firstItem="JXi-Nr-o13" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="1281" id="Gu9-wk-SNv"/>
+                            <constraint firstItem="JXi-Nr-o13" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-102.5" id="OjE-oZ-0WB"/>
+                            <constraint firstItem="qjz-MW-qFu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="icY-iF-Qzt"/>
+                            <constraint firstItem="qjz-MW-qFu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nFi-nO-6bi"/>
+                            <constraint firstItem="YoF-Za-rhH" firstAttribute="top" secondItem="JXi-Nr-o13" secondAttribute="bottom" constant="53" id="z4c-nb-928"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -387,7 +406,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.39485231164383561" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9JK-4Y-lJn" firstAttribute="centerY" secondItem="lae-3K-CHG" secondAttribute="centerY" id="3SY-9J-KYh"/>
                             <constraint firstItem="9JK-4Y-lJn" firstAttribute="centerX" secondItem="lae-3K-CHG" secondAttribute="centerX" id="9Xf-lI-jSg"/>
@@ -404,4 +423,9 @@
             <point key="canvasLocation" x="-846" y="8483"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Selcted" width="533" height="171"/>
+        <image name="background_menu" width="1920" height="1080"/>
+        <image name="botao_menu" width="529" height="167"/>
+    </resources>
 </document>
