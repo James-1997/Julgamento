@@ -40,11 +40,13 @@ class GameViewController: UIViewController {
     //MARK: Variáveis
     
     var históriaSelecionada: Story = arrayDeEstórias[0]
+
+    
     var time = 3
     var timer = Timer()
     var activeButton: Bool = false
     var numDeJogadores: Int?
-    
+   
     @IBAction func start(_ sender: Any) {
         if activeButton == false {
             activeButton = true

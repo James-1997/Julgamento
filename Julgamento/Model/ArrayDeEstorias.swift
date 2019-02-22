@@ -11,6 +11,6 @@ import UIKit
 
 var arrayDeEstórias: [Story] = [
     
-    Story(titulo: "O TRÁFICO DE PÓ MÁGICO", história: "A duas noites atrás, foi encontrado um carregamento ilícito de pó mágico no lago dos duendes. No local do crime foram encontrados algumas pegadas de um animal quadrúpede. Cid o unicórnio que mora nas redondezas está sendo julgado aqui, hoje, como o principal suspeito. ", gênero: "fantasia", image: UIImage(named: "storyBg")!),
+    Story(titulo: "O TRÁFICO DE PÓ MÁGICO", história: "A duas noites atrás, foi encontrado um carregamento ilícito de pó mágico no lago dos duendes. No local do crime foram encontrados algumas pegadas de um animal quadrúpede. Cid o unicórnio que mora nas redondezas está sendo julgado aqui, hoje, como o principal suspeito. ", gênero: "fantasia", image: UIImage(named: "background_menu")!),
     
 ]
