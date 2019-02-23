@@ -56,10 +56,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-Za-rhH">
                                 <rect key="frame" x="1281" y="564" width="463" height="146"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="146" id="NJ1-v3-2Dm"/>
-                                    <constraint firstAttribute="width" constant="463" id="lNz-ik-jIn"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="REGRAS" backgroundImage="botao_semfoco-1">
@@ -76,6 +72,7 @@
                         <constraints>
                             <constraint firstItem="YoF-Za-rhH" firstAttribute="top" secondItem="JXi-Nr-o13" secondAttribute="bottom" constant="53" id="0ev-35-X19"/>
                             <constraint firstItem="JXi-Nr-o13" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="800" constant="305" id="AuD-77-t2o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YoF-Za-rhH" secondAttribute="bottom" constant="310" id="HNN-7E-YCN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JXi-Nr-o13" secondAttribute="trailing" constant="66" id="HpK-xE-LIr"/>
                             <constraint firstItem="YoF-Za-rhH" firstAttribute="centerX" secondItem="JXi-Nr-o13" secondAttribute="centerX" id="Lme-nI-N6x"/>
                             <constraint firstItem="qjz-MW-qFu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="icY-iF-Qzt"/>
@@ -123,7 +120,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itx-Tk-399">
                                 <rect key="frame" x="1057" y="934" width="104" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.96951931715011597" green="0.94742757081985474" blue="0.79694074392318726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addPlayers:" destination="UR6-f9-KfD" eventType="primaryActionTriggered" id="0nf-oU-2yc"/>
                                 </connections>
@@ -150,7 +149,9 @@
                                     <constraint firstAttribute="width" constant="97" id="EzB-hl-b4g"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="-"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="0.96951931715011597" green="0.94742757081985474" blue="0.79694074392318726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="removePlayers:" destination="UR6-f9-KfD" eventType="primaryActionTriggered" id="xCT-vt-mWQ"/>
                                 </connections>
@@ -430,13 +431,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-ul-ASm">
-                                <rect key="frame" x="880" y="498" width="161" height="85"/>
+                                <rect key="frame" x="834" y="498" width="252" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Wih-WS-TD5"/>
                                     <constraint firstAttribute="height" constant="85" id="rqZ-is-qGC"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="start"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="start:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="Qq4-o6-guz"/>
                                 </connections>
@@ -528,9 +532,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDz-9j-cNM">
-                                <rect key="frame" x="1667" y="934" width="188" height="86"/>
+                                <rect key="frame" x="1594" y="902" width="261" height="118"/>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Ready"/>
+                                <state key="normal" title="READY">
+                                    <color key="titleColor" red="0.96951931715011597" green="0.94742757081985474" blue="0.79694074392318726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="lE1-si-hiT" kind="show" id="FpI-lS-lGj"/>
                                 </connections>
@@ -608,7 +615,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.39485231164383561" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9JK-4Y-lJn" firstAttribute="centerY" secondItem="lae-3K-CHG" secondAttribute="centerY" id="3SY-9J-KYh"/>
                             <constraint firstItem="9JK-4Y-lJn" firstAttribute="centerX" secondItem="lae-3K-CHG" secondAttribute="centerX" id="9Xf-lI-jSg"/>
