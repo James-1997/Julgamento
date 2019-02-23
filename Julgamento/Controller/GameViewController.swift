@@ -95,6 +95,7 @@ class GameViewController: UIViewController {
         resumStory.text = históriaSelecionada.história
         backGroudImage.image = históriaSelecionada.image
         rounds = 1
+        timerLabel.text = "00:15"
         gerRound()
     }
     
