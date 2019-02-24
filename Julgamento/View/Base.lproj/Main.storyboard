@@ -625,11 +625,53 @@
                     </view>
                     <connections>
                         <outlet property="EndOfTurnView" destination="9JK-4Y-lJn" id="CdQ-8g-wNI"/>
+                        <outlet property="popUpLabel" destination="1PA-xg-j9G" id="gpZ-fx-cCb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEi-98-L5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-846" y="8483"/>
+            <point key="canvasLocation" x="-846" y="7970"/>
+        </scene>
+        <!--Prova Do Crime View Controller-->
+        <scene sceneID="TB4-1E-0E4">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="NEY-J5-chA" customClass="ProvaDoCrimeViewController" customModule="Julgamento" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f2k-qA-pl4"/>
+                        <viewControllerLayoutGuide type="bottom" id="gUA-2c-nSv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dcj-dm-Nq2">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uqE-fd-KbZ">
+                                <rect key="frame" x="548" y="295" width="768" height="410"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nke-cc-8VL">
+                                        <rect key="frame" x="213" y="44" width="343" height="183"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prova do Crime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFF-xj-ma6">
+                                        <rect key="frame" x="253" y="288" width="262" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="provaDoCrimeView" destination="uqE-fd-KbZ" id="Yeo-qr-6GF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNM-U7-Mxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909" y="8440"/>
         </scene>
     </scenes>
     <resources>

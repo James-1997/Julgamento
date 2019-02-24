@@ -17,7 +17,6 @@ class GameViewController: UIViewController {
     @IBOutlet weak var playerTwo: UIImageView!
     
     @IBOutlet weak var playerThree: UIImageView!
-    
     @IBOutlet weak var playerFour: UIImageView!
     
     @IBOutlet weak var playerFive: UIImageView!
@@ -34,6 +33,9 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var funcPerson: UILabel!
     
+    
+    //POP-UP Connections
+    
 
     //MARK: Variáveis
     
@@ -49,6 +51,9 @@ class GameViewController: UIViewController {
     
     var activeButton: Bool = false
     var numDeJogadores: Int?
+    
+    
+    
    
     @IBAction func start(_ sender: Any) {
         if activeButton == false {
@@ -74,7 +79,7 @@ class GameViewController: UIViewController {
     
     //MARK: POP-UP FUNCTIONS
     
-    func turnEndFeedback(){
+    func powerUpPopUP(){
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -84,6 +89,17 @@ class GameViewController: UIViewController {
             
             self.timer.invalidate()
         }
+        
+    }
+    
+    
+    func provaDoCrimePopUp(){
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let test = storyboard.instantiateViewController(withIdentifier: "ProvaDoCrimeViewController")
+        
+        self.present(test, animated: true)
         
     }
     
@@ -127,10 +143,13 @@ class GameViewController: UIViewController {
     // MARK: ROUND 1
     
     func round1 (){
+        
         namePerson.text = "APRESENTAÇÃO"
         funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
         time = tempoDosJogadores[indexArray]
+        
         if indexArray == 1 {
+          
             namePerson.text = "Promotoria"
             funcPerson.text = "apresente sua acusação"
             timerLabel.text = ("00:30")
@@ -139,6 +158,7 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
         }
         else if indexArray == 2 {
+            indexArray = 2
             namePerson.text = "defesa"
             funcPerson.text = "apresente-se"
             timerLabel.text = ("00:30")
@@ -146,8 +166,8 @@ class GameViewController: UIViewController {
             activeButton = false
             time = tempoDosJogadores[indexArray]
             rounds += 1
-            
         }
+        
     }
     
     // MARK: ROUND 2
@@ -155,6 +175,7 @@ class GameViewController: UIViewController {
     func round2(){
         activeButton = false
         if indexArray == 3{
+             indexArray = 3
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
             timerLabel.text = ("01:30")
@@ -164,6 +185,7 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 4{
             
+            indexArray = 4
             namePerson.text = "defesa"
             funcPerson.text = "SUA VEZ"
             timerLabel.text = ("01:30")
@@ -173,6 +195,7 @@ class GameViewController: UIViewController {
             
         }
         else if indexArray == 5{
+            indexArray = 5
             namePerson.text = "juri"
             funcPerson.text = "PODE FAZER UMA PERGUNTA"
             timerLabel.text = ("00:00")
@@ -329,13 +352,28 @@ class GameViewController: UIViewController {
             indexArray += 1
             self.timer.invalidate()
             gerRound()
-            turnEndFeedback()
+            
+            if indexArray == 2{
+                powerUpPopUP()
+            }
+            
+            
         }
     }
     
     // MARK: PRESS PLAY
     
     override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        
+    }
+    
+    //Passing data for pop-up
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        var dataIndexArray = indexArray
+        let endPopUpViewController = segue.destination as! EndPopUpViewController
+        endPopUpViewController.dataIndexArray = dataIndexArray
         
     }
     

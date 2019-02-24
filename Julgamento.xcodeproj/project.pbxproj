@@ -21,6 +21,9 @@
 		1F173867221D97460076C84F /* sagesans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F173865221D97460076C84F /* sagesans-Regular.ttf */; };
 		1F173868221D97460076C84F /* Splatch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F173866221D97460076C84F /* Splatch.ttf */; };
 		1F4C14A1221F13C100D8099A /* EndPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C14A0221F13C100D8099A /* EndPopUpViewController.swift */; };
+		1F4C14A42221B8D600D8099A /* PowerUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C14A32221B8D600D8099A /* PowerUpModel.swift */; };
+		1F4C14A62222000400D8099A /* ArrayPowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C14A52222000400D8099A /* ArrayPowerUp.swift */; };
+		1F4C14A8222201B800D8099A /* ProvaDoCrimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C14A7222201B800D8099A /* ProvaDoCrimeViewController.swift */; };
 		1F500E20221C59C200BC3139 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E1F221C59C200BC3139 /* StoryModel.swift */; };
 		1F500E22221C5A7200BC3139 /* ArrayDeEstorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */; };
 		1FE35E81221C567F004C7390 /* PerfilPersonagemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE35E80221C567F004C7390 /* PerfilPersonagemModel.swift */; };
@@ -45,6 +48,9 @@
 		1F173865221D97460076C84F /* sagesans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sagesans-Regular.ttf"; sourceTree = "<group>"; };
 		1F173866221D97460076C84F /* Splatch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splatch.ttf; sourceTree = "<group>"; };
 		1F4C14A0221F13C100D8099A /* EndPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPopUpViewController.swift; sourceTree = "<group>"; };
+		1F4C14A32221B8D600D8099A /* PowerUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUpModel.swift; sourceTree = "<group>"; };
+		1F4C14A52222000400D8099A /* ArrayPowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayPowerUp.swift; sourceTree = "<group>"; };
+		1F4C14A7222201B800D8099A /* ProvaDoCrimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvaDoCrimeViewController.swift; sourceTree = "<group>"; };
 		1F500E1F221C59C200BC3139 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeEstorias.swift; sourceTree = "<group>"; };
 		1FE35E80221C567F004C7390 /* PerfilPersonagemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilPersonagemModel.swift; sourceTree = "<group>"; };
@@ -133,6 +139,8 @@
 				1F500E1F221C59C200BC3139 /* StoryModel.swift */,
 				1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */,
 				5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */,
+				1F4C14A32221B8D600D8099A /* PowerUpModel.swift */,
+				1F4C14A52222000400D8099A /* ArrayPowerUp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				1F4C14A0221F13C100D8099A /* EndPopUpViewController.swift */,
+				1F4C14A7222201B800D8099A /* ProvaDoCrimeViewController.swift */,
 			);
 			path = PopUps;
 			sourceTree = "<group>";
@@ -226,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4C14A42221B8D600D8099A /* PowerUpModel.swift in Sources */,
+				1F4C14A62222000400D8099A /* ArrayPowerUp.swift in Sources */,
 				1DC822DE221C3FB400D56F00 /* RegrasViewController.swift in Sources */,
 				1DC822E0221C3FCF00D56F00 /* SelectPlayersViewController.swift in Sources */,
 				1FE35E83221C5694004C7390 /* ArrayPerfilDoPersonagem.swift in Sources */,
@@ -236,6 +247,7 @@
 				1D2587662220A7F300EFF13A /* ImageViewExtension.swift in Sources */,
 				1DC822CB221C384300D56F00 /* ViewController.swift in Sources */,
 				1DC822E6221C52A200D56F00 /* SelectMapViewController.swift in Sources */,
+				1F4C14A8222201B800D8099A /* ProvaDoCrimeViewController.swift in Sources */,
 				1F17385E221D8D150076C84F /* StoryViewController.swift in Sources */,
 				1DC822C9221C384300D56F00 /* AppDelegate.swift in Sources */,
 				1F500E20221C59C200BC3139 /* StoryModel.swift in Sources */,
