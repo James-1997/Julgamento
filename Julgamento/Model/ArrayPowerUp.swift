@@ -18,5 +18,6 @@ var arrayPowerUp: [PowerUpModel] = [
     PowerUpModel(nome: "Aconteceu uma Reviravolta"),
     PowerUpModel(nome: "Alguém cometeu perjúrio!"),
 
-
 ]
+
+var globalRound: Int = 0

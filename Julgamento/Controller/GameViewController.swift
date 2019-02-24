@@ -81,6 +81,9 @@ class GameViewController: UIViewController {
     
     func powerUpPopUP(){
         
+        // Mark: Passando Data para processar em tela do Pop-Up
+        globalRound = indexArray
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let test = storyboard.instantiateViewController(withIdentifier: "EndPopUpViewController")
@@ -158,7 +161,8 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
         }
         else if indexArray == 2 {
-            indexArray = 2
+            
+//            indexArray = 2
             namePerson.text = "defesa"
             funcPerson.text = "apresente-se"
             timerLabel.text = ("00:30")
@@ -175,7 +179,8 @@ class GameViewController: UIViewController {
     func round2(){
         activeButton = false
         if indexArray == 3{
-             indexArray = 3
+            
+//            indexArray = 3
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
             timerLabel.text = ("01:30")
@@ -185,7 +190,7 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 4{
             
-            indexArray = 4
+//            indexArray = 4
             namePerson.text = "defesa"
             funcPerson.text = "SUA VEZ"
             timerLabel.text = ("01:30")
@@ -195,7 +200,8 @@ class GameViewController: UIViewController {
             
         }
         else if indexArray == 5{
-            indexArray = 5
+            
+//            indexArray = 5
             namePerson.text = "juri"
             funcPerson.text = "PODE FAZER UMA PERGUNTA"
             timerLabel.text = ("00:00")
@@ -210,6 +216,7 @@ class GameViewController: UIViewController {
     func round3(){
         activeButton = false
         if indexArray == 6 {
+            
             namePerson.text = "TESTEMUNHA"
             funcPerson.text = "TESTEMUNHE"
             timerLabel.text = ("00:30")
@@ -253,6 +260,7 @@ class GameViewController: UIViewController {
     func round4(){
         activeButton = false
         if indexArray == 9 {
+            
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
             timerLabel.text = ("01:30")
@@ -287,6 +295,7 @@ class GameViewController: UIViewController {
     func round5(){
         activeButton = false
         if indexArray == 12 {
+            
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
             timerLabel.text = ("00:30")
@@ -367,15 +376,15 @@ class GameViewController: UIViewController {
         
     }
     
-    //Passing data for pop-up
+    //Mark: Passing data for pop-up
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        var dataIndexArray = indexArray
-        let endPopUpViewController = segue.destination as! EndPopUpViewController
-        endPopUpViewController.dataIndexArray = dataIndexArray
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        var dataIndexArray = indexArray
+//        let endPopUpViewController = segue.destination as! EndPopUpViewController
+//        endPopUpViewController.dataIndexArray = dataIndexArray
+//
+//    }
     
     
 }

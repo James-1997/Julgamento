@@ -15,17 +15,12 @@ class EndPopUpViewController: UIViewController {
     
     //MARK: Variáveis
     var powerUpDaVez: PowerUpModel = arrayPowerUp[0]
-    var dataIndexArray: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        if dataIndexArray == 1{
-            
-            popUpLabel.text = powerUpDaVez.nome
-        
-        }
+        // Mark: Aqui seta as labels
+        setLabels()
         
         EndOfTurnView.layer.cornerRadius = 16
         EndOfTurnView.clipsToBounds = true
@@ -36,5 +31,18 @@ class EndPopUpViewController: UIViewController {
         }
   
     }
-
+    
+    
+    func setLabels() {
+       
+        switch globalRound {
+        case 1:
+            popUpLabel.text = powerUpDaVez.nome
+        case 2:
+            print ("Faz o resto aqui")
+        default:
+            print("Error")
+        }
+    }
+    
 }
