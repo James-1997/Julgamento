@@ -41,7 +41,7 @@
                                 <rect key="frame" x="1281" y="365" width="463" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="146" id="Q06-x3-6us"/>
-                                    <constraint firstAttribute="width" constant="463" id="dkA-Bd-gLl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="463" id="dkA-Bd-gLl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
