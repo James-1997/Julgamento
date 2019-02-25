@@ -37,47 +37,50 @@
                                     <constraint firstAttribute="width" constant="1920" id="pNL-Ll-ZGM"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
-                                <rect key="frame" x="1281" y="365" width="463" height="146"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="146" id="Q06-x3-6us"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="463" id="dkA-Bd-gLl"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
+                                <rect key="frame" x="1281" y="345" width="463" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="JOGAR" backgroundImage="botao_semfoco-1">
+                                <state key="normal" title="JOGAR" backgroundImage="botao_desfocoXX">
                                     <color key="titleColor" red="0.0" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="selected" backgroundImage="Selcted"/>
-                                <state key="focused" backgroundImage="botao_menu1"/>
+                                <state key="focused" backgroundImage="botao_menuXX"/>
                                 <connections>
                                     <segue destination="UR6-f9-KfD" kind="show" id="VkZ-f6-pMV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-Za-rhH">
-                                <rect key="frame" x="1281" y="564" width="463" height="146"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-Za-rhH">
+                                <rect key="frame" x="1281" y="535" width="463" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="REGRAS" backgroundImage="botao_semfoco-1">
+                                <state key="normal" title="REGRAS" backgroundImage="botao_desfocoXX">
                                     <color key="titleColor" red="0.0" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="selected" backgroundImage="Selcted"/>
-                                <state key="focused" backgroundImage="botao_menu1"/>
+                                <state key="focused" backgroundImage="botao_menuXX"/>
                                 <connections>
                                     <segue destination="M8F-XQ-oes" kind="showDetail" id="nPc-2q-Hhi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syW-Fa-kjY">
+                                <rect key="frame" x="1281" y="721" width="463" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="REGRAS" backgroundImage="botao_desabilitadoXX">
+                                    <color key="titleColor" red="0.0" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" backgroundImage="Selcted"/>
+                                <state key="focused" backgroundImage="botao_desabilitadoXX"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YoF-Za-rhH" firstAttribute="top" secondItem="JXi-Nr-o13" secondAttribute="bottom" constant="53" id="0ev-35-X19"/>
-                            <constraint firstItem="JXi-Nr-o13" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="800" constant="305" id="AuD-77-t2o"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YoF-Za-rhH" secondAttribute="bottom" constant="310" id="HNN-7E-YCN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JXi-Nr-o13" secondAttribute="trailing" constant="66" id="HpK-xE-LIr"/>
-                            <constraint firstItem="YoF-Za-rhH" firstAttribute="centerX" secondItem="JXi-Nr-o13" secondAttribute="centerX" id="Lme-nI-N6x"/>
                             <constraint firstItem="qjz-MW-qFu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="icY-iF-Qzt"/>
                             <constraint firstItem="qjz-MW-qFu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nFi-nO-6bi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YoF-Za-rhH" secondAttribute="trailing" constant="66" id="zyH-fL-BQH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -424,7 +427,7 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                                     <constraint firstItem="eth-ZY-M3F" firstAttribute="centerY" secondItem="ugp-6e-WWR" secondAttribute="centerY" id="ITQ-67-Wkf"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selecione_texto" translatesAutoresizingMaskIntoConstraints="NO" id="4i3-B2-Tf7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selecione_texto1" translatesAutoresizingMaskIntoConstraints="NO" id="4i3-B2-Tf7">
                                 <rect key="frame" x="614" y="43" width="693" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="693" id="Gx1-Mv-Iev"/>
@@ -579,28 +582,40 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="palanque" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-3v-YJZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="palanque8Lugares" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-3v-YJZ">
                                 <rect key="frame" x="110" y="951" width="1700" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gnomo" translatesAutoresizingMaskIntoConstraints="NO" id="LrA-RW-Q6k">
-                                <rect key="frame" x="271" y="739" width="130" height="235"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unicornio" translatesAutoresizingMaskIntoConstraints="NO" id="HSl-5b-nWA">
+                                <rect key="frame" x="753" y="791" width="178" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diabrete" translatesAutoresizingMaskIntoConstraints="NO" id="AP3-LX-Tre">
-                                <rect key="frame" x="559" y="763" width="187" height="211"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bruxa" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-7x-KMM">
+                                <rect key="frame" x="997" y="812" width="109" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gnomo" translatesAutoresizingMaskIntoConstraints="NO" id="HSl-5b-nWA">
-                                <rect key="frame" x="885" y="739" width="130" height="235"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elfo" translatesAutoresizingMaskIntoConstraints="NO" id="Bxd-cc-73o">
+                                <rect key="frame" x="345" y="752" width="161" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gnomo" translatesAutoresizingMaskIntoConstraints="NO" id="rfT-7x-KMM">
-                                <rect key="frame" x="1515" y="739" width="130" height="235"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gnomo1" translatesAutoresizingMaskIntoConstraints="NO" id="LrA-RW-Q6k">
+                                <rect key="frame" x="204" y="807" width="92" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diabrete" translatesAutoresizingMaskIntoConstraints="NO" id="Bxd-cc-73o">
-                                <rect key="frame" x="1186" y="763" width="187" height="211"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gnomo1" translatesAutoresizingMaskIntoConstraints="NO" id="FhT-GH-rbJ">
+                                <rect key="frame" x="1212" y="807" width="92" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diabrete1" translatesAutoresizingMaskIntoConstraints="NO" id="AP3-LX-Tre">
+                                <rect key="frame" x="583" y="807" width="162" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diabrete1" translatesAutoresizingMaskIntoConstraints="NO" id="MPf-Kq-DF1">
+                                <rect key="frame" x="1387" y="807" width="162" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diabrete1" translatesAutoresizingMaskIntoConstraints="NO" id="6ag-5o-iH0">
+                                <rect key="frame" x="1595" y="810" width="162" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -664,12 +679,6 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                                     <segue destination="lE1-si-hiT" kind="show" id="FpI-lS-lGj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAAAAAA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sc-fB-Xw6">
-                                <rect key="frame" x="0.0" y="210" width="1920" height="82"/>
-                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="40"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HISTORIAAAA" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iR-hW-80Y">
                                 <rect key="frame" x="460" y="290" width="1000" height="500"/>
                                 <constraints>
@@ -680,26 +689,26 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="titulo_crime1" translatesAutoresizingMaskIntoConstraints="NO" id="qd8-37-MdT">
+                                <rect key="frame" x="490" y="176" width="970" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="RDJ-3K-R6b" firstAttribute="top" secondItem="Ihb-tx-rZc" secondAttribute="top" id="3oE-zU-ixJ"/>
-                            <constraint firstItem="2sc-fB-Xw6" firstAttribute="leading" secondItem="Ihb-tx-rZc" secondAttribute="leading" id="8gn-Eq-MVl"/>
                             <constraint firstItem="OCF-cJ-7YK" firstAttribute="top" secondItem="bDz-9j-cNM" secondAttribute="bottom" id="9oU-Tt-jC7"/>
                             <constraint firstItem="bDz-9j-cNM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ihb-tx-rZc" secondAttribute="leading" constant="60" symbolic="YES" id="P0u-5j-xYl"/>
                             <constraint firstItem="RDJ-3K-R6b" firstAttribute="leading" secondItem="Ihb-tx-rZc" secondAttribute="leading" id="bZa-BP-upI"/>
                             <constraint firstItem="1iR-hW-80Y" firstAttribute="centerX" secondItem="Ihb-tx-rZc" secondAttribute="centerX" id="de1-YN-Pgv"/>
                             <constraint firstAttribute="trailing" secondItem="bDz-9j-cNM" secondAttribute="trailing" constant="65" id="eHN-Jf-hiU"/>
-                            <constraint firstItem="2sc-fB-Xw6" firstAttribute="top" secondItem="KgY-Bw-gdS" secondAttribute="bottom" constant="150" id="jUg-Nu-5On"/>
                             <constraint firstAttribute="trailing" secondItem="RDJ-3K-R6b" secondAttribute="trailing" id="nau-yn-vng"/>
                             <constraint firstItem="1iR-hW-80Y" firstAttribute="centerY" secondItem="Ihb-tx-rZc" secondAttribute="centerY" id="pb4-tE-bmz"/>
-                            <constraint firstAttribute="trailing" secondItem="2sc-fB-Xw6" secondAttribute="trailing" id="vxp-Gb-O4S"/>
                             <constraint firstAttribute="bottom" secondItem="RDJ-3K-R6b" secondAttribute="bottom" id="yXd-fv-XSk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="RDJ-3K-R6b" id="hP0-vg-L9h"/>
                         <outlet property="storyText" destination="1iR-hW-80Y" id="31m-ng-KPd"/>
-                        <outlet property="storyTitle" destination="2sc-fB-Xw6" id="PzI-8c-kLO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="He9-MF-7HO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -801,13 +810,18 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
     <resources>
         <image name="Selcted" width="533" height="171"/>
         <image name="background_menu" width="1920" height="1080"/>
-        <image name="botao_menu1" width="529" height="167"/>
-        <image name="botao_semfoco-1" width="463" height="146"/>
-        <image name="diabrete" width="285" height="262"/>
+        <image name="botao_desabilitadoXX" width="529" height="167"/>
+        <image name="botao_desfocoXX" width="463" height="146"/>
+        <image name="botao_menuXX" width="529" height="167"/>
+        <image name="bruxa" width="163" height="225"/>
+        <image name="diabrete1" width="285" height="262"/>
         <image name="diabrete_perfil" width="412" height="412"/>
-        <image name="gnomo" width="98" height="262"/>
+        <image name="elfo" width="132" height="225"/>
+        <image name="gnomo1" width="98" height="262"/>
         <image name="gnomo_perfil" width="412" height="412"/>
-        <image name="palanque" width="1642" height="44"/>
-        <image name="selecione_texto" width="962" height="199"/>
+        <image name="palanque8Lugares" width="1920" height="44"/>
+        <image name="selecione_texto1" width="962" height="199"/>
+        <image name="titulo_crime1" width="1102" height="133"/>
+        <image name="unicornio" width="265" height="198"/>
     </resources>
 </document>
