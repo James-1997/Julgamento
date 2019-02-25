@@ -47,16 +47,24 @@ class ProvaDoCrimeViewController: UIViewController {
        
   
         case 9:
+
             
-            powerUpDaVez = arrayPowerUp[3]
+            powerUpDaVez = arrayPowerUp[randoPUp()]
             popUpLabel.text = powerUpDaVez!.nome
         
-   
-            
+
         default:
             print("Error")
         }
     }
 
+    
+    
+    func randoPUp () -> Int {
+        
+        let indexPUp = Int.random(in: 7 ... 9)
+        
+        return indexPUp
+    }
     
 }
