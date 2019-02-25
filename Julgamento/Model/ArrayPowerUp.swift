@@ -11,12 +11,19 @@ import UIKit
 
 var arrayPowerUp: [PowerUpModel] = [
     
-    PowerUpModel(nome: "Round 1"),
+   
+
+    PowerUpModel(nome: "Turno 1"),
+    PowerUpModel(nome: "Turno 2"),
+    PowerUpModel(nome: "Turno 3"),
+    PowerUpModel(nome: "Turno 4"),
+    PowerUpModel(nome: "Turno 5"),
     PowerUpModel(nome: "Final da Partida!"),
-    PowerUpModel(nome: "Seu tempo acabou!"),
-    PowerUpModel(nome: "Uma prova do crime foi encontrada! "),
+    PowerUpModel(nome: "SEU TEMPO ACABOU!"),
+    PowerUpModel(nome: "Uma prova do crime foi encontrada!"),
     PowerUpModel(nome: "Aconteceu uma Reviravolta"),
     PowerUpModel(nome: "Alguém cometeu perjúrio!"),
+ 
 
 ]
 

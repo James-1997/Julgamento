@@ -12,13 +12,17 @@ class ProvaDoCrimeViewController: UIViewController {
 
     
     @IBOutlet weak var provaDoCrimeView: UIView!
+    @IBOutlet weak var popUpLabel: UILabel!
+    @IBOutlet weak var popUpImage: UIImageView!
     
     
     //MARK: Variáveis
-   
+    var powerUpDaVez: PowerUpModel? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setLabels()
         
         provaDoCrimeView.layer.cornerRadius = 16
         provaDoCrimeView.clipsToBounds = true
@@ -29,6 +33,30 @@ class ProvaDoCrimeViewController: UIViewController {
 
         
     }
-
+    
+    
+    func setLabels() {
+        
+        switch globalRound {
+            
+        case 1:
+            
+            powerUpDaVez = arrayPowerUp[7]
+            popUpLabel.text = powerUpDaVez!.nome
+            
+       
+  
+        case 9:
+            
+            powerUpDaVez = arrayPowerUp[3]
+            popUpLabel.text = powerUpDaVez!.nome
+        
    
+            
+        default:
+            print("Error")
+        }
+    }
+
+    
 }
