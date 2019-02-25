@@ -24,7 +24,7 @@ class StoryViewController: UIViewController {
 
         backgroundImage.image = históriaSelecionada.image
         
-        storyTitle.text = históriaSelecionada.titulo
+ //       storyTitle.text = históriaSelecionada.titulo
         storyText.text = históriaSelecionada.história
         
     }
