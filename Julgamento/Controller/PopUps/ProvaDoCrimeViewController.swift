@@ -15,6 +15,7 @@ class ProvaDoCrimeViewController: UIViewController {
     @IBOutlet weak var popUpLabel: UILabel!
     @IBOutlet weak var popUpImage: UIImageView!
     
+     var timer = Timer()
     
     //MARK: Variáveis
     var powerUpDaVez: PowerUpModel? = nil
@@ -39,6 +40,7 @@ class ProvaDoCrimeViewController: UIViewController {
         
         switch globalRound {
             
+        
         case 1:
             
             powerUpDaVez = arrayPowerUp[7]
@@ -48,7 +50,6 @@ class ProvaDoCrimeViewController: UIViewController {
   
         case 9:
 
-            
             powerUpDaVez = arrayPowerUp[randoPUp()]
             popUpLabel.text = powerUpDaVez!.nome
         

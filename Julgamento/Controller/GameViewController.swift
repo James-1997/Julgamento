@@ -94,9 +94,9 @@ class GameViewController: UIViewController {
             self.timer.invalidate()
         }
         
+        
     }
-    
-    
+  
     
     func provaDoCrimePopUp(){
         
@@ -106,7 +106,9 @@ class GameViewController: UIViewController {
         
         let test = storyboard.instantiateViewController(withIdentifier: "ProvaDoCrimeViewController")
         
-        self.present(test, animated: true)
+        self.present(test, animated: true) {
+            self.timer.invalidate()
+        }
     
     }
     
@@ -120,21 +122,28 @@ class GameViewController: UIViewController {
         rounds = 1
         timerLabel.text = "00:15"
         gerRound()
+        
     }
     
     // MARK: Gerenciador de Rounds
     func gerRound () {
         
         switch rounds {
+            
         case 1:
+            
             round1()
+            
         case 2:
+            
             round2()
             
         case 3:
+            
             round3()
             
         case 4:
+        
             round4()
             
         case 5:
@@ -151,14 +160,16 @@ class GameViewController: UIViewController {
     
     func round1 (){
         
-        //Power up — Prova do Crime
+        
         
         namePerson.text = "APRESENTAÇÃO"
         funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
         time = tempoDosJogadores[indexArray]
+       
+       
         
         if indexArray == 1 {
-          
+            provaDoCrimePopUp()
             namePerson.text = "Promotoria"
             funcPerson.text = "apresente sua acusação"
             timerLabel.text = ("00:30")
@@ -178,6 +189,8 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
             rounds += 1
         }
+        
+        
         
     }
     
@@ -368,22 +381,39 @@ class GameViewController: UIViewController {
         else if time < 10{
             timerLabel.text = "00:0\(String(seg))"
             time -= 1
+        
+            
         }
         if time < 0{
+            
+//            if ((indexArray == 0)) {
+//                provaDoCrimePopUp()
+//            } else {
+//                powerUpPopUP()
+//            }
+            
+            powerUpPopUP()
             indexArray += 1
             self.timer.invalidate()
-            powerUpPopUP()
+            
             gerRound()
-
             
         }
     }
+    
+    
     
     // MARK: PRESS PLAY
     
     override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
         
     }
+    
+  
+        
+        
+    
+    
     
     //Mark: Passing data for pop-up
     
