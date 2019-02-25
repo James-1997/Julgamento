@@ -386,11 +386,12 @@ class GameViewController: UIViewController {
         }
         if time < 0{
             
-//            if ((indexArray == 0)) {
-//                provaDoCrimePopUp()
-//            } else {
-//                powerUpPopUP()
-//            }
+            if ((indexArray == 0) || (indexArray == 9)) {
+                provaDoCrimePopUp()
+            
+        } else {
+               powerUpPopUP()
+           }
             
             powerUpPopUP()
             indexArray += 1
