@@ -53,6 +53,9 @@ class GameViewController: UIViewController {
     var numDeJogadores: Int?
     var indexArrayPopUp: Int!
     
+     let shapeLayer = CAShapeLayer()
+    
+   
     
     
    
@@ -60,6 +63,17 @@ class GameViewController: UIViewController {
         if activeButton == false {
             activeButton = true
             timerGame()
+            
+            // animaçao do circulo
+            
+            let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
+            
+            basicAnimate.toValue = 1
+            basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 2.5
+            basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+            basicAnimate.isRemovedOnCompletion = false
+            
+            shapeLayer.add(basicAnimate, forKey: "basic")
            
         }
     }
@@ -123,6 +137,30 @@ class GameViewController: UIViewController {
         timerLabel.text = "00:15"
         gerRound()
         
+        // circulo de tempo
+        
+        timerLabel.textAlignment = .center
+        
+        let center = view.center
+        let circularPath = UIBezierPath(arcCenter: center, radius: 65, startAngle: -CGFloat.pi/2 , endAngle: 2*CGFloat.pi, clockwise: true)
+        
+    
+        shapeLayer.path = circularPath.cgPath
+        
+        shapeLayer.strokeColor = UIColor.red.cgColor
+        shapeLayer.lineWidth = 25
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.lineCap = CAShapeLayerLineCap.round
+        
+        shapeLayer.strokeEnd = 0
+        
+        view.layer.addSublayer(shapeLayer)
+        
+        
+        
+        
+        
+        
     }
     
     // MARK: Gerenciador de Rounds
@@ -169,10 +207,10 @@ class GameViewController: UIViewController {
        
         
         if indexArray == 1 {
-            provaDoCrimePopUp()
+    
             namePerson.text = "Promotoria"
             funcPerson.text = "apresente sua acusação"
-            timerLabel.text = ("00:30")
+            timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -183,7 +221,7 @@ class GameViewController: UIViewController {
 
             namePerson.text = "defesa"
             funcPerson.text = "apresente-se"
-            timerLabel.text = ("00:30")
+            timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -197,6 +235,7 @@ class GameViewController: UIViewController {
     // MARK: ROUND 2
     
     func round2(){
+         provaDoCrimePopUp()
         
         activeButton = false
         if indexArray == 3{
@@ -204,7 +243,7 @@ class GameViewController: UIViewController {
 
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
-            timerLabel.text = ("01:30")
+            timerLabel.text = ("1:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -215,7 +254,7 @@ class GameViewController: UIViewController {
 
             namePerson.text = "defesa"
             funcPerson.text = "SUA VEZ"
-            timerLabel.text = ("01:30")
+            timerLabel.text = ("1:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -226,7 +265,7 @@ class GameViewController: UIViewController {
 
             namePerson.text = "juri"
             funcPerson.text = "PODE FAZER UMA PERGUNTA"
-            timerLabel.text = ("00:00")
+            timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -235,13 +274,14 @@ class GameViewController: UIViewController {
         
     }
     
+    // MARK: ROUND 3
     func round3(){
         activeButton = false
         if indexArray == 6 {
             
             namePerson.text = "TESTEMUNHA"
             funcPerson.text = "TESTEMUNHE"
-            timerLabel.text = ("00:30")
+            timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -249,7 +289,7 @@ class GameViewController: UIViewController {
         else if indexArray == 7 {
             namePerson.text = "PROMOTORIA"
             funcPerson.text = "SUA VEZ"
-            timerLabel.text = ("01:30")
+            timerLabel.text = ("1:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -259,7 +299,7 @@ class GameViewController: UIViewController {
             
             namePerson.text = "DEFESA"
             funcPerson.text = "SUA VEZ"
-            timerLabel.text = ("00:00")
+            timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -269,7 +309,7 @@ class GameViewController: UIViewController {
             
             namePerson.text = "JURI"
             funcPerson.text = "PODE FAZER UMA PERGUNTA"
-            timerLabel.text = ("00:00")
+            timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -278,6 +318,8 @@ class GameViewController: UIViewController {
         }
         
     }
+    
+    // MARK: ROUND 4
     
     func round4(){
         
@@ -288,7 +330,7 @@ class GameViewController: UIViewController {
             
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
-            timerLabel.text = ("01:30")
+            timerLabel.text = ("1:30")
             activeButton = false
             startButton.isHidden = false
             time = tempoDosJogadores[indexArray]
@@ -297,7 +339,7 @@ class GameViewController: UIViewController {
             
             namePerson.text = "defesa"
             funcPerson.text = "SUA VEZ"
-            timerLabel.text = ("01:30")
+            timerLabel.text = ("1:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -307,7 +349,7 @@ class GameViewController: UIViewController {
             
             namePerson.text = "juri"
             funcPerson.text = "PODE FAZER UMA PERGUNTA"
-            timerLabel.text = ("00:00")
+            timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -317,13 +359,15 @@ class GameViewController: UIViewController {
         
     }
     
+    // MARK: ROUND 5
+    
     func round5(){
         activeButton = false
         if indexArray == 12 {
             
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
-            timerLabel.text = ("00:30")
+            timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -332,7 +376,7 @@ class GameViewController: UIViewController {
             
             namePerson.text = "defesa"
             funcPerson.text = "SUA VEZ"
-            timerLabel.text = ("00:30")
+            timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -342,7 +386,7 @@ class GameViewController: UIViewController {
             
             namePerson.text = "juri"
             funcPerson.text = "VOTA"
-            timerLabel.text = ("00:00")
+            timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
@@ -370,16 +414,16 @@ class GameViewController: UIViewController {
         }
             
         else if time == 60{
-            timerLabel.text = "01:00"
+            timerLabel.text = "1:00"
             time -= 1
         }
         else if time < 60 && time >= 10{
-            timerLabel.text = "00:\(String(seg))"
+            timerLabel.text = "0:\(String(seg))"
             // timerLabel.text = String(time)
             time -= 1
         }
         else if time < 10{
-            timerLabel.text = "00:0\(String(seg))"
+            timerLabel.text = "0:0\(String(seg))"
             time -= 1
         
             
@@ -387,13 +431,13 @@ class GameViewController: UIViewController {
         if time < 0{
             
             if ((indexArray == 0) || (indexArray == 9)) {
-                provaDoCrimePopUp()
+              //  provaDoCrimePopUp()
             
         } else {
-               powerUpPopUP()
+              // powerUpPopUP()
            }
             
-            powerUpPopUP()
+           // powerUpPopUP()
             indexArray += 1
             self.timer.invalidate()
             

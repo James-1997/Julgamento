@@ -207,7 +207,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yk3-e0-H67">
                                 <rect key="frame" x="88" y="113" width="1744" height="854"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Ocorreram 5 rodadas ao total:
+                                <string key="text">Ocorreram 5 rodadas ao total:
 * 1 Rodada - Introdução
 * 2 Rodada - Defesa x Ataque
 * 3 Rodada - Testemunha
@@ -215,7 +215,7 @@
 * 5 Rodada - Considerações finais
 
 Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a fazer de sua causa. Ambos podem interrogar o réu durante seu tempo, porém, o réu não pode responder se não for mencionado, muito menos interromper quaisquer das partes. Caso o réu não esteja de acordo com o seu advogado de defesa é possível ele demitir seu advogado, caso isso ocorra seu advogado  automaticamente passar a ser parte da promotoria. O Réu deverá fazer sua própria defesa nas próximas rodadas. Os promotores revezas por rodada o ataque.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -550,26 +550,11 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKb-BM-zze">
-                                <rect key="frame" x="960" y="443" width="0.0" height="0.0"/>
+                                <rect key="frame" x="960" y="540" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-ul-ASm">
-                                <rect key="frame" x="834" y="498" width="252" height="85"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Wih-WS-TD5"/>
-                                    <constraint firstAttribute="height" constant="85" id="rqZ-is-qGC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="START">
-                                    <color key="titleColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="start:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="Qq4-o6-guz"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41I-Ml-0O4">
                                 <rect key="frame" x="914" y="189" width="93" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -618,23 +603,35 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                                 <rect key="frame" x="1595" y="810" width="162" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-ul-ASm">
+                                <rect key="frame" x="834" y="603" width="252" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="GTm-O4-xq8"/>
+                                    <constraint firstAttribute="height" constant="85" id="RGl-fY-Uwl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="Qq4-o6-guz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="oKb-BM-zze" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="23D-bc-mah"/>
                             <constraint firstAttribute="bottom" secondItem="YmH-wn-vPA" secondAttribute="bottom" id="3ej-cC-z2V"/>
-                            <constraint firstItem="RRZ-ul-ASm" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="7RJ-m8-rdw"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="oKb-BM-zze" secondAttribute="trailing" id="8Fv-k4-Mz1"/>
-                            <constraint firstItem="oKb-BM-zze" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Kct-90-Z6s" secondAttribute="leadingMargin" id="95I-1F-ghY"/>
                             <constraint firstItem="AhP-M3-qYS" firstAttribute="leading" secondItem="Kct-90-Z6s" secondAttribute="leading" constant="16" id="9gk-Fy-dtC"/>
-                            <constraint firstItem="RRZ-ul-ASm" firstAttribute="centerY" secondItem="Kct-90-Z6s" secondAttribute="centerY" id="FAo-18-pr5"/>
                             <constraint firstAttribute="trailing" secondItem="AhP-M3-qYS" secondAttribute="trailing" constant="16" id="JAy-YP-BKP"/>
                             <constraint firstItem="AhP-M3-qYS" firstAttribute="top" secondItem="CA8-jh-D1X" secondAttribute="bottom" constant="8" id="LFI-2R-6z3"/>
                             <constraint firstAttribute="trailing" secondItem="YmH-wn-vPA" secondAttribute="trailing" id="NXr-eA-IHV"/>
+                            <constraint firstItem="oKb-BM-zze" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="Qhs-xq-08Z"/>
                             <constraint firstItem="YmH-wn-vPA" firstAttribute="top" secondItem="Kct-90-Z6s" secondAttribute="top" id="c1T-Qb-TuB"/>
-                            <constraint firstItem="RRZ-ul-ASm" firstAttribute="top" secondItem="oKb-BM-zze" secondAttribute="bottom" constant="55" id="iNP-UM-xdY"/>
-                            <constraint firstItem="RRZ-ul-ASm" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="mMz-T6-lrV"/>
+                            <constraint firstItem="RRZ-ul-ASm" firstAttribute="leading" secondItem="Kct-90-Z6s" secondAttribute="leadingMargin" constant="724" id="ctt-C6-Rkr"/>
+                            <constraint firstItem="oKb-BM-zze" firstAttribute="centerY" secondItem="Kct-90-Z6s" secondAttribute="centerY" id="ipr-eS-vvv"/>
                             <constraint firstItem="41I-Ml-0O4" firstAttribute="top" secondItem="AhP-M3-qYS" secondAttribute="bottom" constant="75" id="oDp-iK-XOv"/>
                             <constraint firstItem="G6N-Yo-NbO" firstAttribute="centerX" secondItem="41I-Ml-0O4" secondAttribute="centerX" id="uzi-U3-dtf"/>
+                            <constraint firstItem="RRZ-ul-ASm" firstAttribute="top" secondItem="G6N-Yo-NbO" secondAttribute="bottom" constant="322" id="xsI-aU-PZH"/>
                             <constraint firstItem="41I-Ml-0O4" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="y8O-0J-oJt"/>
                             <constraint firstItem="G6N-Yo-NbO" firstAttribute="top" secondItem="41I-Ml-0O4" secondAttribute="bottom" id="yMb-95-r7C"/>
                             <constraint firstItem="YmH-wn-vPA" firstAttribute="leading" secondItem="Kct-90-Z6s" secondAttribute="leading" id="yPb-yi-TMh"/>
