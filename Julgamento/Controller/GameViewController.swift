@@ -68,8 +68,8 @@ class GameViewController: UIViewController {
             
             let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
             
-            basicAnimate.toValue = 1
-            basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 2.5
+            basicAnimate.toValue = -1
+            basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 7
             basicAnimate.fillMode = CAMediaTimingFillMode.forwards
             basicAnimate.isRemovedOnCompletion = false
             
@@ -142,7 +142,7 @@ class GameViewController: UIViewController {
         timerLabel.textAlignment = .center
         
         let center = view.center
-        let circularPath = UIBezierPath(arcCenter: center, radius: 65, startAngle: -CGFloat.pi/2 , endAngle: 2*CGFloat.pi, clockwise: true)
+        let circularPath = UIBezierPath(arcCenter: center, radius: 65, startAngle:  3*CGFloat.pi/2 , endAngle: -CGFloat.pi/2, clockwise: false)
         
     
         shapeLayer.path = circularPath.cgPath
@@ -152,7 +152,7 @@ class GameViewController: UIViewController {
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineCap = CAShapeLayerLineCap.round
         
-        shapeLayer.strokeEnd = 0
+        shapeLayer.strokeEnd = 1
         
         view.layer.addSublayer(shapeLayer)
         
