@@ -100,7 +100,7 @@
                                     <constraint firstAttribute="height" constant="920" id="lhR-kZ-lLL"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewRules" rowHeight="120" id="nJL-pq-6jG" customClass="TableViewCellRules" customModule="Julgamento" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="tableViewRules" rowHeight="120" id="nJL-pq-6jG" customClass="TableViewCellRules" customModule="Julgamento" customModuleProvider="target">
                                         <rect key="frame" x="90" y="66" width="655" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nJL-pq-6jG" id="H4E-Dc-hqb">
@@ -130,8 +130,42 @@
                                     <outlet property="delegate" destination="M8F-XQ-oes" id="d3h-tz-vVr"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xM-oB-wd5">
+                                <rect key="frame" x="845" y="110" width="1000" height="860"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDf-rc-lYy">
+                                        <rect key="frame" x="45" y="45" width="910" height="770"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCb-iD-xXo">
+                                                <rect key="frame" x="409" y="362" width="93" height="46"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.14647874236106873" blue="0.26275292038917542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="HCb-iD-xXo" firstAttribute="centerX" secondItem="sDf-rc-lYy" secondAttribute="centerX" id="IwD-si-JSk"/>
+                                            <constraint firstItem="HCb-iD-xXo" firstAttribute="centerY" secondItem="sDf-rc-lYy" secondAttribute="centerY" id="hJ9-zd-Ngm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.9824480414390564" blue="0.85293573141098022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sDf-rc-lYy" secondAttribute="bottom" constant="45" id="4rh-L3-Q0Q"/>
+                                    <constraint firstItem="sDf-rc-lYy" firstAttribute="top" secondItem="9xM-oB-wd5" secondAttribute="top" constant="45" id="UQC-ll-BTJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="sDf-rc-lYy" secondAttribute="trailing" constant="45" id="a0d-C5-rk4"/>
+                                    <constraint firstItem="sDf-rc-lYy" firstAttribute="leading" secondItem="9xM-oB-wd5" secondAttribute="leading" constant="45" id="gk0-oF-vV5"/>
+                                    <constraint firstAttribute="height" constant="860" id="lrX-BL-Hsu"/>
+                                    <constraint firstItem="sDf-rc-lYy" firstAttribute="centerX" secondItem="9xM-oB-wd5" secondAttribute="centerX" id="pfF-I4-Tbm"/>
+                                    <constraint firstItem="sDf-rc-lYy" firstAttribute="centerY" secondItem="9xM-oB-wd5" secondAttribute="centerY" id="ulc-8T-zLX"/>
+                                    <constraint firstAttribute="width" constant="1000" id="zM5-1r-1XX"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="9xM-oB-wd5" firstAttribute="centerY" secondItem="ETA-Bz-ipN" secondAttribute="centerY" id="6A6-Vh-CLm"/>
+                            <constraint firstAttribute="trailing" secondItem="9xM-oB-wd5" secondAttribute="trailing" constant="75" id="XuF-R5-1FM"/>
                             <constraint firstItem="Vcr-w1-jtc" firstAttribute="centerX" secondItem="ETA-Bz-ipN" secondAttribute="centerX" id="fiO-It-1e3"/>
                             <constraint firstItem="9zp-BZ-x4v" firstAttribute="leading" secondItem="ETA-Bz-ipN" secondAttribute="leading" id="kb0-hH-OTs"/>
                             <constraint firstItem="Vcr-w1-jtc" firstAttribute="width" secondItem="ETA-Bz-ipN" secondAttribute="width" id="oH3-oB-RLD"/>
@@ -140,6 +174,11 @@
                             <constraint firstAttribute="bottom" secondItem="9zp-BZ-x4v" secondAttribute="bottom" id="zzC-sn-3T8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundFirst" destination="9xM-oB-wd5" id="tEo-iU-E1N"/>
+                        <outlet property="backgroundSecond" destination="sDf-rc-lYy" id="cEH-Q8-36P"/>
+                        <outlet property="rulesInfo" destination="HCb-iD-xXo" id="8os-t7-GE3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOg-tb-2SH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

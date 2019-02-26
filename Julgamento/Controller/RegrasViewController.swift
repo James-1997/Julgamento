@@ -14,10 +14,18 @@ class RegrasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var selectedTableItem: Int = 0
     
+    @IBOutlet weak var backgroundFirst: UIView!
+    @IBOutlet weak var backgroundSecond: UIView!
+    
+    @IBOutlet weak var rulesInfo: UILabel!
+    
+    
     // MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        backgroundFirst.layer.cornerRadius = 60
+        backgroundSecond.layer.cornerRadius = 60
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,13 +58,13 @@ class RegrasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         switch menuElements[selectedTableItem]  {
         case "PAPEIS":
-            print("PAPEIS")
+             rulesInfo.text = "PAPEIS"
         case "RODADAS":
-            print("RODADAS")
+            rulesInfo.text = "RODADAS"
         case "VOTAÇÃO" :
-            print("VOTAÇÃO" )
+            rulesInfo.text = "VOTAÇÃO"
         case "ELEMENTOS ESPECIAIS" :
-            print("ELEMENTOS ESPECIAIS" )
+            rulesInfo.text = "ELEMENTOS ESPECIAIS" 
         default:
             return
         }
