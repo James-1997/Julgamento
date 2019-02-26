@@ -147,7 +147,7 @@ class GameViewController: UIViewController {
     
         shapeLayer.path = circularPath.cgPath
         
-        shapeLayer.strokeColor = UIColor.red.cgColor
+        shapeLayer.strokeColor = #colorLiteral(red: 0.968627451, green: 0.9490196078, blue: 0.7960784314, alpha: 1)
         shapeLayer.lineWidth = 25
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineCap = CAShapeLayerLineCap.round
