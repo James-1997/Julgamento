@@ -12,16 +12,18 @@ import UIKit
 var arrayPowerUp: [PowerUpModel] = [
     
    
-
-    PowerUpModel(nome: "Turno 1"),
-    PowerUpModel(nome: "Turno 2"),
-    PowerUpModel(nome: "Turno 3"),
-    PowerUpModel(nome: "Turno 4"),
-    PowerUpModel(nome: "Turno 5"),
-    PowerUpModel(nome: "SEU TEMPO ACABOU!"),
-    PowerUpModel(nome: "Uma prova do crime foi encontrada!"),
-    PowerUpModel(nome: "Aconteceu uma Reviravolta"),
-    PowerUpModel(nome: "Alguém cometeu perjúrio!"),
+    //Identificação de turnos
+    PowerUpModel(nome: "Turno 1",imageDescription: nil, descrição: "INTRODUÇÃO",imageTitle: nil),
+    PowerUpModel(nome: "Turno 2",imageDescription: nil, descrição: "DEFESA X ATAQUE",imageTitle: nil),
+    PowerUpModel(nome: "Turno 3",imageDescription: nil, descrição: "TESTEMUNHAS",imageTitle: nil),
+    PowerUpModel(nome: "Turno 4",imageDescription: nil, descrição: "TESTEMUNHAS",imageTitle: nil),
+    PowerUpModel(nome: "Turno 5",imageDescription: nil, descrição: "CONSIDERAÇÕES FINAIS",imageTitle: nil),
+        PowerUpModel(nome: "SEU TEMPO ACABOU!",imageDescription: nil, descrição: "DEFESA X ATAQUE",imageTitle: nil),
+    
+    //PowerUps
+    PowerUpModel(nome: "Uma prova do crime foi encontrada!",imageDescription: nil, descrição: "CONSIDERAÇÕES FINAIS",imageTitle: nil),
+    PowerUpModel(nome: "Aconteceu uma Reviravolta",imageDescription: nil, descrição: "CONSIDERAÇÕES FINAIS",imageTitle: nil),
+    PowerUpModel(nome: "Alguém cometeu perjúrio!",imageDescription: nil, descrição: "CONSIDERAÇÕES FINAIS",imageTitle: nil),
  
 
 ]

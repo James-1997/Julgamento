@@ -25,7 +25,7 @@ class ProvaDoCrimeViewController: UIViewController {
 
         setLabels()
         
-        provaDoCrimeView.layer.cornerRadius = 16
+        provaDoCrimeView.layer.cornerRadius = 67.5
         provaDoCrimeView.clipsToBounds = true
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -41,14 +41,14 @@ class ProvaDoCrimeViewController: UIViewController {
         switch globalRound {
             
         
-        case 1:
+        case 4:
             
             powerUpDaVez = arrayPowerUp[7]
             popUpLabel.text = powerUpDaVez!.nome
             
        
   
-        case 9:
+        case 11:
 
             powerUpDaVez = arrayPowerUp[randoPUp()]
             popUpLabel.text = powerUpDaVez!.nome
@@ -63,7 +63,7 @@ class ProvaDoCrimeViewController: UIViewController {
     
     func randoPUp () -> Int {
         
-        let indexPUp = Int.random(in: 7 ... 9)
+        let indexPUp = Int.random(in: 6 ... 8)
         
         return indexPUp
     }
