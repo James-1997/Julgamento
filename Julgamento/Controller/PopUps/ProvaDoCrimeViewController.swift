@@ -12,8 +12,12 @@ class ProvaDoCrimeViewController: UIViewController {
 
     
     @IBOutlet weak var provaDoCrimeView: UIView!
-    @IBOutlet weak var popUpLabel: UILabel!
-    @IBOutlet weak var popUpImage: UIImageView!
+  
+    @IBOutlet weak var powerUpTitle: UIImageView!
+    @IBOutlet weak var powerUpDescription: UIImageView!
+    @IBOutlet weak var powerUpBackground: UIImageView!
+    
+    
     
      var timer = Timer()
     
@@ -44,15 +48,20 @@ class ProvaDoCrimeViewController: UIViewController {
         case 4:
             
             powerUpDaVez = arrayPowerUp[7]
-            popUpLabel.text = powerUpDaVez!.nome
+            powerUpTitle.image = powerUpDaVez!.imageTitle
+            powerUpDescription.image = powerUpDaVez!.imageDescription
+            powerUpBackground.image = powerUpDaVez!.backgroundImage
+         
             
        
   
         case 11:
 
             powerUpDaVez = arrayPowerUp[randoPUp()]
-            popUpLabel.text = powerUpDaVez!.nome
-        
+            powerUpTitle.image = powerUpDaVez!.imageTitle
+            powerUpDescription.image = powerUpDaVez!.imageDescription
+            powerUpBackground.image = powerUpDaVez!.backgroundImage
+            
 
         default:
             print("Error")
@@ -63,7 +72,7 @@ class ProvaDoCrimeViewController: UIViewController {
     
     func randoPUp () -> Int {
         
-        let indexPUp = Int.random(in: 6 ... 8)
+        let indexPUp = Int.random(in: 7 ... 8)
         
         return indexPUp
     }

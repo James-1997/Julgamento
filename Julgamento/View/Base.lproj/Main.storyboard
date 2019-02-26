@@ -637,18 +637,23 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9JK-4Y-lJn" userLabel="EndOfTurnView">
-                                <rect key="frame" x="723" y="444" width="474" height="192"/>
+                                <rect key="frame" x="670" y="335" width="580" height="411"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="END OF TURN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PA-xg-j9G">
-                                        <rect key="frame" x="85" y="64" width="304" height="64"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PopUpView" translatesAutoresizingMaskIntoConstraints="NO" id="vQm-ga-cMW">
+                                        <rect key="frame" x="-1" y="0.0" width="581" height="411"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="32"/>
-                                        <color key="textColor" red="0.9980261922" green="0.76167261600000002" blue="0.05828843266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1TurnoTitulo" translatesAutoresizingMaskIntoConstraints="NO" id="NhM-0T-JyH">
+                                        <rect key="frame" x="137" y="29" width="306" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1TurnoDescrição" translatesAutoresizingMaskIntoConstraints="NO" id="5hG-Rl-xz3">
+                                        <rect key="frame" x="146" y="254" width="306" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.067111030220000006" green="0.0011678881709999999" blue="0.18406236170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -656,7 +661,9 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                     </view>
                     <connections>
                         <outlet property="EndOfTurnView" destination="9JK-4Y-lJn" id="CdQ-8g-wNI"/>
-                        <outlet property="popUpLabel" destination="1PA-xg-j9G" id="gpZ-fx-cCb"/>
+                        <outlet property="popUpBackground" destination="vQm-ga-cMW" id="mFP-Eu-sT8"/>
+                        <outlet property="popUpDescription" destination="5hG-Rl-xz3" id="PxP-5u-Oph"/>
+                        <outlet property="popUpTitle" destination="NhM-0T-JyH" id="QN4-Qx-Wu2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEi-98-L5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -679,24 +686,18 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                                 <rect key="frame" x="670" y="335" width="580" height="411"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prova_maca" translatesAutoresizingMaskIntoConstraints="NO" id="Wir-Md-TJY">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PopUpView" translatesAutoresizingMaskIntoConstraints="NO" id="Wir-Md-TJY">
                                         <rect key="frame" x="0.0" y="0.0" width="580" height="411"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PROVA DO CRIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6t-04-UMx">
-                                        <rect key="frame" x="68" y="21" width="444" height="78"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProvaDoCrimeDescrição1" translatesAutoresizingMaskIntoConstraints="NO" id="Ikw-ri-aKa">
+                                        <rect key="frame" x="107" y="200" width="366" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
-                                        <color key="textColor" red="0.39607843139999999" green="0.4431372549" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maçã no local do crime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0i-Ns-AWL">
-                                        <rect key="frame" x="60" y="333" width="461" height="56"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProvaDoCrimeTitulo" translatesAutoresizingMaskIntoConstraints="NO" id="kux-fX-D0I">
+                                        <rect key="frame" x="107" y="36" width="373" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="46"/>
-                                        <color key="textColor" red="0.396078431372549" green="0.44313725490196076" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -704,6 +705,9 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="powerUpBackground" destination="Wir-Md-TJY" id="7ci-gR-43H"/>
+                        <outlet property="powerUpDescription" destination="Ikw-ri-aKa" id="8Ko-3y-Gua"/>
+                        <outlet property="powerUpTitle" destination="kux-fX-D0I" id="fuL-3B-L8N"/>
                         <outlet property="provaDoCrimeView" destination="uqE-fd-KbZ" id="Yeo-qr-6GF"/>
                     </connections>
                 </viewController>
@@ -713,6 +717,11 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
         </scene>
     </scenes>
     <resources>
+        <image name="1TurnoDescrição" width="464" height="96"/>
+        <image name="1TurnoTitulo" width="260" height="53"/>
+        <image name="PopUpView" width="580" height="411"/>
+        <image name="ProvaDoCrimeDescrição1" width="375" height="207"/>
+        <image name="ProvaDoCrimeTitulo" width="465" height="51"/>
         <image name="Selcted" width="533" height="171"/>
         <image name="background_menu" width="1920" height="1080"/>
         <image name="botao_desfocoXX" width="463" height="146"/>
@@ -726,7 +735,6 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
         <image name="gnomo1" width="98" height="262"/>
         <image name="gnomo_perfil" width="412" height="412"/>
         <image name="palanque8Lugares" width="1920" height="44"/>
-        <image name="prova_maca" width="580" height="411"/>
         <image name="selecione 2" width="962" height="199"/>
         <image name="titulo_crime1" width="1102" height="133"/>
         <image name="unicornio2" width="265" height="265"/>
