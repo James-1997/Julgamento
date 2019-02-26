@@ -281,14 +281,14 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                                     <action selector="removePlayers:" destination="UR6-f9-KfD" eventType="primaryActionTriggered" id="xCT-vt-mWQ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diabrete_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="AWa-Ev-HmI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bruxa_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="AWa-Ev-HmI">
                                 <rect key="frame" x="521" y="281" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="4Ya-gL-lta"/>
                                     <constraint firstAttribute="height" constant="200" id="F7N-lu-d1m"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diabrete_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="NHa-dQ-1B6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gnomo_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="NHa-dQ-1B6">
                                 <rect key="frame" x="1228" y="281" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -299,13 +299,13 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
                                     <constraint firstAttribute="width" constant="200" id="nf4-f3-S44"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gnomo_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="10Z-VY-IIT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unicornio_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="10Z-VY-IIT">
                                 <rect key="frame" x="682" y="582" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="t1G-w6-7si"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gnomo_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-Z6-gRO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elfo_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="1Gh-Z6-gRO">
                                 <rect key="frame" x="863" y="281" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="lxV-5w-0uJ"/>
@@ -811,14 +811,17 @@ Cada parte (Promotoria e Defensoria) tem determinado tempo para argumentar a faz
         <image name="botao_desfocoXX" width="463" height="146"/>
         <image name="botao_menuXX" width="529" height="167"/>
         <image name="bruxa" width="163" height="225"/>
+        <image name="bruxa_perfil" width="412" height="412"/>
         <image name="diabrete1" width="285" height="262"/>
         <image name="diabrete_perfil" width="412" height="412"/>
         <image name="elfo" width="132" height="225"/>
+        <image name="elfo_perfil" width="412" height="412"/>
         <image name="gnomo1" width="98" height="262"/>
         <image name="gnomo_perfil" width="412" height="412"/>
         <image name="palanque8Lugares" width="1920" height="44"/>
         <image name="selecione_texto1" width="962" height="199"/>
         <image name="titulo_crime1" width="1102" height="133"/>
         <image name="unicornio" width="265" height="198"/>
+        <image name="unicornio_perfil" width="412" height="412"/>
     </resources>
 </document>

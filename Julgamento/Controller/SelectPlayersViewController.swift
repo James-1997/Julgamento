@@ -51,7 +51,7 @@ class SelectPlayersViewController: UIViewController {
             numDePlayerLabel.text = "\(quantJogadores)"
             divPersons()
             self.playerThreeLabel.text = "1"
-            self.playerThreePerfImage.image = UIImage(named: "gnomo_perfil")
+            self.playerThreePerfImage.image = UIImage(named: "elfo_perfil")
         }
     }
     
@@ -63,7 +63,7 @@ class SelectPlayersViewController: UIViewController {
                 divPersons()
             } else {
                 self.playerThreeLabel.text = "0"
-                self.playerThreePerfImage.image = UIImage(named: "gnomo_perfil_datived")
+                self.playerThreePerfImage.image = UIImage(named: "elfo_perfil_desatived")
             }
         }
       
@@ -85,7 +85,7 @@ class SelectPlayersViewController: UIViewController {
         setDesignViews()
         let _StrQtdPlayer = "\(quantJogadores)"
         numDePlayerLabel.text = _StrQtdPlayer
-        self.playerThreePerfImage.image = UIImage(named: "gnomo_perfil_datived")
+        self.playerThreePerfImage.image = UIImage(named: "elfo_perfil_desatived")
         self.playerThreeLabel.text = "0"
     }
    
