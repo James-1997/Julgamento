@@ -37,68 +37,81 @@ class EndPopUpViewController: UIViewController {
     func setLabels() {
        
         switch globalRound {
-            
+
         case 0:
             powerUpDaVez = arrayPowerUp[0]
             popUpLabel.text = powerUpDaVez!.nome
+
             
         case 1:
-            
-            powerUpDaVez = arrayPowerUp[6]
+            //Round 1
+            powerUpDaVez = arrayPowerUp[0]
             popUpLabel.text = powerUpDaVez!.nome
             
         case 2:
             
-            powerUpDaVez = arrayPowerUp[1]
+            powerUpDaVez = arrayPowerUp[5]
             popUpLabel.text = powerUpDaVez!.nome
         case 3:
-            
-            powerUpDaVez = arrayPowerUp[6]
+            //Round 2
+            powerUpDaVez = arrayPowerUp[1]
             popUpLabel.text = powerUpDaVez!.nome
             
         case 4:
             
-            powerUpDaVez = arrayPowerUp[6]
+            powerUpDaVez = arrayPowerUp[5]
             popUpLabel.text = powerUpDaVez!.nome
+            
         case 5:
             
-            powerUpDaVez = arrayPowerUp[2]
+            powerUpDaVez = arrayPowerUp[5]
             popUpLabel.text = powerUpDaVez!.nome
             
         case 6:
-            
-            powerUpDaVez = arrayPowerUp[6]
+            //round 3
+            powerUpDaVez = arrayPowerUp[2]
             popUpLabel.text = powerUpDaVez!.nome
         case 7:
             
-            powerUpDaVez = arrayPowerUp[6]
+            powerUpDaVez = arrayPowerUp[5]
             popUpLabel.text = powerUpDaVez!.nome
+         
             
         case 8:
             
-            powerUpDaVez = arrayPowerUp[6]
+            powerUpDaVez = arrayPowerUp[5]
             popUpLabel.text = powerUpDaVez!.nome
+            
+            print("Case 8 - Defesa: \(popUpLabel.text) ")
+            
         case 9:
+            //Round 4
+            powerUpDaVez = arrayPowerUp[5]
+            popUpLabel.text = powerUpDaVez!.nome
+            
+            print("Case 9 - Juri: \(popUpLabel.text) ")
+            
+            
+        case 10:
             
             powerUpDaVez = arrayPowerUp[3]
             popUpLabel.text = powerUpDaVez!.nome
             
-        case 10:
+            print("Case 8 - Round 4: \(popUpLabel.text) ")
             
-            powerUpDaVez = arrayPowerUp[6]
-            popUpLabel.text = powerUpDaVez!.nome
         case 11:
             
-            powerUpDaVez = arrayPowerUp[4]
+            powerUpDaVez = arrayPowerUp[5]
             popUpLabel.text = powerUpDaVez!.nome
             
         case 12:
-            
-            powerUpDaVez = arrayPowerUp[6]
+            //Round 5
+            powerUpDaVez = arrayPowerUp[4]
             popUpLabel.text = powerUpDaVez!.nome
+            
         case 13:
             
-            powerUpDaVez = arrayPowerUp[6]
+            powerUpDaVez = arrayPowerUp[5]
             popUpLabel.text = powerUpDaVez!.nome
         case 14:
             
