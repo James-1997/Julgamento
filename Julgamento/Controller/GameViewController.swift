@@ -207,13 +207,17 @@ class GameViewController: UIViewController {
        
         
         if indexArray == 1 {
-    
+            
+            //Round 1
+            powerUpPopUP()
+            
             namePerson.text = "Promotoria"
             funcPerson.text = "apresente sua acusação"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
+            
             
         }
         else if indexArray == 2 {
@@ -226,6 +230,9 @@ class GameViewController: UIViewController {
             activeButton = false
             time = tempoDosJogadores[indexArray]
             rounds += 1
+            
+            //Acabou o tempo
+            powerUpPopUP()
         }
         
         
@@ -235,18 +242,24 @@ class GameViewController: UIViewController {
     // MARK: ROUND 2
     
     func round2(){
-         provaDoCrimePopUp()
+        
         
         activeButton = false
         if indexArray == 3{
             
-
+            //Round 2
+            powerUpPopUP()
+            
+            //Prova do crime popUp
+           // provaDoCrimePopUp()
+            
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
             timerLabel.text = ("1:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
+            
             
         }
         else if indexArray == 4{
@@ -259,6 +272,9 @@ class GameViewController: UIViewController {
             activeButton = false
             time = tempoDosJogadores[indexArray]
             
+            //Acabou o Tempo
+            powerUpPopUP()
+            
         }
         else if indexArray == 5{
             
@@ -270,6 +286,9 @@ class GameViewController: UIViewController {
             activeButton = false
             time = tempoDosJogadores[indexArray]
             rounds += 1
+            
+            //Acabou o Tempo
+            powerUpPopUP()
         }
         
     }
@@ -279,12 +298,16 @@ class GameViewController: UIViewController {
         activeButton = false
         if indexArray == 6 {
             
+            //Round 3 PopUp
+            powerUpPopUP()
+            
             namePerson.text = "TESTEMUNHA"
             funcPerson.text = "TESTEMUNHE"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
+            
         }
         else if indexArray == 7 {
             namePerson.text = "PROMOTORIA"
@@ -293,7 +316,9 @@ class GameViewController: UIViewController {
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
-            
+           
+            //Acabou o tempo popUP
+            powerUpPopUP()
         }
         else if indexArray == 8 {
             
@@ -303,6 +328,9 @@ class GameViewController: UIViewController {
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
+            
+            //Acabou o tempo popUP
+            powerUpPopUP()
             
         }
         else if indexArray == 9 {
@@ -315,6 +343,8 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
             rounds += 1
             
+            //Acabou o tempo popUP
+            powerUpPopUP()
         }
         
     }
@@ -328,12 +358,16 @@ class GameViewController: UIViewController {
         activeButton = false
         if indexArray == 9 {
             
+            //Round 4 popUp
+            powerUpPopUP()
+            
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
             timerLabel.text = ("1:30")
             activeButton = false
             startButton.isHidden = false
             time = tempoDosJogadores[indexArray]
+            
         }
         else if indexArray == 10 {
             
@@ -344,6 +378,8 @@ class GameViewController: UIViewController {
             activeButton = false
             time = tempoDosJogadores[indexArray]
             
+            //Acabou o tempo popUP
+            powerUpPopUP()
         }
         else if indexArray == 11 {
             
@@ -355,6 +391,8 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
             rounds += 1
             
+            //Acabou o tempo popUP
+            powerUpPopUP()
         }
         
     }
@@ -365,12 +403,16 @@ class GameViewController: UIViewController {
         activeButton = false
         if indexArray == 12 {
             
+            //Round 5 Pop-UP
+            powerUpPopUP()
+            
             namePerson.text = "Promotoria"
             funcPerson.text = "sua vez"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
+           
         }
         else if indexArray == 13 {
             
@@ -380,6 +422,9 @@ class GameViewController: UIViewController {
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
+            
+            //Acabou o tempo popUP
+            powerUpPopUP()
             
         }
         else if indexArray == 14 {
@@ -392,6 +437,8 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
             rounds += 1
             
+            //Acabou o tempo popUP
+            powerUpPopUP()
         }
         
     }
@@ -430,12 +477,12 @@ class GameViewController: UIViewController {
         }
         if time < 0{
             
-            if ((indexArray == 0) || (indexArray == 9)) {
-              //  provaDoCrimePopUp()
-            
-        } else {
-              // powerUpPopUP()
-           }
+            if (indexArray == 0)  {
+                
+               powerUpPopUP()
+                
+            }
+       
             
            // powerUpPopUP()
             indexArray += 1
@@ -450,10 +497,10 @@ class GameViewController: UIViewController {
     
     // MARK: PRESS PLAY
     
-    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
-        
-    }
-    
+//    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+//
+//    }
+
   
         
         
@@ -471,9 +518,10 @@ class GameViewController: UIViewController {
 //    }
     
     
+
+
+
+
+
+
 }
-
-
-
-
-

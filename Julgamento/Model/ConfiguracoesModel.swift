@@ -17,7 +17,7 @@ import UIKit
 
 //let tempoDosJogadores = [15,30,30,90,90,0,15,90,90,0,90,90,0, 30,30,0]
 
-let tempoDosJogadores = [5,5,5,5,5,5,5,5,5,0,5,5,0,5,5,0]
+let tempoDosJogadores = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 
 
 func DivForGame (qtdJogadores: Int) -> [Int?] {

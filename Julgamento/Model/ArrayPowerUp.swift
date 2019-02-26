@@ -18,7 +18,6 @@ var arrayPowerUp: [PowerUpModel] = [
     PowerUpModel(nome: "Turno 3"),
     PowerUpModel(nome: "Turno 4"),
     PowerUpModel(nome: "Turno 5"),
-    PowerUpModel(nome: "Final da Partida!"),
     PowerUpModel(nome: "SEU TEMPO ACABOU!"),
     PowerUpModel(nome: "Uma prova do crime foi encontrada!"),
     PowerUpModel(nome: "Aconteceu uma Reviravolta"),
