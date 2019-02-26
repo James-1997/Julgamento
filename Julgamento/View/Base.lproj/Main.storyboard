@@ -89,6 +89,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_menu" translatesAutoresizingMaskIntoConstraints="NO" id="Vcr-w1-jtc">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="9zp-BZ-x4v">
                                 <rect key="frame" x="0.0" y="160" width="745" height="920"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -105,8 +108,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wek-sj-PXi">
-                                                    <rect key="frame" x="8" y="37" width="639" height="46"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <rect key="frame" x="8" y="21" width="639" height="78"/>
+                                                    <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -129,7 +132,11 @@
                             </tableView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="Vcr-w1-jtc" firstAttribute="centerX" secondItem="ETA-Bz-ipN" secondAttribute="centerX" id="fiO-It-1e3"/>
                             <constraint firstItem="9zp-BZ-x4v" firstAttribute="leading" secondItem="ETA-Bz-ipN" secondAttribute="leading" id="kb0-hH-OTs"/>
+                            <constraint firstItem="Vcr-w1-jtc" firstAttribute="width" secondItem="ETA-Bz-ipN" secondAttribute="width" id="oH3-oB-RLD"/>
+                            <constraint firstItem="Vcr-w1-jtc" firstAttribute="centerY" secondItem="ETA-Bz-ipN" secondAttribute="centerY" id="sho-PO-LBD"/>
+                            <constraint firstItem="Vcr-w1-jtc" firstAttribute="height" secondItem="ETA-Bz-ipN" secondAttribute="height" id="xPP-PC-s2T"/>
                             <constraint firstAttribute="bottom" secondItem="9zp-BZ-x4v" secondAttribute="bottom" id="zzC-sn-3T8"/>
                         </constraints>
                     </view>

@@ -10,7 +10,7 @@ import UIKit
 
 class RegrasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let menuElements: [String] = ["PAPEIS","RODADAS","VOTAÇÃO","ELEMENTOS ESPECIAIS"]
+    let menuElements: [String] = ["PAPEIS","RODADAS","DECRETO DO JURI","ELEMENTOS ESPECIAIS"]
     
     var selectedTableItem: Int = 0
     
