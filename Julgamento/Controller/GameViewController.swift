@@ -357,9 +357,9 @@ class GameViewController: UIViewController {
        //2 Power up — Prova do Crime, Perjúrio ou Reviravolta
         
         activeButton = false
-        if indexArray == 9 {
+        if indexArray == 10 {
             
-            //Round 4 popUp
+            print("promotor")
             powerUpPopUP()
             
             namePerson.text = "Promotoria"
@@ -370,7 +370,7 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
             
         }
-        else if indexArray == 10 {
+        else if indexArray == 11 {
             
             namePerson.text = "defesa"
             funcPerson.text = "SUA VEZ"
@@ -383,7 +383,7 @@ class GameViewController: UIViewController {
             powerUpPopUP()
             
         }
-        else if indexArray == 11 {
+        else if indexArray == 12 {
             
             namePerson.text = "juri"
             funcPerson.text = "PODE FAZER UMA PERGUNTA"
@@ -404,7 +404,7 @@ class GameViewController: UIViewController {
     
     func round5(){
         activeButton = false
-        if indexArray == 12 {
+        if indexArray == 13 {
             
             //Round 5 Pop-UP
             powerUpPopUP()
@@ -417,7 +417,7 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
            
         }
-        else if indexArray == 13 {
+        else if indexArray == 14 {
             
             namePerson.text = "defesa"
             funcPerson.text = "SUA VEZ"
@@ -430,7 +430,7 @@ class GameViewController: UIViewController {
             powerUpPopUP()
             
         }
-        else if indexArray == 14 {
+        else if indexArray == 15 {
             
             namePerson.text = "juri"
             funcPerson.text = "VOTA"
