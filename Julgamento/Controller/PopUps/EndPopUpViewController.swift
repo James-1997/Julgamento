@@ -11,10 +11,8 @@ import UIKit
 class EndPopUpViewController: UIViewController {
 
     @IBOutlet weak var EndOfTurnView: UIView!
-
-    @IBOutlet weak var popUpTitle: UIImageView!
-    @IBOutlet weak var popUpDescription: UIImageView!
-    @IBOutlet weak var popUpBackground: UIImageView!
+    @IBOutlet weak var popUpLabel: UILabel!
+    
     
     //MARK: Variáveis
     var powerUpDaVez: PowerUpModel? = nil
@@ -45,114 +43,82 @@ class EndPopUpViewController: UIViewController {
         case 0:
             
             powerUpDaVez = arrayPowerUp[0]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
         //Round 1
         case 1:
            
             powerUpDaVez = arrayPowerUp[0]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
         case 2:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
-        
+            popUpLabel.text = powerUpDaVez!.name
+            
         //Round 2
         case 3:
             
             powerUpDaVez = arrayPowerUp[1]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
-            
+            popUpLabel.text = powerUpDaVez!.name
             
         case 4:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
-            
+            popUpLabel.text = powerUpDaVez!.name
             
         case 5:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
-        
+            popUpLabel.text = powerUpDaVez!.name
+            
         //round 3
         case 6:
             
             powerUpDaVez = arrayPowerUp[2]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
         case 7:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
         case 8:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
     
         case 9:
            
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
         //Round 4
         case 10:
             
             powerUpDaVez = arrayPowerUp[3]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
         case 11:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
         //Round 5
         case 12:
             
             powerUpDaVez = arrayPowerUp[4]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
         case 13:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
         case 14:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
             
         default:

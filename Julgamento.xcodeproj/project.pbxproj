@@ -27,6 +27,10 @@
 		1F4C14A8222201B800D8099A /* ProvaDoCrimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C14A7222201B800D8099A /* ProvaDoCrimeViewController.swift */; };
 		1F500E20221C59C200BC3139 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E1F221C59C200BC3139 /* StoryModel.swift */; };
 		1F500E22221C5A7200BC3139 /* ArrayDeEstorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */; };
+		1FB307E92227246100735E00 /* Letters for Learners Lined.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB307E52227246100735E00 /* Letters for Learners Lined.ttf */; };
+		1FB307EA2227246100735E00 /* Letters for Learners Lined Dots.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB307E62227246100735E00 /* Letters for Learners Lined Dots.ttf */; };
+		1FB307EB2227246100735E00 /* Letters for Learners.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB307E72227246100735E00 /* Letters for Learners.ttf */; };
+		1FB307EC2227246100735E00 /* Letters for Learners Dots.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB307E82227246100735E00 /* Letters for Learners Dots.ttf */; };
 		1FE35E81221C567F004C7390 /* PerfilPersonagemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE35E80221C567F004C7390 /* PerfilPersonagemModel.swift */; };
 		1FE35E83221C5694004C7390 /* ArrayPerfilDoPersonagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE35E82221C5694004C7390 /* ArrayPerfilDoPersonagem.swift */; };
 		5E562F2D221F8DB200FF26FB /* ConfiguracoesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */; };
@@ -57,6 +61,10 @@
 		1F4C14A7222201B800D8099A /* ProvaDoCrimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvaDoCrimeViewController.swift; sourceTree = "<group>"; };
 		1F500E1F221C59C200BC3139 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		1F500E21221C5A7200BC3139 /* ArrayDeEstorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeEstorias.swift; sourceTree = "<group>"; };
+		1FB307E52227246100735E00 /* Letters for Learners Lined.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Letters for Learners Lined.ttf"; sourceTree = "<group>"; };
+		1FB307E62227246100735E00 /* Letters for Learners Lined Dots.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Letters for Learners Lined Dots.ttf"; sourceTree = "<group>"; };
+		1FB307E72227246100735E00 /* Letters for Learners.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Letters for Learners.ttf"; sourceTree = "<group>"; };
+		1FB307E82227246100735E00 /* Letters for Learners Dots.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Letters for Learners Dots.ttf"; sourceTree = "<group>"; };
 		1FE35E80221C567F004C7390 /* PerfilPersonagemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilPersonagemModel.swift; sourceTree = "<group>"; };
 		1FE35E82221C5694004C7390 /* ArrayPerfilDoPersonagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayPerfilDoPersonagem.swift; sourceTree = "<group>"; };
 		5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracoesModel.swift; sourceTree = "<group>"; };
@@ -165,6 +173,10 @@
 		1F17385F221D96340076C84F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1FB307E82227246100735E00 /* Letters for Learners Dots.ttf */,
+				1FB307E62227246100735E00 /* Letters for Learners Lined Dots.ttf */,
+				1FB307E52227246100735E00 /* Letters for Learners Lined.ttf */,
+				1FB307E72227246100735E00 /* Letters for Learners.ttf */,
 				1F173865221D97460076C84F /* sagesans-Regular.ttf */,
 				1F173866221D97460076C84F /* Splatch.ttf */,
 			);
@@ -246,11 +258,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB307E92227246100735E00 /* Letters for Learners Lined.ttf in Resources */,
 				1DC822D3221C384400D56F00 /* Assets.xcassets in Resources */,
+				1FB307EB2227246100735E00 /* Letters for Learners.ttf in Resources */,
 				1F173868221D97460076C84F /* Splatch.ttf in Resources */,
 				1DC822D1221C384300D56F00 /* Main.storyboard in Resources */,
+				1FB307EC2227246100735E00 /* Letters for Learners Dots.ttf in Resources */,
 				1F173867221D97460076C84F /* sagesans-Regular.ttf in Resources */,
 				5ED2D84B2226CD2F0054FDCD /* JudsySound.m4a in Resources */,
+				1FB307EA2227246100735E00 /* Letters for Learners Lined Dots.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,12 +12,7 @@ class ProvaDoCrimeViewController: UIViewController {
 
     
     @IBOutlet weak var provaDoCrimeView: UIView!
-  
-    @IBOutlet weak var powerUpTitle: UIImageView!
-    @IBOutlet weak var powerUpDescription: UIImageView!
     @IBOutlet weak var powerUpBackground: UIImageView!
-    
-    
     
      var timer = Timer()
     
@@ -48,8 +43,6 @@ class ProvaDoCrimeViewController: UIViewController {
         case 4:
             
             powerUpDaVez = arrayPowerUp[7]
-            powerUpTitle.image = powerUpDaVez!.imageTitle
-            powerUpDescription.image = powerUpDaVez!.imageDescription
             powerUpBackground.image = powerUpDaVez!.backgroundImage
          
             
@@ -58,8 +51,6 @@ class ProvaDoCrimeViewController: UIViewController {
         case 11:
 
             powerUpDaVez = arrayPowerUp[randoPUp()]
-            powerUpTitle.image = powerUpDaVez!.imageTitle
-            powerUpDescription.image = powerUpDaVez!.imageDescription
             powerUpBackground.image = powerUpDaVez!.backgroundImage
             
 
