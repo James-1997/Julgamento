@@ -13,24 +13,16 @@ class GameViewController: UIViewController {
     
     
     @IBOutlet weak var playerOne: UIImageView!
-    
     @IBOutlet weak var playerTwo: UIImageView!
-    
     @IBOutlet weak var playerThree: UIImageView!
     @IBOutlet weak var playerFour: UIImageView!
-    
     @IBOutlet weak var playerFive: UIImageView!
     
     @IBOutlet weak var resumStory: UILabel!
-    
     @IBOutlet weak var backGroudImage: UIImageView!
-    
     @IBOutlet weak var timerLabel: UILabel!
-    
     @IBOutlet weak var startButton: UIButton!
-    
     @IBOutlet weak var namePerson: UILabel!
-    
     @IBOutlet weak var funcPerson: UILabel!
     
     
@@ -379,9 +371,9 @@ class GameViewController: UIViewController {
             activeButton = false
             time = tempoDosJogadores[indexArray]
            
-        
-            powerUpPopUP()
-            
+            //Power Up
+            provaDoCrimePopUp()
+           
         }
         else if indexArray == 12 {
             
@@ -393,8 +385,8 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
             rounds += 1
             
-            //Power Up
-            provaDoCrimePopUp()
+            powerUpPopUP()
+            
            
         }
         
