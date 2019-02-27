@@ -11,9 +11,12 @@ import Foundation
 
 class GameViewController: UIViewController {
     
+    
+    // Prancheta View
+    
+    @IBOutlet weak var pranchetaView: UIView!
+    
   // jogadores variantes
-    
-    
     
     @IBOutlet weak var testemunha2: UIImageView!
     
@@ -170,25 +173,32 @@ class GameViewController: UIViewController {
         
         setarJogadores()
         // circulo de tempo
-        timerLabel.textAlignment = .center
         
-        let center = view.center
+//        timerLabel.textAlignment = .center
+        let center = timerLabel.center
         let circularPath = UIBezierPath(arcCenter: center, radius: 65, startAngle:  3*CGFloat.pi/2 , endAngle: -CGFloat.pi/2, clockwise: false)
         
     
         shapeLayer.path = circularPath.cgPath
         
-        shapeLayer.strokeColor = #colorLiteral(red: 0.968627451, green: 0.9490196078, blue: 0.7960784314, alpha: 1)
+        shapeLayer.strokeColor = #colorLiteral(red: 0.01408086903, green: 0.1323899627, blue: 0.1906898916, alpha: 1)
         shapeLayer.lineWidth = 25
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineCap = CAShapeLayerLineCap.round
         
         shapeLayer.strokeEnd = 1
         
-        view.layer.addSublayer(shapeLayer)
+        pranchetaView.layer.addSublayer(shapeLayer)
         
         
     }
+    // MARK: Animacao de descer prancheta
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 320})
+    }
+    
     
     // MARK: Setando os personagens
     func setarJogadores() {
@@ -531,16 +541,16 @@ class GameViewController: UIViewController {
         }
             
         else if time == 60{
-            timerLabel.text = "1:00"
+            timerLabel.text = "01:00"
             time -= 1
         }
         else if time < 60 && time >= 10{
-            timerLabel.text = "0:\(String(seg))"
+            timerLabel.text = "00:\(String(seg))"
             // timerLabel.text = String(time)
             time -= 1
         }
         else if time < 10{
-            timerLabel.text = "0:0\(String(seg))"
+            timerLabel.text = "00:0\(String(seg))"
             time -= 1
         
             

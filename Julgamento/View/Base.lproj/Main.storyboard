@@ -435,22 +435,40 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_menu" translatesAutoresizingMaskIntoConstraints="NO" id="YmH-wn-vPA">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGC-LQ-2b4">
+                                <rect key="frame" x="608" y="-425" width="705" height="695"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prancheta" translatesAutoresizingMaskIntoConstraints="NO" id="ydc-nt-xNz">
+                                        <rect key="frame" x="0.0" y="58" width="715" height="579"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKb-BM-zze">
+                                        <rect key="frame" x="345" y="512" width="15" height="39"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="32"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ydc-nt-xNz" firstAttribute="width" secondItem="rGC-LQ-2b4" secondAttribute="width" constant="10" id="4g4-T9-Hjb"/>
+                                    <constraint firstItem="oKb-BM-zze" firstAttribute="centerX" secondItem="rGC-LQ-2b4" secondAttribute="centerX" id="Gi8-BD-8c3"/>
+                                    <constraint firstItem="ydc-nt-xNz" firstAttribute="height" secondItem="rGC-LQ-2b4" secondAttribute="height" constant="-117" id="Kvw-iT-pLo"/>
+                                    <constraint firstAttribute="bottom" secondItem="oKb-BM-zze" secondAttribute="bottom" constant="144" id="LF4-fJ-WBp"/>
+                                    <constraint firstAttribute="width" constant="705" id="Otn-pn-DdH"/>
+                                    <constraint firstAttribute="height" constant="695" id="i1n-Ck-DwG"/>
+                                    <constraint firstAttribute="trailing" secondItem="ydc-nt-xNz" secondAttribute="trailing" constant="-10" id="pPJ-IF-Dju"/>
+                                    <constraint firstItem="ydc-nt-xNz" firstAttribute="centerY" secondItem="rGC-LQ-2b4" secondAttribute="centerY" id="sYS-rV-kXG"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhP-M3-qYS">
-                                <rect key="frame" x="47" y="0.0" width="1798" height="252"/>
+                                <rect key="frame" x="1570" y="548" width="278" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">A duas noites atrás, foi encontrado um carregamento ilícito de pó mágico no lago dos duendes. No local do crime foram encontrados algumas pegadas de um animal quadrúpede. Cid o unicórnio que mora nas redondezas está sendo julgado aqui, hoje, como o principal suspeito. </string>
                                 <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="38"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKb-BM-zze">
-                                <rect key="frame" x="945" y="521" width="30" height="39"/>
-                                <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="32"/>
-                                <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41I-Ml-0O4">
-                                <rect key="frame" x="811" y="289" width="310" height="46"/>
+                                <rect key="frame" x="15" y="687" width="310" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -529,7 +547,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6N-Yo-NbO">
-                                <rect key="frame" x="659" y="336" width="614" height="139"/>
+                                <rect key="frame" x="70" y="615" width="200" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="38"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -546,11 +564,12 @@
                         <constraints>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="leading" secondItem="AP3-LX-Tre" secondAttribute="trailing" constant="25" id="0eI-yk-fCb"/>
                             <constraint firstItem="6ag-5o-iH0" firstAttribute="bottom" secondItem="MPf-Kq-DF1" secondAttribute="bottom" id="5DI-rW-dHl"/>
+                            <constraint firstItem="rGC-LQ-2b4" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="6Vh-Ve-IrB"/>
                             <constraint firstItem="YmH-wn-vPA" firstAttribute="height" secondItem="Kct-90-Z6s" secondAttribute="height" id="A5u-Gi-7eX"/>
-                            <constraint firstItem="oKb-BM-zze" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="E8I-da-a3N"/>
                             <constraint firstItem="rfT-7x-KMM" firstAttribute="leading" secondItem="HSl-5b-nWA" secondAttribute="trailing" constant="8" id="F3l-HD-Lmi"/>
                             <constraint firstItem="LrA-RW-Q6k" firstAttribute="leading" secondItem="Kct-90-Z6s" secondAttribute="leading" constant="70" id="Hz0-nc-t8o"/>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="bottom" secondItem="AP3-LX-Tre" secondAttribute="bottom" id="JG0-u8-qNB"/>
+                            <constraint firstItem="rGC-LQ-2b4" firstAttribute="top" secondItem="Kct-90-Z6s" secondAttribute="top" constant="-425" id="NOt-sD-SHF"/>
                             <constraint firstItem="hNh-Dh-KWj" firstAttribute="top" secondItem="xnf-Yt-1Mj" secondAttribute="bottom" constant="27" id="Pr9-c5-I2y"/>
                             <constraint firstItem="FhT-GH-rbJ" firstAttribute="bottom" secondItem="rfT-7x-KMM" secondAttribute="bottom" id="S9E-kw-Wp9"/>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="top" secondItem="RRZ-ul-ASm" secondAttribute="bottom" constant="45" id="SCq-cY-nVx"/>
@@ -558,7 +577,6 @@
                             <constraint firstItem="RRZ-ul-ASm" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="VTp-7a-Reb"/>
                             <constraint firstItem="YmH-wn-vPA" firstAttribute="width" secondItem="Kct-90-Z6s" secondAttribute="width" id="Y3w-9l-5fX"/>
                             <constraint firstItem="Bxd-cc-73o" firstAttribute="bottom" secondItem="LrA-RW-Q6k" secondAttribute="bottom" id="fg5-AC-V8b"/>
-                            <constraint firstItem="oKb-BM-zze" firstAttribute="centerY" secondItem="Kct-90-Z6s" secondAttribute="centerY" id="fpk-Rl-s3X"/>
                             <constraint firstItem="6ag-5o-iH0" firstAttribute="leading" secondItem="MPf-Kq-DF1" secondAttribute="trailing" constant="30" id="gYL-pZ-Ljj"/>
                             <constraint firstItem="xnf-Yt-1Mj" firstAttribute="leading" secondItem="Bxd-cc-73o" secondAttribute="trailing" constant="39" id="hU0-OK-ne7"/>
                             <constraint firstItem="MPf-Kq-DF1" firstAttribute="bottom" secondItem="FhT-GH-rbJ" secondAttribute="bottom" id="jOq-sQ-Lq2"/>
@@ -581,6 +599,7 @@
                         <outlet property="juri2" destination="MPf-Kq-DF1" id="Bma-fL-Db4"/>
                         <outlet property="juri3" destination="6ag-5o-iH0" id="OLV-P4-Jhv"/>
                         <outlet property="namePerson" destination="41I-Ml-0O4" id="SpC-VZ-2g4"/>
+                        <outlet property="pranchetaView" destination="rGC-LQ-2b4" id="fUl-vZ-dW0"/>
                         <outlet property="promotoria" destination="rfT-7x-KMM" id="ANY-1Q-lRG"/>
                         <outlet property="resumStory" destination="AhP-M3-qYS" id="EZc-U4-ufU"/>
                         <outlet property="reu" destination="HSl-5b-nWA" id="Ose-qJ-d1y"/>
@@ -828,6 +847,7 @@
         <image name="gnomo2" width="265" height="265"/>
         <image name="gnomo_perfil1" width="412" height="412"/>
         <image name="palanque8Lugares" width="1920" height="44"/>
+        <image name="prancheta" width="715" height="578"/>
         <image name="selecione 2" width="962" height="199"/>
         <image name="titulo_crime1" width="1102" height="133"/>
         <image name="unicornio2" width="265" height="265"/>
