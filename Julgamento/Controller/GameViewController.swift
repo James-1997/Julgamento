@@ -68,7 +68,7 @@ class GameViewController: UIViewController {
             
             let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
             
-            basicAnimate.toValue = -1
+           // basicAnimate.toValue = -1
             if tempoDosJogadores[indexArray] == 15{
                 basicAnimate.toValue = -1
                 basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
@@ -159,7 +159,6 @@ class GameViewController: UIViewController {
         gerRound()
         
         // circulo de tempo
-        
         timerLabel.textAlignment = .center
         
         let center = view.center
