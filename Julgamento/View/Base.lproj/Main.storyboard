@@ -869,6 +869,14 @@
                     <connections>
                         <outlet property="advgDefesa" destination="AP3-LX-Tre" id="6iT-zf-NyA"/>
                         <outlet property="backGroudImage" destination="YmH-wn-vPA" id="cqQ-GE-eLh"/>
+                        <outlet property="botãoJúri" destination="H7c-oI-IsF" id="UD9-gs-j24"/>
+                        <outlet property="botãoJúri2" destination="AuR-PD-5Fu" id="AHm-BZ-axJ"/>
+                        <outlet property="botãoJúri3" destination="wuG-Ez-aFy" id="kk6-xp-44I"/>
+                        <outlet property="botãoPromotor" destination="kSx-jQ-aaO" id="9L9-9y-KaZ"/>
+                        <outlet property="botãoRéu" destination="RhT-Lm-yzl" id="eZR-Ul-6Ct"/>
+                        <outlet property="botãoTestemunha1" destination="pz0-eK-Web" id="YK5-mK-7mQ"/>
+                        <outlet property="botãoTestemunha2" destination="9rZ-8u-qoq" id="JFx-tL-B4P"/>
+                        <outlet property="botãoTestemunha2_1" destination="LvZ-vJ-dkg" id="2it-rs-hFl"/>
                         <outlet property="funcPerson" destination="G6N-Yo-NbO" id="Chb-bm-UKJ"/>
                         <outlet property="juri1" destination="FhT-GH-rbJ" id="4rC-Lw-Zxz"/>
                         <outlet property="juri2" destination="MPf-Kq-DF1" id="Bma-fL-Db4"/>

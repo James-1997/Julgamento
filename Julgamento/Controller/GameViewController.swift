@@ -65,6 +65,26 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var viewJuri3: UIView!
 
+//Botoes do Balão de Identificação
+    
+    
+    @IBOutlet weak var botãoTestemunha1: UIButton!
+    
+    @IBOutlet weak var botãoTestemunha2: UIButton!
+    
+    @IBOutlet weak var botãoTestemunha2_1: UIButton!
+    
+    @IBOutlet weak var botãoRéu: UIButton!
+    
+    @IBOutlet weak var botãoPromotor: UIButton!
+    
+    @IBOutlet weak var botãoJúri: UIButton!
+    
+    @IBOutlet weak var botãoJúri2: UIButton!
+    
+    @IBOutlet weak var botãoJúri3: UIButton!
+    
+
     //POP-UP Connections
    
  
@@ -137,6 +157,10 @@ class GameViewController: UIViewController {
         temporizador()
         
     }
+    
+    
+    
+    
     
     
     //MARK: POP-UP FUNCTIONS
@@ -319,6 +343,7 @@ class GameViewController: UIViewController {
             //Round 1
             powerUpPopUP()
             
+            viewPromotoria.isHidden = false
             namePerson.text = "PROMOTORIA"
             funcPerson.text = "apresente sua acusação"
             timerLabel.text = ("0:30")
