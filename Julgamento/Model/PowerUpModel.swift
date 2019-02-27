@@ -10,11 +10,17 @@ import UIKit
 
 class PowerUpModel{
    
-    let nome: String
-    //let image: UIImage?
+   
+    let imageDescription: UIImage?
+    let imageTitle: UIImage?
+    let backgroundImage: UIImage?
     
-    init(nome: String) {
-        self.nome = nome
+    init(imageDescription: UIImage?,imageTitle: UIImage?,backgroundImage: UIImage?) {
+        
+      
+        self.imageDescription = imageDescription
+        self.backgroundImage = backgroundImage
+        self.imageTitle = imageTitle
         
     }
 
