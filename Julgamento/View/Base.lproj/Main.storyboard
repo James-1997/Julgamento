@@ -895,9 +895,9 @@
                         <outlet property="viewJúri2" destination="VKV-0P-ahg" id="BJU-gg-ohT"/>
                         <outlet property="viewPromotoria" destination="WOl-ta-sTA" id="e8v-ms-nM8"/>
                         <outlet property="viewRéu" destination="f3P-NJ-1Bk" id="dOT-bc-RRK"/>
-                        <outlet property="viewTestemuna2_1" destination="f3P-NJ-1Bk" id="IKP-rV-YFx"/>
                         <outlet property="viewTestemunha1" destination="wKk-KG-2NC" id="h1I-Gy-xgz"/>
                         <outlet property="viewTestemunha2" destination="2zh-H5-Gry" id="Gkm-QW-Dxr"/>
+                        <outlet property="viewTestemunha2_1" destination="XAN-TW-4S4" id="o11-Q0-bB0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKf-7x-4Uv" userLabel="First Responder" sceneMemberID="firstResponder"/>

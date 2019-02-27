@@ -53,7 +53,9 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var viewTestemunha2: UIView!
     
-    @IBOutlet weak var viewTestemuna2_1: UIView!
+    
+    @IBOutlet weak var viewTestemunha2_1: UIView!
+
     
     @IBOutlet weak var viewRéu: UIView!
     
@@ -158,11 +160,6 @@ class GameViewController: UIViewController {
         
     }
     
-    
-    
-    
-    
-    
     //MARK: POP-UP FUNCTIONS
     
     func powerUpPopUP(){
@@ -207,6 +204,7 @@ class GameViewController: UIViewController {
         //Escondendo Balões de identificação
         viewTestemunha1.isHidden = true
         viewTestemunha2.isHidden = true
+        viewTestemunha2_1.isHidden = true
         viewRéu.isHidden = true
         viewPromotoria.isHidden = true
         viewJúri.isHidden = true
@@ -336,6 +334,7 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
             startButton.isHidden = false
             activeButton = false
+            
         }
     
         if indexArray == 1 {
@@ -343,14 +342,14 @@ class GameViewController: UIViewController {
             //Round 1
             powerUpPopUP()
             
-            viewPromotoria.isHidden = false
+            
             namePerson.text = "PROMOTORIA"
             funcPerson.text = "apresente sua acusação"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
-            
+            viewPromotoria.isHidden = false
             
         }
         else if indexArray == 2 {
