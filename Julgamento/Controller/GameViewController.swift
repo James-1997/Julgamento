@@ -64,40 +64,26 @@ class GameViewController: UIViewController {
     @IBOutlet weak var viewJúri2: UIView!
     
     @IBOutlet weak var viewJuri3: UIView!
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     //POP-UP Connections
    
  
     //MARK: Variáveis
     
     var históriaSelecionada: Story = arrayDeEstórias[0]
-
     var rounds: Int = 0
-    
     var indexArray = 0
-    
     var timer = Timer()
-    
     var time: Int = 0
-    
     var activeButton: Bool = false
     var numDeJogadores: Int?
     var indexArrayPopUp: Int!
-    
     let shapeLayer = CAShapeLayer()
     
     
     
-   
+    //MARK Funções
+    
     @IBAction func start(_ sender: Any) {
         if activeButton == false {
             activeButton = true
@@ -192,6 +178,19 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        
+        
+        //Escondendo Balões de identificação
+        viewTestemunha1.isHidden = true
+        viewTestemunha2.isHidden = true
+        viewRéu.isHidden = true
+        viewPromotoria.isHidden = true
+        viewJúri.isHidden = true
+        viewJúri2.isHidden = true
+        viewJuri3.isHidden = true
+        
+        
+        
         namePerson.isHidden = true
         
         backGroudImage.image = históriaSelecionada.image
