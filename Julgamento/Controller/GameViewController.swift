@@ -11,26 +11,37 @@ import Foundation
 
 class GameViewController: UIViewController {
     
+  // jogadores variantes
     
-    @IBOutlet weak var playerOne: UIImageView!
     
-    @IBOutlet weak var playerTwo: UIImageView!
     
-    @IBOutlet weak var playerThree: UIImageView!
-    @IBOutlet weak var playerFour: UIImageView!
+    @IBOutlet weak var testemunha2: UIImageView!
     
-    @IBOutlet weak var playerFive: UIImageView!
+    @IBOutlet weak var juri2: UIImageView!
+    @IBOutlet weak var juri3: UIImageView!
+    
+    @IBOutlet weak var testemunhaCase4: UIImageView!
+    
+    
+  // default
+    
+    @IBOutlet weak var testemunha1: UIImageView!
+    
+    @IBOutlet weak var juri1: UIImageView!
+    
+    @IBOutlet weak var reu: UIImageView!
+    
+    @IBOutlet weak var advgDefesa: UIImageView!
+    
+    @IBOutlet weak var promotoria: UIImageView!
+    
+    
     
     @IBOutlet weak var resumStory: UILabel!
-    
     @IBOutlet weak var backGroudImage: UIImageView!
-    
     @IBOutlet weak var timerLabel: UILabel!
-    
     @IBOutlet weak var startButton: UIButton!
-    
     @IBOutlet weak var namePerson: UILabel!
-    
     @IBOutlet weak var funcPerson: UILabel!
     
     
@@ -54,8 +65,6 @@ class GameViewController: UIViewController {
     var indexArrayPopUp: Int!
     
      let shapeLayer = CAShapeLayer()
-    
-   
     
     
    
@@ -157,7 +166,9 @@ class GameViewController: UIViewController {
         rounds = 1
         timerLabel.text = "00:15"
         gerRound()
+        // Setando jogadores
         
+        setarJogadores()
         // circulo de tempo
         timerLabel.textAlignment = .center
         
@@ -177,11 +188,47 @@ class GameViewController: UIViewController {
         view.layer.addSublayer(shapeLayer)
         
         
+    }
+    
+    // MARK: Setando os personagens
+    func setarJogadores() {
+        var arrayPersonJT: [Int]? = nil
         
+        if numDeJogadores == 4 {
+            arrayPersonJT = (DivForGame(qtdJogadores: (numDeJogadores! - 2)) as! [Int])
+            testemunha1.isHidden = true
+            advgDefesa.isHidden = true
+            testemunhaCase4.isHidden = false
+        } else {
+            testemunhaCase4.isHidden = true
+            arrayPersonJT = (DivForGame(qtdJogadores: (numDeJogadores! - 3)) as! [Int])
+        }
         
+        let juri = arrayPersonJT![0]
+        let testemunha = arrayPersonJT![1]
         
+        switch juri{
+        case 1:
+            juri2.isHidden = true
+            juri3.isHidden = true
+        case 3:
+            juri2.isHidden = false
+            juri3.isHidden = false
+        default:
+            return
+        }
+        
+        switch testemunha {
+        case 1:
+            testemunha2.isHidden = true
+        case 2:
+            testemunha2.isHidden = false
+        default:
+            return
+        }
         
     }
+    
     
     // MARK: Gerenciador de Rounds
     func gerRound () {
@@ -399,9 +446,9 @@ class GameViewController: UIViewController {
             activeButton = false
             time = tempoDosJogadores[indexArray]
            
-        
-            powerUpPopUP()
-            
+            //Power Up
+            provaDoCrimePopUp()
+           
         }
         else if indexArray == 12 {
             
@@ -413,8 +460,8 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
             rounds += 1
             
-            //Power Up
-            provaDoCrimePopUp()
+            powerUpPopUP()
+            
            
         }
         
