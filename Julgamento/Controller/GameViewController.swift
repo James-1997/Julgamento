@@ -67,7 +67,8 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var viewJuri3: UIView!
 
-//Botoes do Balão de Identificação
+    @IBOutlet weak var viewAdvogadoDeDefesa: UIView!
+    //Botoes do Balão de Identificação
     
     
     @IBOutlet weak var botãoTestemunha1: UIButton!
@@ -86,7 +87,8 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var botãoJúri3: UIButton!
     
-
+    @IBOutlet weak var botãoAdvogadoDeDefesa: UIView!
+    
     //POP-UP Connections
    
  
@@ -210,6 +212,7 @@ class GameViewController: UIViewController {
         viewJúri.isHidden = true
         viewJúri2.isHidden = true
         viewJuri3.isHidden = true
+        viewAdvogadoDeDefesa.isHidden = true
         
         
         
@@ -335,6 +338,7 @@ class GameViewController: UIViewController {
             startButton.isHidden = false
             activeButton = false
             
+            powerUpPopUP()
         }
     
         if indexArray == 1 {
@@ -342,8 +346,8 @@ class GameViewController: UIViewController {
             //Round 1
             powerUpPopUP()
             
-            
-            namePerson.text = "PROMOTORIA"
+           // namePerson.text = "PROMOTORIA"
+            namePerson.text = "TURNO 1!"
             funcPerson.text = "apresente sua acusação"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
@@ -351,10 +355,14 @@ class GameViewController: UIViewController {
             time = tempoDosJogadores[indexArray]
             viewPromotoria.isHidden = false
             
+            
+            
+            
+            
         }
         else if indexArray == 2 {
             
-
+            
             namePerson.text = "DEFESA"
             funcPerson.text = "apresente-se"
             timerLabel.text = ("0:30")
@@ -362,6 +370,7 @@ class GameViewController: UIViewController {
             activeButton = false
             time = tempoDosJogadores[indexArray]
             rounds += 1
+            
             
             //Acabou o tempo
             powerUpPopUP()

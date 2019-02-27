@@ -462,13 +462,6 @@
                                     <constraint firstItem="ydc-nt-xNz" firstAttribute="centerY" secondItem="rGC-LQ-2b4" secondAttribute="centerY" id="sYS-rV-kXG"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APRESENTAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41I-Ml-0O4">
-                                <rect key="frame" x="627" y="387" width="666" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="50"/>
-                                <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="palanque8Lugares" translatesAutoresizingMaskIntoConstraints="NO" id="Q7d-3v-YJZ">
                                 <rect key="frame" x="0.0" y="976" width="1920" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -656,6 +649,41 @@
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
                                     </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z4i-Md-xjA" userLabel="ViewAdvogado">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="306"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balaoDeFala" translatesAutoresizingMaskIntoConstraints="NO" id="nnt-0M-1yg">
+                                                <rect key="frame" x="-9" y="20" width="265" height="306"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADVOGADO DE DEFESA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4b-hK-zre">
+                                                <rect key="frame" x="49" y="62" width="149" height="110"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="17"/>
+                                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEI-Ax-Ihb">
+                                                <rect key="frame" x="48" y="169" width="151" height="86"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8k-FY-gIF">
+                                                <rect key="frame" x="38" y="40" width="170" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -835,6 +863,13 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PREPAREM SEU ARGUMENTO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41I-Ml-0O4">
+                                <rect key="frame" x="430" y="278" width="1060" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="50"/>
+                                <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="leading" secondItem="AP3-LX-Tre" secondAttribute="trailing" constant="25" id="0eI-yk-fCb"/>
@@ -869,6 +904,7 @@
                     <connections>
                         <outlet property="advgDefesa" destination="AP3-LX-Tre" id="6iT-zf-NyA"/>
                         <outlet property="backGroudImage" destination="YmH-wn-vPA" id="cqQ-GE-eLh"/>
+                        <outlet property="botãoAdvogadoDeDefesa" destination="Z4i-Md-xjA" id="lOB-mz-Nzb"/>
                         <outlet property="botãoJúri" destination="H7c-oI-IsF" id="UD9-gs-j24"/>
                         <outlet property="botãoJúri2" destination="AuR-PD-5Fu" id="AHm-BZ-axJ"/>
                         <outlet property="botãoJúri3" destination="wuG-Ez-aFy" id="kk6-xp-44I"/>
@@ -890,6 +926,7 @@
                         <outlet property="testemunha2" destination="LrA-RW-Q6k" id="Mvc-JK-xM3"/>
                         <outlet property="testemunhaCase4" destination="xnf-Yt-1Mj" id="4LF-vD-gfB"/>
                         <outlet property="timerLabel" destination="oKb-BM-zze" id="1mz-np-Gh7"/>
+                        <outlet property="viewAdvogadoDeDefesa" destination="Z4i-Md-xjA" id="BuF-ZR-xVO"/>
                         <outlet property="viewJuri3" destination="1W6-2X-srU" id="EJu-tG-MZl"/>
                         <outlet property="viewJúri" destination="fhD-WO-DBc" id="4uI-5c-tw7"/>
                         <outlet property="viewJúri2" destination="VKV-0P-ahg" id="BJU-gg-ohT"/>
@@ -1039,22 +1076,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9JK-4Y-lJn" userLabel="EndOfTurnView">
-                                <rect key="frame" x="433" y="335" width="1007" height="411"/>
+                                <rect key="frame" x="457" y="338" width="1007" height="227"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEMPO ESGOTADO!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eds-gE-moM">
-                                        <rect key="frame" x="168" y="154" width="670" height="102"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OUTRA COISA!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eds-gE-moM">
+                                        <rect key="frame" x="-31" y="62" width="1068" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="50"/>
                                         <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="0.75508347602739723" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="owj-ex-jmg"/>
                     </view>
                     <connections>
@@ -1064,7 +1101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEi-98-L5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-846" y="8034"/>
+            <point key="canvasLocation" x="-846" y="7881"/>
         </scene>
         <!--Prova Do Crime View Controller-->
         <scene sceneID="TB4-1E-0E4">

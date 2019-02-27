@@ -14,29 +14,20 @@ var arrayPowerUp: [PowerUpModel] = [
    
     //Identificação de turnos
     
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
+    PowerUpModel(name: "TURNO 1!", backgroundImage: nil),
+    PowerUpModel(name: "TURNO 2!", backgroundImage: nil),
+    PowerUpModel(name: "TURNO 3!", backgroundImage: nil),
+    PowerUpModel(name: "TURNO 4!", backgroundImage: nil),
+    PowerUpModel(name: "TURNO 5!", backgroundImage: nil),
     
     //Acabou o tempo pop-up
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
+    PowerUpModel(name: "TEMPO ESGOTADO!", backgroundImage: nil),
     
     //Power Ups
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
-    PowerUpModel(name: "", backgroundImage: UIImage(named: "PopUpView")),
-    
-    
-    
-
-//    //PowerUps
-//    PowerUpModel(nome: "Uma prova do crime foi encontrada!",imageDescription: nil, imageTitle: nil),
-//    PowerUpModel(nome: "Aconteceu uma Reviravolta",imageDescription: nil, imageTitle: nil),
-//    PowerUpModel(nome: "Alguém cometeu perjúrio!",imageDescription: nil, imageTitle: nil),
-//
+    PowerUpModel(name: "Prova do Crime 1", backgroundImage: UIImage(named: "ProvaDoCrime1")),
+    PowerUpModel(name: "Prova do Crime 2", backgroundImage: UIImage(named: "ProvaDoCrime2")),
+    PowerUpModel(name: "Perjúrio", backgroundImage: UIImage(named: "PerjúrioPopUp1")),
+    PowerUpModel(name: "Reviravolta", backgroundImage: UIImage(named: "ReviravoltaPopUp")),
 
 ]
 
