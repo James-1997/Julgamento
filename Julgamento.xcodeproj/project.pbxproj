@@ -30,6 +30,8 @@
 		1FE35E81221C567F004C7390 /* PerfilPersonagemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE35E80221C567F004C7390 /* PerfilPersonagemModel.swift */; };
 		1FE35E83221C5694004C7390 /* ArrayPerfilDoPersonagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE35E82221C5694004C7390 /* ArrayPerfilDoPersonagem.swift */; };
 		5E562F2D221F8DB200FF26FB /* ConfiguracoesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */; };
+		5ED2D8482226CC8B0054FDCD /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2D8472226CC8B0054FDCD /* Music.swift */; };
+		5ED2D84B2226CD2F0054FDCD /* JudsySound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5ED2D84A2226CD2F0054FDCD /* JudsySound.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		1FE35E80221C567F004C7390 /* PerfilPersonagemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilPersonagemModel.swift; sourceTree = "<group>"; };
 		1FE35E82221C5694004C7390 /* ArrayPerfilDoPersonagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayPerfilDoPersonagem.swift; sourceTree = "<group>"; };
 		5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracoesModel.swift; sourceTree = "<group>"; };
+		5ED2D8472226CC8B0054FDCD /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		5ED2D84A2226CD2F0054FDCD /* JudsySound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = JudsySound.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		1DC822C7221C384300D56F00 /* Julgamento */ = {
 			isa = PBXGroup;
 			children = (
+				5ED2D8492226CD120054FDCD /* Sounds */,
 				1F17385F221D96340076C84F /* Fonts */,
 				1DC822DC221C395200D56F00 /* Model */,
 				1DC822DA221C393500D56F00 /* Controller */,
@@ -144,6 +149,7 @@
 				5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */,
 				1F4C14A32221B8D600D8099A /* PowerUpModel.swift */,
 				1F4C14A52222000400D8099A /* ArrayPowerUp.swift */,
+				5ED2D8472226CC8B0054FDCD /* Music.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +170,14 @@
 				1F4C14A7222201B800D8099A /* ProvaDoCrimeViewController.swift */,
 			);
 			path = PopUps;
+			sourceTree = "<group>";
+		};
+		5ED2D8492226CD120054FDCD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5ED2D84A2226CD2F0054FDCD /* JudsySound.m4a */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +242,7 @@
 				1F173868221D97460076C84F /* Splatch.ttf in Resources */,
 				1DC822D1221C384300D56F00 /* Main.storyboard in Resources */,
 				1F173867221D97460076C84F /* sagesans-Regular.ttf in Resources */,
+				5ED2D84B2226CD2F0054FDCD /* JudsySound.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +260,7 @@
 				1FE35E83221C5694004C7390 /* ArrayPerfilDoPersonagem.swift in Sources */,
 				1D65F7E022243FD2007F30C1 /* RegrasPage2ViewController.swift in Sources */,
 				1FE35E81221C567F004C7390 /* PerfilPersonagemModel.swift in Sources */,
+				5ED2D8482226CC8B0054FDCD /* Music.swift in Sources */,
 				1D3B42E5221DADD2008489BF /* GameViewController.swift in Sources */,
 				1F4C14A1221F13C100D8099A /* EndPopUpViewController.swift in Sources */,
 				5E562F2D221F8DB200FF26FB /* ConfiguracoesModel.swift in Sources */,
