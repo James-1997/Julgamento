@@ -69,11 +69,32 @@ class GameViewController: UIViewController {
             let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
             
             basicAnimate.toValue = -1
-            basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 7
-            basicAnimate.fillMode = CAMediaTimingFillMode.forwards
-            basicAnimate.isRemovedOnCompletion = false
+            if tempoDosJogadores[indexArray] == 15{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 30{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 33
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 90{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 91.5
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
             
-            shapeLayer.add(basicAnimate, forKey: "basic")
+                shapeLayer.add(basicAnimate, forKey: "basic")
+            
+        }
+        
            
         }
     }
@@ -482,7 +503,7 @@ class GameViewController: UIViewController {
             
             if (indexArray == 0)  {
                 
-               powerUpPopUP()
+             //  powerUpPopUP()
                 
             }
        
