@@ -606,16 +606,6 @@
                                 <rect key="frame" x="170" y="290" width="1580" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">A duas noites atrás, foi encontrado um carregamento ilícito de pó mágico no lago dos duendes. No local do crime foram encontrados algumas pegadas de um animal quadrúpede. Cid o unicórnio que mora nas redondezas está sendo julgado aqui, hoje, como o principal suspeito. </string>
-<<<<<<< Updated upstream
-                                <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="50"/>
-                                <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="titulo_crime1" translatesAutoresizingMaskIntoConstraints="NO" id="qd8-37-MdT">
-                                <rect key="frame" x="475" y="238" width="970" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-=======
                                 <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="43"/>
                                 <color key="textColor" red="0.96951931715011597" green="0.94742757081985474" blue="0.79694074392318726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -687,7 +677,6 @@
                                 <rect key="frame" x="548" y="646" width="140" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
->>>>>>> Stashed changes
                         </subviews>
                         <constraints>
                             <constraint firstItem="RDJ-3K-R6b" firstAttribute="top" secondItem="Ihb-tx-rZc" secondAttribute="top" id="3oE-zU-ixJ"/>
@@ -815,10 +804,12 @@
         <image name="bruxa_perfil" width="412" height="412"/>
         <image name="diabrete2" width="265" height="265"/>
         <image name="diabrete_perfil" width="412" height="412"/>
+        <image name="diabrete_perfil1" width="412" height="412"/>
         <image name="elfo2" width="265" height="265"/>
         <image name="elfo_perfil" width="412" height="412"/>
         <image name="gnomo2" width="265" height="265"/>
         <image name="gnomo_perfil" width="412" height="412"/>
+        <image name="gnomo_perfil1" width="412" height="412"/>
         <image name="palanque8Lugares" width="1920" height="44"/>
         <image name="selecione 2" width="962" height="199"/>
         <image name="titulo_crime1" width="1102" height="133"/>
