@@ -242,12 +242,8 @@
                                 <rect key="frame" x="521" y="281" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gnomo_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="NHa-dQ-1B6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diabrete_perfil1" translatesAutoresizingMaskIntoConstraints="NO" id="NHa-dQ-1B6">
                                 <rect key="frame" x="1228" y="281" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diabrete_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="alX-pL-adQ">
-                                <rect key="frame" x="885" y="282" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unicornio_perfil" translatesAutoresizingMaskIntoConstraints="NO" id="10Z-VY-IIT">
@@ -378,6 +374,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gnomo_perfil1" translatesAutoresizingMaskIntoConstraints="NO" id="alX-pL-adQ">
+                                <rect key="frame" x="878" y="281" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Ibn-yy-Zqj" firstAttribute="top" secondItem="r6W-J4-zDq" secondAttribute="top" constant="478" id="3L9-zL-2Hx"/>
@@ -535,6 +535,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diabrete2" translatesAutoresizingMaskIntoConstraints="NO" id="xnf-Yt-1Mj">
+                                <rect key="frame" x="534" y="793" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="cu9-fT-7YS"/>
+                                    <constraint firstAttribute="width" constant="200" id="czX-JO-kzd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="leading" secondItem="AP3-LX-Tre" secondAttribute="trailing" constant="25" id="0eI-yk-fCb"/>
@@ -544,6 +551,7 @@
                             <constraint firstItem="rfT-7x-KMM" firstAttribute="leading" secondItem="HSl-5b-nWA" secondAttribute="trailing" constant="8" id="F3l-HD-Lmi"/>
                             <constraint firstItem="LrA-RW-Q6k" firstAttribute="leading" secondItem="Kct-90-Z6s" secondAttribute="leading" constant="70" id="Hz0-nc-t8o"/>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="bottom" secondItem="AP3-LX-Tre" secondAttribute="bottom" id="JG0-u8-qNB"/>
+                            <constraint firstItem="hNh-Dh-KWj" firstAttribute="top" secondItem="xnf-Yt-1Mj" secondAttribute="bottom" constant="27" id="Pr9-c5-I2y"/>
                             <constraint firstItem="FhT-GH-rbJ" firstAttribute="bottom" secondItem="rfT-7x-KMM" secondAttribute="bottom" id="S9E-kw-Wp9"/>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="top" secondItem="RRZ-ul-ASm" secondAttribute="bottom" constant="45" id="SCq-cY-nVx"/>
                             <constraint firstItem="AP3-LX-Tre" firstAttribute="leading" secondItem="Bxd-cc-73o" secondAttribute="trailing" constant="5" id="Skv-s4-e5J"/>
@@ -552,11 +560,13 @@
                             <constraint firstItem="Bxd-cc-73o" firstAttribute="bottom" secondItem="LrA-RW-Q6k" secondAttribute="bottom" id="fg5-AC-V8b"/>
                             <constraint firstItem="oKb-BM-zze" firstAttribute="centerY" secondItem="Kct-90-Z6s" secondAttribute="centerY" id="fpk-Rl-s3X"/>
                             <constraint firstItem="6ag-5o-iH0" firstAttribute="leading" secondItem="MPf-Kq-DF1" secondAttribute="trailing" constant="30" id="gYL-pZ-Ljj"/>
+                            <constraint firstItem="xnf-Yt-1Mj" firstAttribute="leading" secondItem="Bxd-cc-73o" secondAttribute="trailing" constant="39" id="hU0-OK-ne7"/>
                             <constraint firstItem="MPf-Kq-DF1" firstAttribute="bottom" secondItem="FhT-GH-rbJ" secondAttribute="bottom" id="jOq-sQ-Lq2"/>
                             <constraint firstItem="MPf-Kq-DF1" firstAttribute="leading" secondItem="FhT-GH-rbJ" secondAttribute="trailing" constant="26" id="jZH-ff-baj"/>
                             <constraint firstItem="YmH-wn-vPA" firstAttribute="centerY" secondItem="Kct-90-Z6s" secondAttribute="centerY" id="kex-PC-A8t"/>
                             <constraint firstItem="hNh-Dh-KWj" firstAttribute="top" secondItem="LrA-RW-Q6k" secondAttribute="bottom" constant="27" id="kxf-QY-UuU"/>
                             <constraint firstItem="rfT-7x-KMM" firstAttribute="bottom" secondItem="HSl-5b-nWA" secondAttribute="bottom" id="miV-ga-SZc"/>
+                            <constraint firstItem="xnf-Yt-1Mj" firstAttribute="bottom" secondItem="Bxd-cc-73o" secondAttribute="bottom" id="qhl-fE-xeV"/>
                             <constraint firstItem="AP3-LX-Tre" firstAttribute="bottom" secondItem="Bxd-cc-73o" secondAttribute="bottom" id="rdu-zH-vvY"/>
                             <constraint firstItem="FhT-GH-rbJ" firstAttribute="leading" secondItem="rfT-7x-KMM" secondAttribute="trailing" constant="44" id="tjL-81-XoJ"/>
                             <constraint firstItem="Bxd-cc-73o" firstAttribute="leading" secondItem="LrA-RW-Q6k" secondAttribute="trailing" constant="25" id="zjk-eP-LVI"/>
@@ -564,11 +574,20 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="advgDefesa" destination="AP3-LX-Tre" id="6iT-zf-NyA"/>
                         <outlet property="backGroudImage" destination="YmH-wn-vPA" id="cqQ-GE-eLh"/>
                         <outlet property="funcPerson" destination="G6N-Yo-NbO" id="Chb-bm-UKJ"/>
+                        <outlet property="juri1" destination="FhT-GH-rbJ" id="4rC-Lw-Zxz"/>
+                        <outlet property="juri2" destination="MPf-Kq-DF1" id="Bma-fL-Db4"/>
+                        <outlet property="juri3" destination="6ag-5o-iH0" id="OLV-P4-Jhv"/>
                         <outlet property="namePerson" destination="41I-Ml-0O4" id="SpC-VZ-2g4"/>
+                        <outlet property="promotoria" destination="rfT-7x-KMM" id="ANY-1Q-lRG"/>
                         <outlet property="resumStory" destination="AhP-M3-qYS" id="EZc-U4-ufU"/>
+                        <outlet property="reu" destination="HSl-5b-nWA" id="Ose-qJ-d1y"/>
                         <outlet property="startButton" destination="RRZ-ul-ASm" id="V2w-6s-IOZ"/>
+                        <outlet property="testemunha1" destination="Bxd-cc-73o" id="Oyz-lN-oPd"/>
+                        <outlet property="testemunha2" destination="LrA-RW-Q6k" id="Mvc-JK-xM3"/>
+                        <outlet property="testemunhaCase4" destination="xnf-Yt-1Mj" id="4LF-vD-gfB"/>
                         <outlet property="timerLabel" destination="oKb-BM-zze" id="1mz-np-Gh7"/>
                     </connections>
                 </viewController>
@@ -803,12 +822,10 @@
         <image name="bruxa2" width="265" height="265"/>
         <image name="bruxa_perfil" width="412" height="412"/>
         <image name="diabrete2" width="265" height="265"/>
-        <image name="diabrete_perfil" width="412" height="412"/>
         <image name="diabrete_perfil1" width="412" height="412"/>
         <image name="elfo2" width="265" height="265"/>
         <image name="elfo_perfil" width="412" height="412"/>
         <image name="gnomo2" width="265" height="265"/>
-        <image name="gnomo_perfil" width="412" height="412"/>
         <image name="gnomo_perfil1" width="412" height="412"/>
         <image name="palanque8Lugares" width="1920" height="44"/>
         <image name="selecione 2" width="962" height="199"/>
