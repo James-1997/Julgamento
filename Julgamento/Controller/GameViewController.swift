@@ -11,7 +11,7 @@ import Foundation
 
 class GameViewController: UIViewController {
     
-    
+
     // Prancheta View
     
     @IBOutlet weak var pranchetaView: UIView!
@@ -62,11 +62,28 @@ class GameViewController: UIViewController {
     @IBOutlet weak var viewJuri3: UIView!
 
    
-    //POP-UP Connections
    
+   
+    // Add the swipe gesture recognizer
+//    let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "rightSwipe")
+//    let direction = UISwipeGestureRecognizerDirection.Right
+//    swipeGestureRecognizer.direction = direction
+//
+//
+//    func rightSwipe(swipeGestureRecognizer : UISwipeGestureRecognizer) {
+//        // Handle right swipe
+//    }
+    
+   
+    
+    
+    
+    
     
     //Botões 
  
+  
+    
     //MARK: Variáveis
     
     var históriaSelecionada: Story = arrayDeEstórias[0]
@@ -80,10 +97,76 @@ class GameViewController: UIViewController {
     let shapeLayer = CAShapeLayer()
     var animationPranchete: Bool = false
     
+    var numDeVotosInocente: Int = 0
+    var numDeVotosCulpado: Int = 0
+    var totalDeVotos: Int = 0
+    
+    var decisãoFinal: String?
+    
     
     //MARK Funções
     
+    @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
+        
+        
+        switch sender.direction {
+            
+        case .left:
+            
+            //culpado
+            if ((numDeVotosCulpado >= 0) && numDeVotosCulpado < 3){
+                
+                numDeVotosCulpado += 1
+                
+                totalDeVotos = numDeVotosInocente + numDeVotosCulpado
+                qtdVotosLabel.text = "\(numDeVotosInocente)"
+                
+             print("O total de votos foi: \(totalDeVotos)")
+                
+            }
+            
+        case .right:
+            
+            //inocente
+            if ((numDeVotosInocente >= 0) && numDeVotosInocente < 3){
+                
+                numDeVotosInocente += 1
+                
+                totalDeVotos = numDeVotosInocente + numDeVotosCulpado
+                qtdVotosLabel.text = "\(numDeVotosInocente)"
+                
+                print("O total de votos foi: \(totalDeVotos)")
+            }
+           
+           
+        default:
+            return
+        }
+        
+        
+    }
+    
+
+    func decisãoFinal(totalDeVotos: Int, numDeVotosInocente: Int, numDeVotosCulpado: Int){
+        
+        print("O total de votos foi: \(totalDeVotos)")
+        print("O total de votos para inocentação do Réu foi: \(numDeVotosInocente)")
+        print("O total de votos para culpa o Réu foi: \(numDeVotosCulpado)")
+        
+        if numDeVotosInocente > numDeVotosCulpado{
+            
+            decisãoFinal = "O Únicornio foi considerado culpado!"
+            
+        }else{
+            
+            decisãoFinal = "O Únicornio foi inocentado!"
+            
+        }
+        
+    }
+    
     @IBAction func start(_ sender: Any) {
+       
         if activeButton == false {
             if animationPranchete == true {
                 upView()
@@ -179,6 +262,17 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        //gestureRecognizer
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        leftSwipe.direction = .left
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        rightSwipe.direction = .right
+        
+        viewDecisãoDoJúri.addGestureRecognizer(leftSwipe)
+        viewDecisãoDoJúri.addGestureRecognizer(rightSwipe)
+        self.viewQtdVotos.layer.cornerRadius = viewQtdVotos.frame.size.height/2
+        
         backGroudImage.image = históriaSelecionada.image
         rounds = 1
         gerentBubble()
@@ -189,7 +283,7 @@ class GameViewController: UIViewController {
         setarJogadores()
         // circulo de tempo
         
-//        timerLabel.textAlignment = .center
+        // timerLabel.textAlignment = .center
         let center = timerLabel.center
         let circularPath = UIBezierPath(arcCenter: center, radius: 65, startAngle:  3*CGFloat.pi/2 , endAngle: -CGFloat.pi/2, clockwise: false)
         
@@ -322,6 +416,8 @@ class GameViewController: UIViewController {
         if indexArray == 1 {
            
             //Round 1
+            // exemplo de como colocar os sons em cada pop up NomeDaClass.sharedHelper.playBackgroundMusic()
+            Turnos.sharedHelper.playBackgroundMusic()
             powerUpPopUP()
             gerentBubble()
             timerLabel.text = ("0:30")
