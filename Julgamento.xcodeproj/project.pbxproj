@@ -32,6 +32,15 @@
 		5E562F2D221F8DB200FF26FB /* ConfiguracoesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */; };
 		5ED2D8482226CC8B0054FDCD /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2D8472226CC8B0054FDCD /* Music.swift */; };
 		5ED2D84B2226CD2F0054FDCD /* JudsySound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5ED2D84A2226CD2F0054FDCD /* JudsySound.m4a */; };
+		5ED2D84E222810C90054FDCD /* PowerUps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2D84D222810C90054FDCD /* PowerUps.swift */; };
+		5ED2D8502228112F0054FDCD /* TimeOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2D84F2228112F0054FDCD /* TimeOut.swift */; };
+		5ED2D8522228115A0054FDCD /* Turnos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2D8512228115A0054FDCD /* Turnos.swift */; };
+		5ED2D859222812FF0054FDCD /* PowerUp26.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED2D853222812FE0054FDCD /* PowerUp26.mp3 */; };
+		5ED2D85A222812FF0054FDCD /* PowerUp27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED2D854222812FE0054FDCD /* PowerUp27.mp3 */; };
+		5ED2D85B222812FF0054FDCD /* PowerUp16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED2D855222812FE0054FDCD /* PowerUp16.mp3 */; };
+		5ED2D85C222812FF0054FDCD /* PowerUp18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED2D856222812FE0054FDCD /* PowerUp18.mp3 */; };
+		5ED2D85D222812FF0054FDCD /* PowerUp8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED2D857222812FE0054FDCD /* PowerUp8.mp3 */; };
+		5ED2D85E222812FF0054FDCD /* PowerUp25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5ED2D858222812FE0054FDCD /* PowerUp25.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +71,15 @@
 		5E562F2C221F8DB200FF26FB /* ConfiguracoesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracoesModel.swift; sourceTree = "<group>"; };
 		5ED2D8472226CC8B0054FDCD /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		5ED2D84A2226CD2F0054FDCD /* JudsySound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = JudsySound.m4a; sourceTree = "<group>"; };
+		5ED2D84D222810C90054FDCD /* PowerUps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUps.swift; sourceTree = "<group>"; };
+		5ED2D84F2228112F0054FDCD /* TimeOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOut.swift; sourceTree = "<group>"; };
+		5ED2D8512228115A0054FDCD /* Turnos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turnos.swift; sourceTree = "<group>"; };
+		5ED2D853222812FE0054FDCD /* PowerUp26.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PowerUp26.mp3; sourceTree = "<group>"; };
+		5ED2D854222812FE0054FDCD /* PowerUp27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PowerUp27.mp3; sourceTree = "<group>"; };
+		5ED2D855222812FE0054FDCD /* PowerUp16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PowerUp16.mp3; sourceTree = "<group>"; };
+		5ED2D856222812FE0054FDCD /* PowerUp18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PowerUp18.mp3; sourceTree = "<group>"; };
+		5ED2D857222812FE0054FDCD /* PowerUp8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PowerUp8.mp3; sourceTree = "<group>"; };
+		5ED2D858222812FE0054FDCD /* PowerUp25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PowerUp25.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +141,7 @@
 		1DC822DA221C393500D56F00 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5ED2D84C222810770054FDCD /* Sounds */,
 				1D65F80322259499007F30C1 /* Cell */,
 				1D2587642220A7D200EFF13A /* Extensions */,
 				1F4C14A2221F13C600D8099A /* PopUps */,
@@ -183,7 +202,23 @@
 		5ED2D8492226CD120054FDCD /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				5ED2D857222812FE0054FDCD /* PowerUp8.mp3 */,
+				5ED2D855222812FE0054FDCD /* PowerUp16.mp3 */,
+				5ED2D856222812FE0054FDCD /* PowerUp18.mp3 */,
+				5ED2D858222812FE0054FDCD /* PowerUp25.mp3 */,
+				5ED2D853222812FE0054FDCD /* PowerUp26.mp3 */,
+				5ED2D854222812FE0054FDCD /* PowerUp27.mp3 */,
 				5ED2D84A2226CD2F0054FDCD /* JudsySound.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		5ED2D84C222810770054FDCD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5ED2D84D222810C90054FDCD /* PowerUps.swift */,
+				5ED2D84F2228112F0054FDCD /* TimeOut.swift */,
+				5ED2D8512228115A0054FDCD /* Turnos.swift */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -247,9 +282,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DC822D3221C384400D56F00 /* Assets.xcassets in Resources */,
+				5ED2D859222812FF0054FDCD /* PowerUp26.mp3 in Resources */,
+				5ED2D85A222812FF0054FDCD /* PowerUp27.mp3 in Resources */,
+				5ED2D85E222812FF0054FDCD /* PowerUp25.mp3 in Resources */,
 				1F173868221D97460076C84F /* Splatch.ttf in Resources */,
+				5ED2D85B222812FF0054FDCD /* PowerUp16.mp3 in Resources */,
 				1DC822D1221C384300D56F00 /* Main.storyboard in Resources */,
+				5ED2D85D222812FF0054FDCD /* PowerUp8.mp3 in Resources */,
 				1F173867221D97460076C84F /* sagesans-Regular.ttf in Resources */,
+				5ED2D85C222812FF0054FDCD /* PowerUp18.mp3 in Resources */,
 				5ED2D84B2226CD2F0054FDCD /* JudsySound.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,8 +320,11 @@
 				1DC822C9221C384300D56F00 /* AppDelegate.swift in Sources */,
 				1F500E20221C59C200BC3139 /* StoryModel.swift in Sources */,
 				1D65F805222594B4007F30C1 /* tableCellRules.swift in Sources */,
+				5ED2D8522228115A0054FDCD /* Turnos.swift in Sources */,
+				5ED2D84E222810C90054FDCD /* PowerUps.swift in Sources */,
 				1F500E22221C5A7200BC3139 /* ArrayDeEstorias.swift in Sources */,
 				1DC822CE221C384300D56F00 /* Julgamento.xcdatamodeld in Sources */,
+				5ED2D8502228112F0054FDCD /* TimeOut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
