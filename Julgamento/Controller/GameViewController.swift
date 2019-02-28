@@ -43,8 +43,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var backGroudImage: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var namePerson: UILabel!
-    @IBOutlet weak var funcPerson: UILabel!
+   
     
     //Balao de Identificação
     
@@ -52,9 +51,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var viewTestemunha2: UIView!
     
-    
     @IBOutlet weak var viewTestemunha2_1: UIView!
-
     
     @IBOutlet weak var viewRéu: UIView!
     
@@ -137,7 +134,7 @@ class GameViewController: UIViewController {
     // funcao usada p/ dizer o que vai acontecer durante o decorrer do timer
     @objc func action1 () {
         
-        namePerson.isHidden = false
+        
         startButton.isHidden = true
         temporizador()
         
@@ -182,7 +179,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        namePerson.isHidden = true
+      
       
         backGroudImage.image = históriaSelecionada.image
         rounds = 1
@@ -217,23 +214,118 @@ class GameViewController: UIViewController {
     func gerentBubble(){
         
         switch rounds {
+            
         case 1:
+            
             //Escondendo Balões de identificação
+            if indexArray == 0 {
+                
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+            if indexArray == 1 {
+                
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = false
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+            else if indexArray == 2 {
+                
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = false
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+           
+            
+        case 2:
+            
+            
+            if indexArray == 3{
+             
+              //namePerson.text = "PROMOTORIA"
+               
+                
+                
+                
+            }
+            else if indexArray == 4{
+                
+                
+                //            namePerson.text = "DEFESA"
+                
+                
+                
+            }
+            else if indexArray == 5{
+                
+                
+                //            namePerson.text = "JURI"
+               
+                
+                if indexArray == 3{
+                    
+                   
+                    
+                    
+                    
+                    //                namePerson.text = "Promotoria"
+                   
+                    
+                    
+                    
+                }
+                else if indexArray == 4{
+                    
+                    
+                    //                namePerson.text = "defesa"
+                   
+                    
+                    
+                }
+                else if indexArray == 5{
+                    
+                    
+                    //                namePerson.text = "juri"
+                    
+                }
+            }
+            
+            
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
             viewTestemunha2_1.isHidden = true
             viewRéu.isHidden = true
-            viewPromotoria.isHidden = true
+            viewPromotoria.isHidden = false
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
             viewJuri3.isHidden = true
             
-        case 2:
-            print("gerenciar aqui")
+            
+            
         default:
             return
         }
         
+       
         
     }
     
@@ -260,6 +352,7 @@ class GameViewController: UIViewController {
     
     // MARK: Setando os personagens
     func setarJogadores() {
+        
         var arrayPersonJT: [Int]? = nil
         
         if numDeJogadores == 4 {
@@ -337,8 +430,8 @@ class GameViewController: UIViewController {
         
         if indexArray == 0{
             
-            namePerson.text = "PREPARE SEU ARGUMENTO!"
-            funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
+            //namePerson.text = "PREPARE SEU ARGUMENTO!"
+            //funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
             time = tempoDosJogadores[indexArray]
             startButton.isHidden = false
             activeButton = false
@@ -350,26 +443,21 @@ class GameViewController: UIViewController {
             
             //Round 1
             powerUpPopUP()
-            
-           // namePerson.text = "PROMOTORIA"
-            namePerson.text = "TURNO 1!"
-            funcPerson.text = "apresente sua acusação"
+          
+            //namePerson.text = "TURNO 1!"
+            //funcPerson.text = "apresente sua acusação"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
-            viewPromotoria.isHidden = false
-            
-            
-            
             
             
         }
         else if indexArray == 2 {
             
             
-            namePerson.text = "DEFESA"
-            funcPerson.text = "apresente-se"
+//            namePerson.text = "DEFESA"
+//            funcPerson.text = "apresente-se"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
@@ -398,8 +486,8 @@ class GameViewController: UIViewController {
             
             
             
-            namePerson.text = "PROMOTORIA"
-            funcPerson.text = "sua vez"
+//            namePerson.text = "PROMOTORIA"
+//            funcPerson.text = "sua vez"
             timerLabel.text = ("1:30")
             startButton.isHidden = false
             activeButton = false
@@ -411,8 +499,8 @@ class GameViewController: UIViewController {
         else if indexArray == 4{
             
 
-            namePerson.text = "DEFESA"
-            funcPerson.text = "SUA VEZ"
+//            namePerson.text = "DEFESA"
+//            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("1:30")
             startButton.isHidden = false
             activeButton = false
@@ -425,34 +513,30 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 5{
             
-
-            namePerson.text = "JURI"
-            funcPerson.text = "PODE FAZER UMA PERGUNTA"
+            //juri
             timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
+            
             if indexArray == 3{
-                
+
                 //Round 2
                 powerUpPopUP()
-                
-                
-                
-                namePerson.text = "Promotoria"
-                funcPerson.text = "sua vez"
+
+//                namePerson.text = "Promotoria"
+//                funcPerson.text = "sua vez"
                 timerLabel.text = ("1:30")
                 startButton.isHidden = false
                 activeButton = false
                 time = tempoDosJogadores[indexArray]
-                
-                
-                
+
             }
+                
             else if indexArray == 4{
                 
                 
-                namePerson.text = "defesa"
-                funcPerson.text = "SUA VEZ"
+//                namePerson.text = "defesa"
+//                funcPerson.text = "SUA VEZ"
                 timerLabel.text = ("1:30")
                 startButton.isHidden = false
                 activeButton = false
@@ -466,8 +550,8 @@ class GameViewController: UIViewController {
             else if indexArray == 5{
                 
                 
-                namePerson.text = "juri"
-                funcPerson.text = "PODE FAZER UMA PERGUNTA"
+//                namePerson.text = "juri"
+//                funcPerson.text = "PODE FAZER UMA PERGUNTA"
                 timerLabel.text = ("0:00")
                 startButton.isHidden = false
                 activeButton = false
@@ -491,8 +575,8 @@ class GameViewController: UIViewController {
             //Round 3 PopUp
             powerUpPopUP()
             
-            namePerson.text = "TESTEMUNHA"
-            funcPerson.text = "TESTEMUNHE"
+//            namePerson.text = "TESTEMUNHA"
+//            funcPerson.text = "TESTEMUNHE"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
@@ -500,8 +584,8 @@ class GameViewController: UIViewController {
             
         }
         else if indexArray == 7 {
-            namePerson.text = "PROMOTORIA"
-            funcPerson.text = "SUA VEZ"
+//            namePerson.text = "PROMOTORIA"
+//            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("1:30")
             startButton.isHidden = false
             activeButton = false
@@ -512,8 +596,8 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 8 {
             
-            namePerson.text = "DEFESA"
-            funcPerson.text = "SUA VEZ"
+//            namePerson.text = "DEFESA"
+//            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
@@ -525,8 +609,8 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 9 {
             
-            namePerson.text = "JURI"
-            funcPerson.text = "PODE FAZER UMA PERGUNTA"
+//            namePerson.text = "JURI"
+//            funcPerson.text = "PODE FAZER UMA PERGUNTA"
             timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
@@ -551,8 +635,8 @@ class GameViewController: UIViewController {
             print("promotor")
             powerUpPopUP()
             
-            namePerson.text = "Promotoria"
-            funcPerson.text = "sua vez"
+//            namePerson.text = "Promotoria"
+//            funcPerson.text = "sua vez"
             timerLabel.text = ("1:30")
             activeButton = false
             startButton.isHidden = false
@@ -561,8 +645,8 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 11 {
             
-            namePerson.text = "defesa"
-            funcPerson.text = "SUA VEZ"
+//            namePerson.text = "defesa"
+//            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("1:30")
             startButton.isHidden = false
             activeButton = false
@@ -574,8 +658,8 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 12 {
             
-            namePerson.text = "juri"
-            funcPerson.text = "PODE FAZER UMA PERGUNTA"
+//            namePerson.text = "juri"
+//            funcPerson.text = "PODE FAZER UMA PERGUNTA"
             timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
@@ -598,8 +682,8 @@ class GameViewController: UIViewController {
             //Round 5 Pop-UP
             powerUpPopUP()
             
-            namePerson.text = "Promotoria"
-            funcPerson.text = "sua vez"
+//            namePerson.text = "Promotoria"
+//            funcPerson.text = "sua vez"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
@@ -608,8 +692,8 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 14 {
             
-            namePerson.text = "defesa"
-            funcPerson.text = "SUA VEZ"
+//            namePerson.text = "defesa"
+//            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
@@ -621,8 +705,8 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 15 {
             
-            namePerson.text = "juri"
-            funcPerson.text = "VOTA"
+//            namePerson.text = "juri"
+//            funcPerson.text = "VOTA"
             timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
@@ -693,12 +777,6 @@ class GameViewController: UIViewController {
 //
 //    }
 
-  
-        
-        
-    
-    
-    
     //Mark: Passing data for pop-up
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
