@@ -51,9 +51,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var viewTestemunha2: UIView!
     
-    
     @IBOutlet weak var viewTestemunha2_1: UIView!
-
     
     @IBOutlet weak var viewRéu: UIView!
     
@@ -216,23 +214,118 @@ class GameViewController: UIViewController {
     func gerentBubble(){
         
         switch rounds {
+            
         case 1:
+            
             //Escondendo Balões de identificação
+            if indexArray == 0 {
+                
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+            if indexArray == 1 {
+                
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = false
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+            else if indexArray == 2 {
+                
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = false
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+           
+            
+        case 2:
+            
+            
+            if indexArray == 3{
+             
+              //namePerson.text = "PROMOTORIA"
+               
+                
+                
+                
+            }
+            else if indexArray == 4{
+                
+                
+                //            namePerson.text = "DEFESA"
+                
+                
+                
+            }
+            else if indexArray == 5{
+                
+                
+                //            namePerson.text = "JURI"
+               
+                
+                if indexArray == 3{
+                    
+                   
+                    
+                    
+                    
+                    //                namePerson.text = "Promotoria"
+                   
+                    
+                    
+                    
+                }
+                else if indexArray == 4{
+                    
+                    
+                    //                namePerson.text = "defesa"
+                   
+                    
+                    
+                }
+                else if indexArray == 5{
+                    
+                    
+                    //                namePerson.text = "juri"
+                    
+                }
+            }
+            
+            
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
             viewTestemunha2_1.isHidden = true
             viewRéu.isHidden = true
-            viewPromotoria.isHidden = true
+            viewPromotoria.isHidden = false
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
             viewJuri3.isHidden = true
             
-        case 2:
-            print("gerenciar aqui")
+            
+            
         default:
             return
         }
         
+       
         
     }
     
@@ -337,8 +430,8 @@ class GameViewController: UIViewController {
         
         if indexArray == 0{
             
-//            namePerson.text = "PREPARE SEU ARGUMENTO!"
-//            funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
+            //namePerson.text = "PREPARE SEU ARGUMENTO!"
+            //funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
             time = tempoDosJogadores[indexArray]
             startButton.isHidden = false
             activeButton = false
@@ -350,18 +443,13 @@ class GameViewController: UIViewController {
             
             //Round 1
             powerUpPopUP()
-            
           
-//            namePerson.text = "TURNO 1!"
-//            funcPerson.text = "apresente sua acusação"
+            //namePerson.text = "TURNO 1!"
+            //funcPerson.text = "apresente sua acusação"
             timerLabel.text = ("0:30")
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
-            viewPromotoria.isHidden = false
-            
-            
-            
             
             
         }
@@ -425,29 +513,25 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 5{
             
-
-//            namePerson.text = "JURI"
-//            funcPerson.text = "PODE FAZER UMA PERGUNTA"
+            //juri
             timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
+            
             if indexArray == 3{
-                
+
                 //Round 2
                 powerUpPopUP()
-                
-                
-                
+
 //                namePerson.text = "Promotoria"
 //                funcPerson.text = "sua vez"
                 timerLabel.text = ("1:30")
                 startButton.isHidden = false
                 activeButton = false
                 time = tempoDosJogadores[indexArray]
-                
-                
-                
+
             }
+                
             else if indexArray == 4{
                 
                 
