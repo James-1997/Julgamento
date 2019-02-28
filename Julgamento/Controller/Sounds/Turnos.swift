@@ -17,7 +17,7 @@ class Turnos {
         let aSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "PowerUp25", ofType: "mp3")!)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf:aSound as URL)
-            audioPlayer!.numberOfLoops = -1
+            audioPlayer!.numberOfLoops = 0
             audioPlayer!.prepareToPlay()
             audioPlayer!.play()
         } catch {
