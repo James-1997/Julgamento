@@ -11,7 +11,6 @@ import UIKit
 class StoryViewController: UIViewController {
 
     @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var storyTitle: UILabel!
     @IBOutlet weak var storyText: UILabel!
     @IBOutlet weak var storyIdLabel: UILabel!
     
@@ -35,8 +34,8 @@ class StoryViewController: UIViewController {
         
         storyIdLabel.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         storyIdLabel.shadowOffset =  CGSize(width: 4, height: 4)
-       storyIdLabel.layer.shadowRadius = 6
-       storyIdLabel.layer.shadowOpacity = -3
+        storyIdLabel.layer.shadowRadius = 6
+        storyIdLabel.layer.shadowOpacity = -3
         
         //515255
     }

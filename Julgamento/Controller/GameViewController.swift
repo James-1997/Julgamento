@@ -170,10 +170,10 @@ class GameViewController: UIViewController {
     @IBAction func start(_ sender: Any) {
        
         if activeButton == false {
-            if animationPranchete == true {
-                upView()
-                animationPranchete = false
-            }
+//            if animationPranchete == true {
+//                upView()
+//                animationPranchete = false
+//            }
             
             activeButton = true
             timerGame()
@@ -265,6 +265,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        startButton.isHidden = true
         //gestureRecognizer
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         leftSwipe.direction = .left
@@ -312,6 +313,12 @@ class GameViewController: UIViewController {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 320})
         animationPranchete = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y -= 320
+                                                        self.startButton.isHidden = false
+            })
+        }
+        
     }
 
     
@@ -432,22 +439,17 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 2 {
             
-            DispatchQueue.main.asyncAfter(deadline: .now()+4.0) {
-                self.powerUpPopUP()
+            self.powerUpPopUP()
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:30")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+                self.rounds += 1
             }
-            gerentBubble()
-            timerLabel.text = ("0:30")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-            rounds += 1
-            
-            
             //Acabou o tempo
-            
         }
-        
-        
         
     }
     
@@ -458,39 +460,39 @@ class GameViewController: UIViewController {
         activeButton = false
         
         if indexArray == 3{
-            gerentBubble()
-            //Round 2
+            
             powerUpPopUP()
-            
-            timerLabel.text = ("1:30")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-            
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                //Round 2
+                self.timerLabel.text = ("1:30")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
         }
         else if indexArray == 4{
-            
-            gerentBubble()
-            timerLabel.text = ("1:30")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-            
             //Prova do crime popUp
             provaDoCrimePopUp()
-           
+            
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("1:30")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
             
         }
-        else if indexArray == 5{
-            gerentBubble()
-            timerLabel.text = ("0:00")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
+        else if indexArray == 5 {
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:00")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
         }
-        
-        
-        
     }
     
     // MARK: ROUND 3
@@ -500,45 +502,51 @@ class GameViewController: UIViewController {
             
             //Round 3 PopUp
             powerUpPopUP()
-            gerentBubble()
-            timerLabel.text = ("0:30")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:30")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
             
         }
         else if indexArray == 7 {
-
-            gerentBubble()
-            timerLabel.text = ("1:30")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-           
             //Acabou o tempo popUP
             powerUpPopUP()
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("1:30")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
+            
         }
         else if indexArray == 8 {
-            gerentBubble()
-            timerLabel.text = ("0:00")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-            
             //Acabou o tempo popUP
             powerUpPopUP()
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:00")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
             
         }
         else if indexArray == 9 {
-            gerentBubble()
-            timerLabel.text = ("0:00")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-            rounds += 1
-            
             //Acabou o tempo popUP
             powerUpPopUP()
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:00")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+                self.rounds += 1
+            }
+            
         }
         
     }
@@ -551,36 +559,38 @@ class GameViewController: UIViewController {
         
         activeButton = false
         if indexArray == 10 {
-            gerentBubble()
-//            print("promotor")
             powerUpPopUP()
-            
-            timerLabel.text = ("1:30")
-            activeButton = false
-            startButton.isHidden = false
-            time = tempoDosJogadores[indexArray]
-            
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("1:30")
+                self.activeButton = false
+                self.startButton.isHidden = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
         }
         else if indexArray == 11 {
-            gerentBubble()
-            timerLabel.text = ("1:30")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-           
             //Power Up
             provaDoCrimePopUp()
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("1:30")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
            
         }
         else if indexArray == 12 {
-            gerentBubble()
-            timerLabel.text = ("0:00")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-            rounds += 1
-            
             powerUpPopUP()
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:00")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+                self.rounds += 1
+            }
+           
             
            
         }
@@ -592,38 +602,40 @@ class GameViewController: UIViewController {
     func round5(){
         
         if indexArray == 13 {
-          gerentBubble()
             //Round 5 Pop-UP
             powerUpPopUP()
             
-
-            timerLabel.text = ("0:30")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-           
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:30")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
         }
         else if indexArray == 14 {
-            gerentBubble()
-            timerLabel.text = ("0:30")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-            
             //Acabou o tempo popUP
             powerUpPopUP()
-            
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:30")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+            }
         }
         else if indexArray == 15 {
-            gerentBubble()
-            timerLabel.text = ("0:00")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
-            rounds += 1
-            
             //Acabou o tempo popUP
             powerUpPopUP()
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:00")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+                self.rounds += 1
+            }
+            
         }
         
     }
