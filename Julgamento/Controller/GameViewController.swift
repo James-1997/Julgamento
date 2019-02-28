@@ -37,9 +37,6 @@ class GameViewController: UIViewController {
     @IBOutlet weak var advgDefesa: UIImageView!
     
     @IBOutlet weak var promotoria: UIImageView!
-    
-    
-    
     @IBOutlet weak var backGroudImage: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
@@ -138,7 +135,7 @@ class GameViewController: UIViewController {
     // funcao usada p/ dizer o que vai acontecer durante o decorrer do timer
     @objc func action1 () {
         
-        
+        gerentBubble()
         startButton.isHidden = true
         temporizador()
         
@@ -267,14 +264,30 @@ class GameViewController: UIViewController {
              
               //namePerson.text = "PROMOTORIA"
                
-                
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = false
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
                 
                 
             }
             else if indexArray == 4{
                 
                 
-                //            namePerson.text = "DEFESA"
+                //namePerson.text = "DEFESA"
+                
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = false
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
                 
                 
                 
@@ -282,49 +295,160 @@ class GameViewController: UIViewController {
             else if indexArray == 5{
                 
                 
-                //            namePerson.text = "JURI"
-               
+                // namePerson.text = "JURI"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = false
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
                 
-                if indexArray == 3{
-                    
-                   
-                    
-                    
-                    
-                    //                namePerson.text = "Promotoria"
-                   
-                    
-                    
-                    
-                }
-                else if indexArray == 4{
-                    
-                    
-                    //                namePerson.text = "defesa"
-                   
-                    
-                    
-                }
-                else if indexArray == 5{
-                    
-                    
-                    //                namePerson.text = "juri"
-                    
-                }
             }
             
+        case 3:
             
-            viewTestemunha1.isHidden = true
-            viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = true
-            viewRéu.isHidden = true
-            viewPromotoria.isHidden = false
-            viewJúri.isHidden = true
-            viewJúri2.isHidden = true
-            viewJuri3.isHidden = true
+            if indexArray == 6 {
+  
+                // namePerson.text = "TESTEMUNHA"
+                viewTestemunha1.isHidden = false
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+
+                
+            }
+            else if indexArray == 7 {
+                
+                // namePerson.text = "PROMOTORIA"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = false
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+              
+            }
+            else if indexArray == 8 {
+                
+                // namePerson.text = "DEFESA"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = false
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+              
+                
+            }
+            else if indexArray == 9 {
+                
+                // namePerson.text = "JURI"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
             
+         case 4:
             
+            if indexArray == 10 {
             
+                // namePerson.text = "Promotoria"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = false
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+            else if indexArray == 11 {
+                
+                // namePerson.text = "defesa"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = false
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+            else if indexArray == 12 {
+                
+                // namePerson.text = "juri"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+        
+        case 5:
+            
+            if indexArray == 13 {
+               
+                // namePerson.text = "Promotoria"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = false
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+            else if indexArray == 14 {
+                
+                // namePerson.text = "defesa"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = false
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = true
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+                
+            }
+            else if indexArray == 15 {
+                
+                // namePerson.text = "juri"
+                viewTestemunha1.isHidden = true
+                viewTestemunha2.isHidden = true
+                viewTestemunha2_1.isHidden = true
+                viewRéu.isHidden = true
+                viewPromotoria.isHidden = true
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = true
+                viewJuri3.isHidden = true
+      
+            }
+      
         default:
             return
         }
@@ -481,15 +605,13 @@ class GameViewController: UIViewController {
     // MARK: ROUND 2
     
     func round2(){
-        
-        
+      
         activeButton = false
+        
         if indexArray == 3{
             
             //Round 2
             powerUpPopUP()
-            
-            
             
 //            namePerson.text = "PROMOTORIA"
 //            funcPerson.text = "sua vez"
@@ -497,8 +619,6 @@ class GameViewController: UIViewController {
             startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
-            
-           
             
         }
         else if indexArray == 4{
@@ -523,49 +643,6 @@ class GameViewController: UIViewController {
             startButton.isHidden = false
             activeButton = false
             
-            if indexArray == 3{
-
-                //Round 2
-                powerUpPopUP()
-
-//                namePerson.text = "Promotoria"
-//                funcPerson.text = "sua vez"
-                timerLabel.text = ("1:30")
-                startButton.isHidden = false
-                activeButton = false
-                time = tempoDosJogadores[indexArray]
-
-            }
-                
-            else if indexArray == 4{
-                
-                
-//                namePerson.text = "defesa"
-//                funcPerson.text = "SUA VEZ"
-                timerLabel.text = ("1:30")
-                startButton.isHidden = false
-                activeButton = false
-                time = tempoDosJogadores[indexArray]
-                
-                //Prova do crime popUp
-                provaDoCrimePopUp()
-                
-                
-            }
-            else if indexArray == 5{
-                
-                
-//                namePerson.text = "juri"
-//                funcPerson.text = "PODE FAZER UMA PERGUNTA"
-                timerLabel.text = ("0:00")
-                startButton.isHidden = false
-                activeButton = false
-                time = tempoDosJogadores[indexArray]
-                rounds += 1
-                
-                //Acabou o Tempo
-                powerUpPopUP()
-            }
         }
         
         
