@@ -63,8 +63,6 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var viewJuri3: UIView!
 
-    //Botoes do Balão de Identificação
-    
    
     //POP-UP Connections
    
