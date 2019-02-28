@@ -13,6 +13,7 @@ class EndPopUpViewController: UIViewController {
     @IBOutlet weak var EndOfTurnView: UIView!
     @IBOutlet weak var popUpLabel: UILabel!
     
+    @IBOutlet weak var popUpImage: UIImageView!
     
     //MARK: Variáveis
     var powerUpDaVez: PowerUpModel? = nil
@@ -54,13 +55,14 @@ class EndPopUpViewController: UIViewController {
             
            
             powerUpDaVez = arrayPowerUp[0]
-            popUpLabel.text = powerUpDaVez!.name
+            
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
             //Defesa
         case 2:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
             
         //Round 2 --- Prova do Crime
@@ -69,19 +71,19 @@ class EndPopUpViewController: UIViewController {
         case 3:
             
             powerUpDaVez = arrayPowerUp[1]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
             //Defesa
         case 4:
             
             powerUpDaVez = arrayPowerUp[6]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
             //Juri
         case 5:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
         //round 3
             
@@ -89,25 +91,25 @@ class EndPopUpViewController: UIViewController {
         case 6:
             
             powerUpDaVez = arrayPowerUp[2]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
             //Promotoria
         case 7:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
             //Defesa
         case 8:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
     
             //Juri
         case 9:
            
             powerUpDaVez = arrayPowerUp[3]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
         //Round 4 -- Power-UP
           
@@ -115,13 +117,13 @@ class EndPopUpViewController: UIViewController {
         case 10:
             
             powerUpDaVez = arrayPowerUp[8]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
            
             //Defesa
         case 11:
             
             powerUpDaVez = arrayPowerUp[4]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
         //Round 5
             
@@ -129,19 +131,19 @@ class EndPopUpViewController: UIViewController {
         case 12:
             
             powerUpDaVez = arrayPowerUp[4]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
             //Defesa
         case 13:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
             //Juri
         case 14:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpLabel.text = powerUpDaVez!.name
+            popUpImage.image = powerUpDaVez!.backgroundImage
             
             
         default:
