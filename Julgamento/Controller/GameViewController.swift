@@ -77,14 +77,18 @@ class GameViewController: UIViewController {
     var numDeJogadores: Int?
     var indexArrayPopUp: Int!
     let shapeLayer = CAShapeLayer()
-    
+    var animationPranchete: Bool = false
     
     
     //MARK Funções
     
     @IBAction func start(_ sender: Any) {
         if activeButton == false {
-            upView()
+            if animationPranchete == true {
+                upView()
+                animationPranchete = false
+            }
+            
             activeButton = true
             timerGame()
             
@@ -459,6 +463,7 @@ class GameViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 320})
+        animationPranchete = true
     }
 
     
