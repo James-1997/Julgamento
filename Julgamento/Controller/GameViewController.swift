@@ -67,7 +67,6 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var viewJuri3: UIView!
 
-    @IBOutlet weak var viewAdvogadoDeDefesa: UIView!
     //Botoes do Balão de Identificação
     
    
