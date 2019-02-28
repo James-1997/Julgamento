@@ -214,13 +214,8 @@ class GameViewController: UIViewController {
     
     func gerentBubble(){
         
-        switch rounds {
-            
-        case 1:
-            
-            //Escondendo Balões de identificação
-            if indexArray == 0 {
-                
+        switch indexArray {
+        case 0 :
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -230,8 +225,8 @@ class GameViewController: UIViewController {
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
                 
-            }
-            if indexArray == 1 {
+       
+        case 1 :
                 
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
@@ -242,8 +237,8 @@ class GameViewController: UIViewController {
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
                 
-            }
-            else if indexArray == 2 {
+        
+        case 2 :
                 
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
@@ -253,17 +248,11 @@ class GameViewController: UIViewController {
                 viewJúri.isHidden = true
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
-                
-            }
+            
            
             
-        case 2:
-            
-            
-            if indexArray == 3{
-             
-              //namePerson.text = "PROMOTORIA"
-               
+        case 3 :
+        
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -274,8 +263,7 @@ class GameViewController: UIViewController {
                 viewJuri3.isHidden = true
                 
                 
-            }
-            else if indexArray == 4{
+        case 4 :
                 
                 
                 //namePerson.text = "DEFESA"
@@ -291,8 +279,7 @@ class GameViewController: UIViewController {
                 
                 
                 
-            }
-            else if indexArray == 5{
+        case 5 :
                 
                 
                 // namePerson.text = "JURI"
@@ -304,12 +291,8 @@ class GameViewController: UIViewController {
                 viewJúri.isHidden = true
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
-                
-            }
             
-        case 3:
-            
-            if indexArray == 6 {
+        case 6 :
   
                 // namePerson.text = "TESTEMUNHA"
                 viewTestemunha1.isHidden = false
@@ -320,10 +303,8 @@ class GameViewController: UIViewController {
                 viewJúri.isHidden = true
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
-
-                
-            }
-            else if indexArray == 7 {
+    
+        case 7 :
                 
                 // namePerson.text = "PROMOTORIA"
                 viewTestemunha1.isHidden = true
@@ -335,8 +316,8 @@ class GameViewController: UIViewController {
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
               
-            }
-            else if indexArray == 8 {
+        
+        case 8 :
                 
                 // namePerson.text = "DEFESA"
                 viewTestemunha1.isHidden = true
@@ -347,11 +328,9 @@ class GameViewController: UIViewController {
                 viewJúri.isHidden = true
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
+        
                 
-              
-                
-            }
-            else if indexArray == 9 {
+        case 9 :
                 
                 // namePerson.text = "JURI"
                 viewTestemunha1.isHidden = true
@@ -362,12 +341,9 @@ class GameViewController: UIViewController {
                 viewJúri.isHidden = false
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
-                
-            }
+        
             
-         case 4:
-            
-            if indexArray == 10 {
+        case 10:
             
                 // namePerson.text = "Promotoria"
                 viewTestemunha1.isHidden = true
@@ -379,8 +355,8 @@ class GameViewController: UIViewController {
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
                 
-            }
-            else if indexArray == 11 {
+        
+        case 11 :
                 
                 // namePerson.text = "defesa"
                 viewTestemunha1.isHidden = true
@@ -392,8 +368,8 @@ class GameViewController: UIViewController {
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
                 
-            }
-            else if indexArray == 12 {
+        
+        case 12 :
                 
                 // namePerson.text = "juri"
                 viewTestemunha1.isHidden = true
@@ -405,11 +381,9 @@ class GameViewController: UIViewController {
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
                 
-            }
         
-        case 5:
-            
-            if indexArray == 13 {
+        
+        case 13 :
                
                 // namePerson.text = "Promotoria"
                 viewTestemunha1.isHidden = true
@@ -421,8 +395,7 @@ class GameViewController: UIViewController {
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
                 
-            }
-            else if indexArray == 14 {
+        case 14 :
                 
                 // namePerson.text = "defesa"
                 viewTestemunha1.isHidden = true
@@ -434,8 +407,7 @@ class GameViewController: UIViewController {
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
                 
-            }
-            else if indexArray == 15 {
+        case 15 :
                 
                 // namePerson.text = "juri"
                 viewTestemunha1.isHidden = true
@@ -447,15 +419,12 @@ class GameViewController: UIViewController {
                 viewJúri2.isHidden = true
                 viewJuri3.isHidden = true
       
-            }
-      
         default:
             return
         }
         
-       
-        
     }
+
     
     
     // MARK: Animacao de descer prancheta
@@ -562,9 +531,9 @@ class GameViewController: UIViewController {
             //namePerson.text = "PREPARE SEU ARGUMENTO!"
             //funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
             time = tempoDosJogadores[indexArray]
-            startButton.isHidden = false
-            activeButton = false
-            
+//          startButton.isHidden = false
+          activeButton = false
+            gerentBubble()
             powerUpPopUP()
         }
     
@@ -572,11 +541,11 @@ class GameViewController: UIViewController {
             
             //Round 1
             powerUpPopUP()
-          
+            gerentBubble()
             //namePerson.text = "TURNO 1!"
             //funcPerson.text = "apresente sua acusação"
             timerLabel.text = ("0:30")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             
@@ -584,11 +553,11 @@ class GameViewController: UIViewController {
         }
         else if indexArray == 2 {
             
-            
+            gerentBubble()
 //            namePerson.text = "DEFESA"
 //            funcPerson.text = "apresente-se"
             timerLabel.text = ("0:30")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             rounds += 1
@@ -609,14 +578,14 @@ class GameViewController: UIViewController {
         activeButton = false
         
         if indexArray == 3{
-            
+            gerentBubble()
             //Round 2
             powerUpPopUP()
             
 //            namePerson.text = "PROMOTORIA"
 //            funcPerson.text = "sua vez"
             timerLabel.text = ("1:30")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             
@@ -627,7 +596,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "DEFESA"
 //            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("1:30")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             
@@ -640,9 +609,9 @@ class GameViewController: UIViewController {
             
             //juri
             timerLabel.text = ("0:00")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
-            
+
         }
         
         
@@ -660,7 +629,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "TESTEMUNHA"
 //            funcPerson.text = "TESTEMUNHE"
             timerLabel.text = ("0:30")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             
@@ -669,7 +638,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "PROMOTORIA"
 //            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("1:30")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
            
@@ -681,7 +650,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "DEFESA"
 //            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("0:00")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             
@@ -694,7 +663,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "JURI"
 //            funcPerson.text = "PODE FAZER UMA PERGUNTA"
             timerLabel.text = ("0:00")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             rounds += 1
@@ -714,14 +683,14 @@ class GameViewController: UIViewController {
         activeButton = false
         if indexArray == 10 {
             
-            print("promotor")
+//            print("promotor")
             powerUpPopUP()
             
 //            namePerson.text = "Promotoria"
 //            funcPerson.text = "sua vez"
             timerLabel.text = ("1:30")
             activeButton = false
-            startButton.isHidden = false
+//            startButton.isHidden = false
             time = tempoDosJogadores[indexArray]
             
         }
@@ -730,7 +699,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "defesa"
 //            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("1:30")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
            
@@ -743,7 +712,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "juri"
 //            funcPerson.text = "PODE FAZER UMA PERGUNTA"
             timerLabel.text = ("0:00")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             rounds += 1
@@ -767,7 +736,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "Promotoria"
 //            funcPerson.text = "sua vez"
             timerLabel.text = ("0:30")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
            
@@ -777,7 +746,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "defesa"
 //            funcPerson.text = "SUA VEZ"
             timerLabel.text = ("0:30")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             
@@ -790,7 +759,7 @@ class GameViewController: UIViewController {
 //            namePerson.text = "juri"
 //            funcPerson.text = "VOTA"
             timerLabel.text = ("0:00")
-            startButton.isHidden = false
+//            startButton.isHidden = false
             activeButton = false
             time = tempoDosJogadores[indexArray]
             rounds += 1
@@ -868,12 +837,416 @@ class GameViewController: UIViewController {
 //        endPopUpViewController.dataIndexArray = dataIndexArray
 //
 //    }
+   
+    // MARK: Outlets dos botões
     
     
+    @IBOutlet weak var test1ButtonOut: UIButton!
+    
+    
+    @IBOutlet weak var test2ButtonOut: UIButton!
+   
+    
+    @IBOutlet weak var testAndDefButtonOut: UIButton!
+    
+    
+    @IBOutlet weak var promButtonOut: UIButton!
+    
+    
+    @IBOutlet weak var reuButtonOut: UIButton!
+    
+    
+    @IBOutlet weak var juri1ButtonOut: UIButton!
+    
+    
+    @IBOutlet weak var juri2ButtonOut: UIButton!
+    
+    
+    @IBOutlet weak var juri3ButtonOut: UIButton!
+    
+    
+    
+    func setLabelText() {
+        test1ButtonOut.setTitle("VAI", for: .normal)
+        test2ButtonOut.setTitle("VAI", for: .normal)
+        testAndDefButtonOut.setTitle("VAI", for: .normal)
+        promButtonOut.setTitle("VAI", for: .normal)
+        reuButtonOut.setTitle("VAI", for: .normal)
+        juri1ButtonOut.setTitle("VAI", for: .normal)
+        juri2ButtonOut.setTitle("VAI", for: .normal)
+        juri3ButtonOut.setTitle("VAI", for: .normal)
+    }
+    
+    
+    // MARK: actions dos botões
 
+    @IBAction func test1Action(_ sender: Any) {
+        
+        if activeButton == false {
+            test1ButtonOut.setTitle("VAI", for: .normal)
+            if animationPranchete == true {
+                upView()
+                animationPranchete = false
+            }
+            
+            activeButton = true
+            timerGame()
+            
+            // animaçao do circulo
+            
+            let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
+            
+            // basicAnimate.toValue = -1
+            if tempoDosJogadores[indexArray] == 15{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 30{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 33
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 90{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 91.5
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            }
+            test1ButtonOut.setTitle("PRONTO", for: .normal)
+        }
+        
+    }
+    
+    @IBAction func test2Action(_ sender: Any) {
+        if activeButton == false {
+            if animationPranchete == true {
+                upView()
+                animationPranchete = false
+            }
+            
+            activeButton = true
+            timerGame()
+            
+            // animaçao do circulo
+            
+            let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
+            
+            // basicAnimate.toValue = -1
+            if tempoDosJogadores[indexArray] == 15{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 30{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 33
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 90{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 91.5
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            }
+            
+            test2ButtonOut.setTitle("PRONTO", for: .normal)
+        }
+    }
+    
 
-
-
-
+    
+    @IBAction func test3DefAction(_ sender: Any) {
+        if activeButton == false {
+            if animationPranchete == true {
+                upView()
+                animationPranchete = false
+            }
+            
+            activeButton = true
+            timerGame()
+            
+            // animaçao do circulo
+            
+            let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
+            
+            // basicAnimate.toValue = -1
+            if tempoDosJogadores[indexArray] == 15{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 30{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 33
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 90{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 91.5
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            }
+            
+            testAndDefButtonOut.setTitle("PRONTO", for: .normal)
+        }
+    }
+    
+    
+    @IBAction func reuAction(_ sender: Any) {
+        if activeButton == false {
+            if animationPranchete == true {
+                upView()
+                animationPranchete = false
+            }
+            
+            activeButton = true
+            timerGame()
+            
+            // animaçao do circulo
+            
+            let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
+            
+            // basicAnimate.toValue = -1
+            if tempoDosJogadores[indexArray] == 15{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 30{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 33
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 90{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 91.5
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            }
+            
+            reuButtonOut.setTitle("PRONTO", for: .normal)
+        }
+    }
+    
+    @IBAction func promAction(_ sender: Any) {
+        if activeButton == false {
+            if animationPranchete == true {
+                upView()
+                animationPranchete = false
+            }
+            
+            activeButton = true
+            timerGame()
+            
+            // animaçao do circulo
+            
+            let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
+            
+            // basicAnimate.toValue = -1
+            if tempoDosJogadores[indexArray] == 15{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 30{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 33
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 90{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 91.5
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            }
+            
+            promButtonOut.setTitle("PRONTO", for: .normal)
+        }
+    }
+    
+    @IBAction func juri1Action(_ sender: Any) {
+        if activeButton == false {
+            if animationPranchete == true {
+                upView()
+                animationPranchete = false
+            }
+            
+            activeButton = true
+            timerGame()
+            
+            // animaçao do circulo
+            
+            let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
+            
+            // basicAnimate.toValue = -1
+            if tempoDosJogadores[indexArray] == 15{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 30{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 33
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 90{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 91.5
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            }
+            
+            juri1ButtonOut.setTitle("PRONTO", for: .normal)
+        }
+    }
+    
+    
+    @IBAction func juri2Action(_ sender: Any) {
+        if activeButton == false {
+            if animationPranchete == true {
+                upView()
+                animationPranchete = false
+            }
+            
+            activeButton = true
+            timerGame()
+            
+            // animaçao do circulo
+            
+            let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
+            
+            // basicAnimate.toValue = -1
+            if tempoDosJogadores[indexArray] == 15{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 30{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 33
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 90{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 91.5
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            }
+            
+            juri2ButtonOut.setTitle("PRONTO", for: .normal)
+            
+        }
+    }
+    
+    
+    @IBAction func juri3Action(_ sender: Any) {
+        if activeButton == false {
+            if animationPranchete == true {
+                upView()
+                animationPranchete = false
+            }
+            
+            activeButton = true
+            timerGame()
+            
+            // animaçao do circulo
+            
+            let basicAnimate = CABasicAnimation(keyPath: "strokeEnd")
+            
+            // basicAnimate.toValue = -1
+            if tempoDosJogadores[indexArray] == 15{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 18
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 30{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 33
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            } else if tempoDosJogadores[indexArray] == 90{
+                basicAnimate.toValue = -1
+                basicAnimate.duration = Double(tempoDosJogadores[indexArray]) + 91.5
+                basicAnimate.fillMode = CAMediaTimingFillMode.forwards
+                basicAnimate.isRemovedOnCompletion = false
+                
+                shapeLayer.add(basicAnimate, forKey: "basic")
+                
+            }
+            
+            juri3ButtonOut.setTitle("PRONTO", for: .normal)
+        }
+    }
+    
 
 }

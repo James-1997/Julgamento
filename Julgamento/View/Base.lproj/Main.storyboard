@@ -639,6 +639,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                        <connections>
+                                            <action selector="test1Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="gPP-T7-54e"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -685,6 +688,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                        <connections>
+                                            <action selector="test2Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="ydm-vJ-ldW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -731,6 +737,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                        <connections>
+                                            <action selector="test3DefAction:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="9e3-da-tyf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -777,6 +786,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                        <connections>
+                                            <action selector="reuAction:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="z70-Da-pm0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -823,6 +835,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                        <connections>
+                                            <action selector="promAction:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="QlK-PR-S0W"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -869,6 +884,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                        <connections>
+                                            <action selector="juri1Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="dd1-Q4-ufg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -915,6 +933,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                        <connections>
+                                            <action selector="juri2Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="QZn-os-md2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -961,6 +982,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                        <connections>
+                                            <action selector="juri3Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="NH6-51-yb7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1030,12 +1054,20 @@
                         <outlet property="advgDefesa" destination="AP3-LX-Tre" id="6iT-zf-NyA"/>
                         <outlet property="backGroudImage" destination="YmH-wn-vPA" id="cqQ-GE-eLh"/>
                         <outlet property="juri1" destination="FhT-GH-rbJ" id="4rC-Lw-Zxz"/>
+                        <outlet property="juri1ButtonOut" destination="H7c-oI-IsF" id="2bE-Nh-8Vn"/>
                         <outlet property="juri2" destination="MPf-Kq-DF1" id="Bma-fL-Db4"/>
+                        <outlet property="juri2ButtonOut" destination="AuR-PD-5Fu" id="Rak-m7-Qd6"/>
                         <outlet property="juri3" destination="6ag-5o-iH0" id="OLV-P4-Jhv"/>
+                        <outlet property="juri3ButtonOut" destination="wuG-Ez-aFy" id="Pbo-DF-c6n"/>
                         <outlet property="pranchetaView" destination="rGC-LQ-2b4" id="fUl-vZ-dW0"/>
+                        <outlet property="promButtonOut" destination="kSx-jQ-aaO" id="kRQ-B6-RIA"/>
                         <outlet property="promotoria" destination="rfT-7x-KMM" id="ANY-1Q-lRG"/>
                         <outlet property="reu" destination="HSl-5b-nWA" id="Ose-qJ-d1y"/>
+                        <outlet property="reuButtonOut" destination="RhT-Lm-yzl" id="0Sd-rN-o9P"/>
                         <outlet property="startButton" destination="RRZ-ul-ASm" id="V2w-6s-IOZ"/>
+                        <outlet property="test1ButtonOut" destination="pz0-eK-Web" id="guo-E3-tRN"/>
+                        <outlet property="test2ButtonOut" destination="9rZ-8u-qoq" id="IX3-ph-KX8"/>
+                        <outlet property="testAndDefButtonOut" destination="LvZ-vJ-dkg" id="aIF-3A-izq"/>
                         <outlet property="testemunha1" destination="Bxd-cc-73o" id="Oyz-lN-oPd"/>
                         <outlet property="testemunha2" destination="LrA-RW-Q6k" id="Mvc-JK-xM3"/>
                         <outlet property="testemunhaCase4" destination="xnf-Yt-1Mj" id="4LF-vD-gfB"/>
