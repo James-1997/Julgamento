@@ -101,7 +101,7 @@ class GameViewController: UIViewController {
     var numDeVotosCulpado: Int = 0
     var totalDeVotos: Int = 0
     
-    var isHiddenForEl: Bool = false
+    var endTime: Bool = false
     
     var decisãoFinal: String?
     
@@ -209,7 +209,10 @@ class GameViewController: UIViewController {
             
             }
             
-            startButton.isHidden = true
+//            startButton.isHidden = true
+            startButton.setTitle("Terminei", for: .normal)
+        } else {
+            endTime = true
         }
     }
     
@@ -254,7 +257,6 @@ class GameViewController: UIViewController {
         let test = storyboard.instantiateViewController(withIdentifier: "ProvaDoCrimeViewController")
         
         self.present(test, animated: true) {
-            self.isHiddenForEl = true
             self.timer.invalidate()
         }
     
@@ -643,6 +645,11 @@ class GameViewController: UIViewController {
     // MARK: TEMPORIZADOR
     
     func temporizador (){
+        if endTime == true {
+            indexArray += 1
+            self.timer.invalidate()
+            gerRound()
+        }
         
         let min =  time/60
         let seg = time%60
