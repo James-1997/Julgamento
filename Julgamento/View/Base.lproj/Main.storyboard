@@ -910,20 +910,6 @@
                                     <constraint firstItem="36e-SN-sSs" firstAttribute="top" secondItem="c1V-J7-ORU" secondAttribute="bottom" constant="8" id="yR7-9d-571"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PREPAREM SEU ARGUMENTO!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41I-Ml-0O4">
-                                <rect key="frame" x="430" y="278" width="1060" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="50"/>
-                                <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descricao" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6N-Yo-NbO">
-                                <rect key="frame" x="70" y="201" width="529" height="229"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="50"/>
-                                <color key="textColor" red="0.96951931715011597" green="0.94742757081985474" blue="0.79694074392318726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="XAN-TW-4S4" firstAttribute="centerX" secondItem="xnf-Yt-1Mj" secondAttribute="centerX" id="0WR-eu-vx1"/>
@@ -975,11 +961,9 @@
                     <connections>
                         <outlet property="advgDefesa" destination="AP3-LX-Tre" id="6iT-zf-NyA"/>
                         <outlet property="backGroudImage" destination="YmH-wn-vPA" id="cqQ-GE-eLh"/>
-                        <outlet property="funcPerson" destination="G6N-Yo-NbO" id="Chb-bm-UKJ"/>
                         <outlet property="juri1" destination="FhT-GH-rbJ" id="4rC-Lw-Zxz"/>
                         <outlet property="juri2" destination="MPf-Kq-DF1" id="Bma-fL-Db4"/>
                         <outlet property="juri3" destination="6ag-5o-iH0" id="OLV-P4-Jhv"/>
-                        <outlet property="namePerson" destination="41I-Ml-0O4" id="SpC-VZ-2g4"/>
                         <outlet property="pranchetaView" destination="rGC-LQ-2b4" id="fUl-vZ-dW0"/>
                         <outlet property="promotoria" destination="rfT-7x-KMM" id="ANY-1Q-lRG"/>
                         <outlet property="reu" destination="HSl-5b-nWA" id="Ose-qJ-d1y"/>
