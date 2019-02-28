@@ -40,9 +40,12 @@
                                     <constraint firstAttribute="width" constant="1920" id="pNL-Ll-ZGM"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
-                                <rect key="frame" x="702" y="707" width="517" height="155"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
+                                <rect key="frame" x="702" y="710" width="517" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="0UT-aT-QiY"/>
+                                    <constraint firstAttribute="width" constant="517" id="9Hp-QI-EoC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="JOGAR" backgroundImage="botao_sem">
@@ -61,8 +64,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="JXi-Nr-o13" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JoV-Mn-E25"/>
                             <constraint firstItem="qjz-MW-qFu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="icY-iF-Qzt"/>
                             <constraint firstItem="qjz-MW-qFu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nFi-nO-6bi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JXi-Nr-o13" secondAttribute="bottom" constant="155" id="tb4-JN-lk1"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -573,12 +578,12 @@
                                     <constraint firstAttribute="width" constant="200" id="tbZ-zY-bSq"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-ul-ASm">
-                                <rect key="frame" x="696" y="465" width="529" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-ul-ASm" customClass="buttonFocus" customModule="Julgamento" customModuleProvider="target">
+                                <rect key="frame" x="799" y="480" width="323" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="373" id="SQq-3l-Rm9"/>
-                                    <constraint firstAttribute="height" constant="150" id="xJM-W7-kqE"/>
+                                    <constraint firstAttribute="width" constant="323" id="SQq-3l-Rm9"/>
+                                    <constraint firstAttribute="height" constant="120" id="xJM-W7-kqE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

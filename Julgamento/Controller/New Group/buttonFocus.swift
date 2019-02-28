@@ -10,12 +10,21 @@ import UIKit
 
 class buttonFocus: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    func canBecomeFocused() -> Bool {
+        return true
     }
-    */
+    
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        if context.nextFocusedView == self {
+            UIView.animate(withDuration: 0.1, animations: {() -> Void in context.nextFocusedView?.transform = CGAffineTransform(scaleX: 1.10, y: 1.10)})
+        }
+        
+        if context.previouslyFocusedView == self {
+            UIView.animate(withDuration: 0.1, animations: {() -> Void in context.nextFocusedView?.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)})
+        }
+        
+    }
+    
+    
 
 }

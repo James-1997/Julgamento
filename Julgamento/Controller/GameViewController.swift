@@ -462,7 +462,7 @@ class GameViewController: UIViewController {
       
         activeButton = false
         
-        if indexArray == 3{
+        if indexArray == 3 {
             
             powerUpPopUP()
             DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
@@ -494,6 +494,7 @@ class GameViewController: UIViewController {
                 self.startButton.isHidden = false
                 self.activeButton = false
                 self.time = tempoDosJogadores[self.indexArray]
+                self.rounds += 1
             }
         }
     }
@@ -691,6 +692,7 @@ class GameViewController: UIViewController {
            // powerUpPopUP()
             indexArray += 1
             self.timer.invalidate()
+            zeraBubble()
             gerRound()
             
         }
@@ -713,6 +715,21 @@ class GameViewController: UIViewController {
 //        endPopUpViewController.dataIndexArray = dataIndexArray
 //
 //    }
+    
+    
+    func zeraBubble(){
+        viewDecisãoDoJúri.isHidden = true
+        viewTestemunha1.isHidden = true
+        viewTestemunha2.isHidden = true
+        viewTestemunha2_1.isHidden = true
+        viewRéu.isHidden = true
+        viewPromotoria.isHidden = true
+        viewJúri.isHidden = true
+        viewJúri2.isHidden = true
+        viewJuri3.isHidden = true
+    }
+    
+    
    
     // MARK: FUNC CONTROLADO BALÃO
     
@@ -767,8 +784,8 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = true
             viewRéu.isHidden = true
+            viewTestemunha2_1.isHidden = true
             viewPromotoria.isHidden = false
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -781,8 +798,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = false
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = true
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -794,10 +814,13 @@ class GameViewController: UIViewController {
             
             
             viewDecisãoDoJúri.isHidden = true
-            viewTestemunha1.isHidden = true
-            viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = false
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewTestemunha2_1.isHidden = false
+
+            } else{
+                viewTestemunha1.isHidden = false
+                viewTestemunha2.isHidden = false
+            }
             viewPromotoria.isHidden = true
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -809,8 +832,13 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = false
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = true
-            viewRéu.isHidden = true
+            
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
+            
             viewPromotoria.isHidden = true
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -822,8 +850,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = true
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = false
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -836,8 +867,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = false
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = true
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -850,8 +884,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = true
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = true
             viewJúri.isHidden = false
             viewJúri2.isHidden = true
@@ -864,8 +901,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = true
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = false
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -878,8 +918,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = false
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = true
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -892,8 +935,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = true
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = true
             viewJúri.isHidden = false
             viewJúri2.isHidden = true
@@ -907,8 +953,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = true
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = false
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -920,8 +969,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = false
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = true
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -933,8 +985,11 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = false
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            viewTestemunha2_1.isHidden = true
-            viewRéu.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
             viewPromotoria.isHidden = true
             viewJúri.isHidden = false
             viewJúri2.isHidden = true
