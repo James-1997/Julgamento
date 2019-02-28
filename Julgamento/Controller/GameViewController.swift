@@ -563,6 +563,8 @@ class GameViewController: UIViewController {
         if indexArray == 1 {
             
             //Round 1
+            // exemplo de como colocar os sons em cada pop up NomeDaClass.sharedHelper.playBackgroundMusic()
+            Turnos.sharedHelper.playBackgroundMusic()
             powerUpPopUP()
             gerentBubble()
             //namePerson.text = "TURNO 1!"

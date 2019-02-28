@@ -50,6 +50,8 @@ class EndPopUpViewController: UIViewController {
             
             //Promotoria
         case 1:
+            
+            
            
             powerUpDaVez = arrayPowerUp[0]
             popUpLabel.text = powerUpDaVez!.name
