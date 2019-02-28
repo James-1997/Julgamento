@@ -849,7 +849,9 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
+                                        <state key="normal" title="Vai!" backgroundImage="BVD"/>
+                                        <state key="selected" backgroundImage="BotãoVai-1"/>
+                                        <state key="focused" backgroundImage="BotãoVai-1"/>
                                         <connections>
                                             <action selector="promAction:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="QlK-PR-S0W"/>
                                         </connections>
@@ -1403,6 +1405,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BVD" width="151" height="72"/>
         <image name="Botao_SemFoco" width="479" height="151"/>
         <image name="BotãoVai-1" width="151" height="72"/>
         <image name="Selcted" width="533" height="171"/>

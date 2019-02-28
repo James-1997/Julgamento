@@ -66,6 +66,8 @@ class GameViewController: UIViewController {
    
     //POP-UP Connections
    
+    
+    //Botões 
  
     //MARK: Variáveis
     
