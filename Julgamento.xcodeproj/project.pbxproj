@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D2587662220A7F300EFF13A /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2587652220A7F300EFF13A /* ImageViewExtension.swift */; };
 		1D3B42E5221DADD2008489BF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B42E4221DADD2008489BF /* GameViewController.swift */; };
+		1D5E75222228946B00A6FD23 /* buttonFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E75212228946B00A6FD23 /* buttonFocus.swift */; };
 		1D65F805222594B4007F30C1 /* tableCellRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D65F804222594B4007F30C1 /* tableCellRules.swift */; };
 		1DC822C9221C384300D56F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC822C8221C384300D56F00 /* AppDelegate.swift */; };
 		1DC822CB221C384300D56F00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC822CA221C384300D56F00 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		1D2587652220A7F300EFF13A /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		1D3B42E4221DADD2008489BF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1D5E75212228946B00A6FD23 /* buttonFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonFocus.swift; sourceTree = "<group>"; };
 		1D65F804222594B4007F30C1 /* tableCellRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCellRules.swift; sourceTree = "<group>"; };
 		1DC822C5221C384300D56F00 /* Julgamento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Julgamento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC822C8221C384300D56F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,15 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		1D5E7523222894DB00A6FD23 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E75212228946B00A6FD23 /* buttonFocus.swift */,
+			);
+			name = Resource;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		1D65F80322259499007F30C1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +166,7 @@
 		1DC822DA221C393500D56F00 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1D5E7523222894DB00A6FD23 /* Resource */,
 				5ED2D84C222810770054FDCD /* Sounds */,
 				1D65F80322259499007F30C1 /* Cell */,
 				1D2587642220A7D200EFF13A /* Extensions */,
@@ -338,6 +350,7 @@
 				1F4C14A8222201B800D8099A /* ProvaDoCrimeViewController.swift in Sources */,
 				1F17385E221D8D150076C84F /* StoryViewController.swift in Sources */,
 				1DC822C9221C384300D56F00 /* AppDelegate.swift in Sources */,
+				1D5E75222228946B00A6FD23 /* buttonFocus.swift in Sources */,
 				1F500E20221C59C200BC3139 /* StoryModel.swift in Sources */,
 				1D65F805222594B4007F30C1 /* tableCellRules.swift in Sources */,
 				5ED2D8522228115A0054FDCD /* Turnos.swift in Sources */,

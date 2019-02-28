@@ -1139,9 +1139,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advogado de Defesa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEg-Ld-8qH">
-                                <rect key="frame" x="1185" y="817" width="250" height="35"/>
+                                <rect key="frame" x="1235" y="817" width="150" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="rub-1X-rpg"/>
+                                    <constraint firstAttribute="width" constant="150" id="OhW-EZ-lVq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="29"/>
                                 <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
