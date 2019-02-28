@@ -40,49 +40,24 @@
                                     <constraint firstAttribute="width" constant="1920" id="pNL-Ll-ZGM"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
-                                <rect key="frame" x="1281" y="345" width="463" height="166"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
+                                <rect key="frame" x="702" y="707" width="517" height="155"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" backgroundImage="botao_sem">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="JOGAR">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="38" name="Splatch"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <state key="normal" title="JOGAR" backgroundImage="botao_sem">
+                                    <color key="titleColor" red="0.0" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <state key="selected" backgroundImage="Selcted"/>
-                                <state key="focused" backgroundImage="botao_menuXX">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="JOGAR">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="smallSystem"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                                <state key="selected" title="JOGAR" backgroundImage="botao_menuXX"/>
+                                <state key="focused" title="JOGAR" backgroundImage="botao_sem"/>
                                 <connections>
                                     <segue destination="UR6-f9-KfD" kind="show" id="VkZ-f6-pMV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-Za-rhH">
-                                <rect key="frame" x="1281" y="535" width="463" height="162"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="judzy_world" translatesAutoresizingMaskIntoConstraints="NO" id="dBC-lq-wpj">
+                                <rect key="frame" x="0.0" y="-158" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="REGRAS" backgroundImage="botao_sem">
-                                    <color key="titleColor" red="0.0" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" backgroundImage="Selcted"/>
-                                <state key="focused" backgroundImage="botao_menuXX"/>
-                                <connections>
-                                    <segue destination="M8F-XQ-oes" kind="showDetail" id="nPc-2q-Hhi"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1408,7 +1383,6 @@
         <image name="BVD" width="151" height="72"/>
         <image name="Botao_SemFoco" width="479" height="151"/>
         <image name="BotãoVai-1" width="151" height="72"/>
-        <image name="Selcted" width="533" height="171"/>
         <image name="UnicornioRéu" width="214" height="214"/>
         <image name="background_menu" width="1920" height="1080"/>
         <image name="balaoDeFala" width="265" height="299"/>
@@ -1422,6 +1396,7 @@
         <image name="elfo_perfil" width="412" height="412"/>
         <image name="gnomo2" width="265" height="265"/>
         <image name="gnomo_perfil1" width="412" height="412"/>
+        <image name="judzy_world" width="1920" height="1080"/>
         <image name="palanque8Lugares" width="1920" height="44"/>
         <image name="prancheta" width="715" height="578"/>
         <image name="selecione 2" width="962" height="199"/>
