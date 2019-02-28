@@ -1222,18 +1222,15 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9JK-4Y-lJn" userLabel="EndOfTurnView">
-                                <rect key="frame" x="457" y="338" width="1007" height="227"/>
+                                <rect key="frame" x="524" y="325" width="873" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OUTRA COISA!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eds-gE-moM">
-                                        <rect key="frame" x="-31" y="62" width="1068" height="102"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1ºTurno" translatesAutoresizingMaskIntoConstraints="NO" id="icO-Bc-J1K">
+                                        <rect key="frame" x="0.0" y="2" width="873" height="179"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="50"/>
-                                        <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="0.75508347602739723" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -1242,7 +1239,7 @@
                     </view>
                     <connections>
                         <outlet property="EndOfTurnView" destination="9JK-4Y-lJn" id="CdQ-8g-wNI"/>
-                        <outlet property="popUpLabel" destination="Eds-gE-moM" id="AED-EO-nMg"/>
+                        <outlet property="popUpImage" destination="icO-Bc-J1K" id="49f-eY-Lfc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEi-98-L5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1286,6 +1283,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1ºTurno" width="873" height="179"/>
         <image name="Botao_SemFoco" width="479" height="151"/>
         <image name="UnicornioRéu" width="214" height="214"/>
         <image name="background_menu" width="1920" height="1080"/>
