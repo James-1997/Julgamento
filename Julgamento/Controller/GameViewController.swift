@@ -480,7 +480,7 @@ class GameViewController: UIViewController {
             timerLabel.text = ("0:00")
             startButton.isHidden = false
             activeButton = false
-
+            time = tempoDosJogadores[indexArray]
         }
         
         
@@ -489,7 +489,7 @@ class GameViewController: UIViewController {
     
     // MARK: ROUND 3
     func round3(){
-        activeButton = false
+
         if indexArray == 6 {
             
             //Round 3 PopUp
