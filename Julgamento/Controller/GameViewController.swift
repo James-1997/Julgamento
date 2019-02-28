@@ -209,11 +209,12 @@ class GameViewController: UIViewController {
             
             }
             
-//            startButton.isHidden = true
-            startButton.setTitle("Terminei", for: .normal)
-        } else {
-            endTime = true
+            startButton.isHidden = true
+//            startButton.setTitle("Terminei", for: .normal)
         }
+//            else {
+//            endTime = true
+//        }
     }
     
     func timerGame(){
@@ -645,11 +646,11 @@ class GameViewController: UIViewController {
     // MARK: TEMPORIZADOR
     
     func temporizador (){
-        if endTime == true {
-            indexArray += 1
-            self.timer.invalidate()
-            gerRound()
-        }
+//        if endTime == true {
+//            indexArray += 1
+//            self.timer.invalidate()
+//            gerRound()
+//        }
         
         let min =  time/60
         let seg = time%60
