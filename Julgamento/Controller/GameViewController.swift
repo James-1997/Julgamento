@@ -216,6 +216,7 @@ class GameViewController: UIViewController {
         
         switch indexArray {
         case 0 :
+            
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -227,7 +228,7 @@ class GameViewController: UIViewController {
                 
        
         case 1 :
-                
+                setLabelText()
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -242,8 +243,13 @@ class GameViewController: UIViewController {
                 
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
-                viewTestemunha2_1.isHidden = false
-                viewRéu.isHidden = true
+                if numDeJogadores == 4 {
+                    viewRéu.isHidden = false
+                   print ( reuButtonOut.canBecomeFocused )
+                } else {
+                    viewTestemunha2_1.isHidden = false
+                }
+                
                 viewPromotoria.isHidden = true
                 viewJúri.isHidden = true
                 viewJúri2.isHidden = true
@@ -532,7 +538,7 @@ class GameViewController: UIViewController {
             //funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
             time = tempoDosJogadores[indexArray]
 //          startButton.isHidden = false
-          activeButton = false
+            activeButton = false
             gerentBubble()
             powerUpPopUP()
         }
@@ -867,14 +873,25 @@ class GameViewController: UIViewController {
     
     
     func setLabelText() {
-        test1ButtonOut.setTitle("VAI", for: .normal)
-        test2ButtonOut.setTitle("VAI", for: .normal)
-        testAndDefButtonOut.setTitle("VAI", for: .normal)
-        promButtonOut.setTitle("VAI", for: .normal)
-        reuButtonOut.setTitle("VAI", for: .normal)
-        juri1ButtonOut.setTitle("VAI", for: .normal)
-        juri2ButtonOut.setTitle("VAI", for: .normal)
-        juri3ButtonOut.setTitle("VAI", for: .normal)
+        if activeButton == false {
+            test1ButtonOut.setTitle("VAI", for: .normal)
+            test2ButtonOut.setTitle("VAI", for: .normal)
+            testAndDefButtonOut.setTitle("VAI", for: .normal)
+            promButtonOut.setTitle("VAI", for: .normal)
+            reuButtonOut.setTitle("VAI", for: .normal)
+            juri1ButtonOut.setTitle("VAI", for: .normal)
+            juri2ButtonOut.setTitle("VAI", for: .normal)
+            juri3ButtonOut.setTitle("VAI", for: .normal)
+        } else {
+            test1ButtonOut.setTitle("PRONTO", for: .normal)
+            test2ButtonOut.setTitle("PRONTO", for: .normal)
+            testAndDefButtonOut.setTitle("PRONTO", for: .normal)
+            promButtonOut.setTitle("PRONTO", for: .normal)
+            reuButtonOut.setTitle("PRONTO", for: .normal)
+            juri1ButtonOut.setTitle("PRONTO", for: .normal)
+            juri2ButtonOut.setTitle("PRONTO", for: .normal)
+            juri3ButtonOut.setTitle("PRONTO", for: .normal)
+        }
     }
     
     
