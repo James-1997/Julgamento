@@ -70,25 +70,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var viewAdvogadoDeDefesa: UIView!
     //Botoes do Balão de Identificação
     
-    
-    @IBOutlet weak var botãoTestemunha1: UIButton!
-    
-    @IBOutlet weak var botãoTestemunha2: UIButton!
-    
-    @IBOutlet weak var botãoTestemunha2_1: UIButton!
-    
-    @IBOutlet weak var botãoRéu: UIButton!
-    
-    @IBOutlet weak var botãoPromotor: UIButton!
-    
-    @IBOutlet weak var botãoJúri: UIButton!
-    
-    @IBOutlet weak var botãoJúri2: UIButton!
-    
-    @IBOutlet weak var botãoJúri3: UIButton!
-    
-    @IBOutlet weak var botãoAdvogadoDeDefesa: UIView!
-    
+   
     //POP-UP Connections
    
  
