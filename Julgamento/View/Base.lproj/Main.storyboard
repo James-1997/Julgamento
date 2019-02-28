@@ -40,16 +40,31 @@
                                     <constraint firstAttribute="width" constant="1920" id="pNL-Ll-ZGM"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
                                 <rect key="frame" x="1281" y="345" width="463" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="JOGAR" backgroundImage="botao_desfocoXX">
-                                    <color key="titleColor" red="0.0" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="botao_sem">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="JOGAR">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="38" name="Splatch"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <state key="selected" backgroundImage="Selcted"/>
-                                <state key="focused" backgroundImage="botao_menuXX"/>
+                                <state key="focused" backgroundImage="botao_menuXX">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="JOGAR">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <segue destination="UR6-f9-KfD" kind="show" id="VkZ-f6-pMV"/>
                                 </connections>
@@ -59,7 +74,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="REGRAS" backgroundImage="botao_desfocoXX">
+                                <state key="normal" title="REGRAS" backgroundImage="botao_sem">
                                     <color key="titleColor" red="0.0" green="0.18039215689999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="selected" backgroundImage="Selcted"/>
@@ -1002,6 +1017,61 @@
                                     <constraint firstItem="36e-SN-sSs" firstAttribute="top" secondItem="c1V-J7-ORU" secondAttribute="bottom" constant="8" id="yR7-9d-571"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-GN-XND">
+                                <rect key="frame" x="511" y="166" width="914" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UnicornioRéu" translatesAutoresizingMaskIntoConstraints="NO" id="6zJ-q4-LaO">
+                                        <rect key="frame" x="357" y="142" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJE-IN-Kug">
+                                        <rect key="frame" x="598" y="191" width="205" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" backgroundImage="setaInocente"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3p-JT-vlh">
+                                        <rect key="frame" x="114" y="191" width="205" height="103"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" backgroundImage="setaCulpado">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CULPADO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co0-8D-q1D">
+                                        <rect key="frame" x="149" y="137" width="135" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
+                                        <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INOCENTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3n-Ec-ejq">
+                                        <rect key="frame" x="621" y="137" width="158" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
+                                        <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOz-Yg-EOR">
+                                        <rect key="frame" x="477" y="126" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZq-LW-vqP">
+                                                <rect key="frame" x="28" y="25" width="25" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
+                                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="XAN-TW-4S4" firstAttribute="centerX" secondItem="xnf-Yt-1Mj" secondAttribute="centerX" id="0WR-eu-vx1"/>
@@ -1326,17 +1396,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNM-U7-Mxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162" y="8034"/>
+            <point key="canvasLocation" x="1138" y="7881"/>
         </scene>
     </scenes>
     <resources>
         <image name="Botao_SemFoco" width="479" height="151"/>
         <image name="BotãoVai-1" width="151" height="72"/>
         <image name="Selcted" width="533" height="171"/>
+        <image name="UnicornioRéu" width="214" height="214"/>
         <image name="background_menu" width="1920" height="1080"/>
         <image name="balaoDeFala" width="265" height="299"/>
-        <image name="botao_desfocoXX" width="463" height="146"/>
         <image name="botao_menuXX" width="529" height="167"/>
+        <image name="botao_sem" width="479" height="151"/>
         <image name="bruxa2" width="265" height="265"/>
         <image name="bruxa_perfil" width="412" height="412"/>
         <image name="diabrete2" width="265" height="265"/>
@@ -1348,6 +1419,8 @@
         <image name="palanque8Lugares" width="1920" height="44"/>
         <image name="prancheta" width="715" height="578"/>
         <image name="selecione 2" width="962" height="199"/>
+        <image name="setaCulpado" width="205" height="103"/>
+        <image name="setaInocente" width="205" height="103"/>
         <image name="titulo_crime1" width="1102" height="133"/>
         <image name="unicornio2" width="265" height="265"/>
         <image name="unicornio_perfil" width="412" height="412"/>
