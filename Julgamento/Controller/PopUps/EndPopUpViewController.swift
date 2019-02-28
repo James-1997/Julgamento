@@ -11,10 +11,8 @@ import UIKit
 class EndPopUpViewController: UIViewController {
 
     @IBOutlet weak var EndOfTurnView: UIView!
-
-    @IBOutlet weak var popUpTitle: UIImageView!
-    @IBOutlet weak var popUpDescription: UIImageView!
-    @IBOutlet weak var popUpBackground: UIImageView!
+    @IBOutlet weak var popUpLabel: UILabel!
+    
     
     //MARK: Variáveis
     var powerUpDaVez: PowerUpModel? = nil
@@ -41,118 +39,107 @@ class EndPopUpViewController: UIViewController {
        
         switch globalRound {
 
-        
-        case 0:
-            
-            powerUpDaVez = arrayPowerUp[0]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+//        //Apresentação
+//        case 0:
+//
+//            powerUpDaVez = arrayPowerUp[0]
+//            popUpLabel.text = powerUpDaVez!.name
+//
             
         //Round 1
+            
+            //Promotoria
         case 1:
            
             powerUpDaVez = arrayPowerUp[0]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
+            //Defesa
         case 2:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
-        
-        //Round 2
+            popUpLabel.text = powerUpDaVez!.name
+            
+            
+        //Round 2 --- Prova do Crime
+            
+            //Promotoria
         case 3:
             
             powerUpDaVez = arrayPowerUp[1]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
-            
+            //Defesa
         case 4:
             
-            powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            powerUpDaVez = arrayPowerUp[6]
+            popUpLabel.text = powerUpDaVez!.name
             
-            
+            //Juri
         case 5:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
-        
+            popUpLabel.text = powerUpDaVez!.name
+            
         //round 3
+            
+            //Testemunha
         case 6:
             
             powerUpDaVez = arrayPowerUp[2]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
+            //Promotoria
         case 7:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
+            //Defesa
         case 8:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
     
+            //Juri
         case 9:
            
-            powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            powerUpDaVez = arrayPowerUp[3]
+            popUpLabel.text = powerUpDaVez!.name
             
-        //Round 4
+        //Round 4 -- Power-UP
+          
+            //Promotoria
         case 10:
             
-            powerUpDaVez = arrayPowerUp[3]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
-            
+            powerUpDaVez = arrayPowerUp[8]
+            popUpLabel.text = powerUpDaVez!.name
+           
+            //Defesa
         case 11:
             
-            powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            powerUpDaVez = arrayPowerUp[4]
+            popUpLabel.text = powerUpDaVez!.name
             
         //Round 5
+            
+            //promotoria
         case 12:
             
             powerUpDaVez = arrayPowerUp[4]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
+            //Defesa
         case 13:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
+            //Juri
         case 14:
             
             powerUpDaVez = arrayPowerUp[5]
-            popUpTitle.image = powerUpDaVez!.imageTitle
-            popUpDescription.image = powerUpDaVez!.imageDescription
-            popUpBackground.image = powerUpDaVez!.backgroundImage
+            popUpLabel.text = powerUpDaVez!.name
             
             
         default:

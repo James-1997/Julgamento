@@ -22,8 +22,12 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Letters for Learners Dots.ttf</string>
 		<string>Splatch.ttf</string>
 		<string>sagesans-Regular.ttf</string>
+		<string>Letters for Learners Lined Dots.ttf</string>
+		<string>Letters for Learners Lined.ttf</string>
+		<string>Letters for Learners</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
