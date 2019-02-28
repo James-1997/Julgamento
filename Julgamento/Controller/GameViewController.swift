@@ -40,7 +40,6 @@ class GameViewController: UIViewController {
     
     
     
-    @IBOutlet weak var resumStory: UILabel!
     @IBOutlet weak var backGroudImage: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
@@ -91,6 +90,7 @@ class GameViewController: UIViewController {
     
     @IBAction func start(_ sender: Any) {
         if activeButton == false {
+            upView()
             activeButton = true
             timerGame()
             
@@ -182,25 +182,11 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        
-        
-        //Escondendo Balões de identificação
-        viewTestemunha1.isHidden = true
-        viewTestemunha2.isHidden = true
-        viewTestemunha2_1.isHidden = true
-        viewRéu.isHidden = true
-        viewPromotoria.isHidden = true
-        viewJúri.isHidden = true
-        viewJúri2.isHidden = true
-        viewJuri3.isHidden = true
-        viewAdvogadoDeDefesa.isHidden = true
-        
-        
-        
         namePerson.isHidden = true
-        
+      
         backGroudImage.image = históriaSelecionada.image
         rounds = 1
+        gerentBubble()
         timerLabel.text = "00:15"
         gerRound()
         // Setando jogadores
@@ -224,14 +210,52 @@ class GameViewController: UIViewController {
         
         pranchetaView.layer.addSublayer(shapeLayer)
         
+    }
+    
+    // MARK: FUNC CONTROLADO BALÃO
+    
+    func gerentBubble(){
+        
+        switch rounds {
+        case 1:
+            //Escondendo Balões de identificação
+            viewTestemunha1.isHidden = true
+            viewTestemunha2.isHidden = true
+            viewTestemunha2_1.isHidden = true
+            viewRéu.isHidden = true
+            viewPromotoria.isHidden = true
+            viewJúri.isHidden = true
+            viewJúri2.isHidden = true
+            viewJuri3.isHidden = true
+            
+        case 2:
+            print("gerenciar aqui")
+        default:
+            return
+        }
+        
         
     }
+    
+    
     // MARK: Animacao de descer prancheta
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 320})
     }
+
+    
+    func downView(){
+        UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 320})
+    }
+    
+    // MARK: Animacao de subir prancheta
+    
+    func upView(){
+        UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y -= 320})
+    }
+    
     
     
     // MARK: Setando os personagens
