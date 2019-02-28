@@ -574,8 +574,12 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-ul-ASm">
-                                <rect key="frame" x="721" y="582" width="479" height="151"/>
+                                <rect key="frame" x="774" y="542" width="373" height="121"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="373" id="UKU-CC-EwW"/>
+                                    <constraint firstAttribute="height" constant="121" id="xJM-W7-kqE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
@@ -601,51 +605,24 @@
                                     <constraint firstAttribute="width" constant="200" id="czX-JO-kzd"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKk-KG-2NC" userLabel="ViewTestemunha1">
-                                <rect key="frame" x="35" y="612" width="265" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKk-KG-2NC" userLabel="ViewTestemunha1">
+                                <rect key="frame" x="35" y="607" width="270" height="160"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="7Ci-XT-yYj">
-                                        <rect key="frame" x="2" y="0.0" width="265" height="155"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="7Ci-XT-yYj">
+                                        <rect key="frame" x="3" y="3" width="265" height="155"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="265" id="K5i-bq-VhB"/>
+                                            <constraint firstAttribute="height" constant="155" id="kWq-cA-EJF"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-gb-yBl">
-                                        <rect key="frame" x="49" y="19" width="170" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-gb-yBl">
+                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
                                         <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
                                         <color key="textColor" red="0.011764705882352941" green="0.1764705882352941" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TESTEMUNHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-FL-L4H">
-                                        <rect key="frame" x="29" y="72" width="211" height="45"/>
-                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
-                                        <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="uMB-FL-L4H" firstAttribute="top" secondItem="nYa-gb-yBl" secondAttribute="bottom" constant="8" id="T1K-dd-EIr"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3P-NJ-1Bk" userLabel="RÉU">
-                                <rect key="frame" x="698" y="612" width="265" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="Zvo-7c-g77">
-                                        <rect key="frame" x="0.0" y="0.0" width="265" height="155"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axE-v5-kqb">
-                                        <rect key="frame" x="50" y="29" width="170" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
-                                        <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RÉU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80f-ib-pCm">
-                                        <rect key="frame" x="105" y="82" width="59" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTEMUNHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-FL-L4H">
+                                        <rect key="frame" x="30" y="68" width="211" height="45"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -653,24 +630,74 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="uMB-FL-L4H" firstAttribute="centerX" secondItem="wKk-KG-2NC" secondAttribute="centerX" id="AAr-3T-DXh"/>
+                                    <constraint firstAttribute="height" constant="160" id="BPW-p1-TNG"/>
+                                    <constraint firstItem="nYa-gb-yBl" firstAttribute="centerX" secondItem="wKk-KG-2NC" secondAttribute="centerX" id="BRf-dq-7F3"/>
+                                    <constraint firstAttribute="width" constant="270" id="Eot-cX-1ku"/>
+                                    <constraint firstItem="nYa-gb-yBl" firstAttribute="top" secondItem="wKk-KG-2NC" secondAttribute="top" constant="15" id="FRu-ZX-x6y"/>
+                                    <constraint firstItem="7Ci-XT-yYj" firstAttribute="centerY" secondItem="wKk-KG-2NC" secondAttribute="centerY" id="JY4-59-1jr"/>
+                                    <constraint firstItem="uMB-FL-L4H" firstAttribute="top" secondItem="nYa-gb-yBl" secondAttribute="bottom" constant="8" id="T1K-dd-EIr"/>
+                                    <constraint firstItem="7Ci-XT-yYj" firstAttribute="centerX" secondItem="wKk-KG-2NC" secondAttribute="centerX" id="eSe-PL-n7W"/>
+                                    <constraint firstItem="uMB-FL-L4H" firstAttribute="top" secondItem="nYa-gb-yBl" secondAttribute="bottom" constant="8" id="nld-5q-o0k"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOl-ta-sTA" userLabel="PROMOTORIA">
-                                <rect key="frame" x="913" y="612" width="265" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3P-NJ-1Bk" userLabel="RÉU">
+                                <rect key="frame" x="698" y="607" width="270" height="160"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="EmQ-EM-QQl">
-                                        <rect key="frame" x="1" y="0.0" width="265" height="155"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="Zvo-7c-g77">
+                                        <rect key="frame" x="2" y="3" width="265" height="155"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="155" id="4tn-aK-6Ab"/>
+                                            <constraint firstAttribute="width" constant="265" id="K3C-OT-rqs"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1T-OE-1VO">
-                                        <rect key="frame" x="47" y="12" width="170" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axE-v5-kqb">
+                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
+                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                        <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RÉU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80f-ib-pCm">
+                                        <rect key="frame" x="105" y="68" width="59" height="45"/>
+                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
+                                        <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Zvo-7c-g77" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="3Tx-2b-K4r"/>
+                                    <constraint firstItem="axE-v5-kqb" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="9L7-qa-pRF"/>
+                                    <constraint firstItem="80f-ib-pCm" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="BFi-yJ-SNM"/>
+                                    <constraint firstAttribute="height" constant="160" id="CVS-TI-Ain"/>
+                                    <constraint firstItem="80f-ib-pCm" firstAttribute="top" secondItem="axE-v5-kqb" secondAttribute="bottom" constant="8" id="Fmx-UR-d3r"/>
+                                    <constraint firstItem="Zvo-7c-g77" firstAttribute="centerY" secondItem="f3P-NJ-1Bk" secondAttribute="centerY" id="Z5D-6K-CGk"/>
+                                    <constraint firstAttribute="width" constant="270" id="fUY-Hk-Njx"/>
+                                    <constraint firstItem="axE-v5-kqb" firstAttribute="top" secondItem="f3P-NJ-1Bk" secondAttribute="top" constant="15" id="l95-qJ-sxR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOl-ta-sTA" userLabel="PROMOTORIA">
+                                <rect key="frame" x="913" y="607" width="270" height="160"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="EmQ-EM-QQl">
+                                        <rect key="frame" x="3" y="3" width="265" height="155"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="265" id="KHg-HJ-BaL"/>
+                                            <constraint firstAttribute="height" constant="155" id="xgF-Qs-XUE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1T-OE-1VO" userLabel="É a vez de">
+                                        <rect key="frame" x="69" y="15" width="132" height="35"/>
                                         <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="35"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PROMOTORIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9J-mz-kdh">
-                                        <rect key="frame" x="32" y="65" width="201" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROMOTORIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9J-mz-kdh">
+                                        <rect key="frame" x="44" y="58" width="183" height="41"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="20"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -679,29 +706,36 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="7oa-SF-yN5"/>
+                                    <constraint firstItem="M1T-OE-1VO" firstAttribute="centerX" secondItem="WOl-ta-sTA" secondAttribute="centerX" id="9pi-CE-3cb"/>
+                                    <constraint firstItem="EmQ-EM-QQl" firstAttribute="centerX" secondItem="WOl-ta-sTA" secondAttribute="centerX" id="Gk9-mC-PZ3"/>
+                                    <constraint firstItem="U9J-mz-kdh" firstAttribute="top" secondItem="M1T-OE-1VO" secondAttribute="bottom" constant="8" id="QqP-Mi-n83"/>
+                                    <constraint firstAttribute="width" constant="270" id="V19-k7-xOX"/>
+                                    <constraint firstItem="EmQ-EM-QQl" firstAttribute="centerY" secondItem="WOl-ta-sTA" secondAttribute="centerY" id="cox-y0-DvB"/>
                                     <constraint firstItem="U9J-mz-kdh" firstAttribute="top" secondItem="M1T-OE-1VO" secondAttribute="bottom" constant="8" id="h5l-uF-y0X"/>
+                                    <constraint firstItem="U9J-mz-kdh" firstAttribute="centerX" secondItem="WOl-ta-sTA" secondAttribute="centerX" id="hQc-1v-Wua"/>
+                                    <constraint firstItem="M1T-OE-1VO" firstAttribute="top" secondItem="WOl-ta-sTA" secondAttribute="top" constant="15" id="pMA-Sp-Tjt"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhD-WO-DBc" userLabel="JÚRI1">
-                                <rect key="frame" x="1157" y="612" width="265" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhD-WO-DBc" userLabel="JÚRI1">
+                                <rect key="frame" x="1157" y="607" width="270" height="160"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="NOF-AN-op5">
-                                        <rect key="frame" x="0.0" y="0.0" width="265" height="155"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="NOF-AN-op5">
+                                        <rect key="frame" x="3" y="3" width="265" height="155"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="306" id="MDn-MG-dVF"/>
-                                            <constraint firstAttribute="width" constant="265" id="Pui-lz-SrW"/>
+                                            <constraint firstAttribute="height" constant="155" id="HbH-Sm-DgP"/>
+                                            <constraint firstAttribute="width" constant="265" id="NYA-CY-kV8"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgr-x0-acJ">
-                                        <rect key="frame" x="41" y="22" width="170" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgr-x0-acJ" userLabel="É a vez de">
+                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
                                         <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="JÚRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpc-da-MQj">
-                                        <rect key="frame" x="93" y="61" width="67" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JÚRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpc-da-MQj">
+                                        <rect key="frame" x="102" y="68" width="67" height="45"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -710,29 +744,36 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="NOF-AN-op5" firstAttribute="centerX" secondItem="fhD-WO-DBc" secondAttribute="centerX" id="5AC-U6-rWS"/>
+                                    <constraint firstItem="zpc-da-MQj" firstAttribute="top" secondItem="Dgr-x0-acJ" secondAttribute="bottom" constant="8" id="7UL-kc-h7H"/>
+                                    <constraint firstItem="Dgr-x0-acJ" firstAttribute="centerX" secondItem="fhD-WO-DBc" secondAttribute="centerX" id="L9W-LY-H0U"/>
+                                    <constraint firstItem="Dgr-x0-acJ" firstAttribute="top" secondItem="fhD-WO-DBc" secondAttribute="top" constant="15" id="UI6-nh-Sd1"/>
+                                    <constraint firstItem="zpc-da-MQj" firstAttribute="centerX" secondItem="fhD-WO-DBc" secondAttribute="centerX" id="ftt-mY-0aK"/>
+                                    <constraint firstAttribute="width" constant="270" id="lym-7O-8m3"/>
+                                    <constraint firstAttribute="height" constant="160" id="tlm-wn-Kqw"/>
+                                    <constraint firstItem="NOF-AN-op5" firstAttribute="centerY" secondItem="fhD-WO-DBc" secondAttribute="centerY" id="uCI-Ir-9yZ"/>
                                     <constraint firstItem="zpc-da-MQj" firstAttribute="top" secondItem="Dgr-x0-acJ" secondAttribute="bottom" constant="8" id="uRm-BQ-F7X"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKV-0P-ahg" userLabel="JÚRI2">
-                                <rect key="frame" x="1383" y="612" width="265" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKV-0P-ahg" userLabel="JÚRI2">
+                                <rect key="frame" x="1383" y="607" width="270" height="160"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="7T4-P8-EDv">
-                                        <rect key="frame" x="0.0" y="0.0" width="265" height="155"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="7T4-P8-EDv">
+                                        <rect key="frame" x="3" y="3" width="265" height="155"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="306" id="99c-E7-aIg"/>
-                                            <constraint firstAttribute="width" constant="265" id="T3T-96-ocz"/>
+                                            <constraint firstAttribute="height" constant="155" id="Er1-Z3-X2X"/>
+                                            <constraint firstAttribute="width" constant="265" id="xBx-nd-eF1"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="É a vez de: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWB-gF-97i">
-                                        <rect key="frame" x="39" y="21" width="174" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWB-gF-97i">
+                                        <rect key="frame" x="48" y="15" width="174" height="45"/>
                                         <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="JÚRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aW-27-27g">
-                                        <rect key="frame" x="93" y="66" width="67" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JÚRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aW-27-27g">
+                                        <rect key="frame" x="102" y="68" width="67" height="45"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -741,29 +782,36 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="7T4-P8-EDv" firstAttribute="centerY" secondItem="VKV-0P-ahg" secondAttribute="centerY" id="2W6-BI-n7g"/>
+                                    <constraint firstItem="7T4-P8-EDv" firstAttribute="centerX" secondItem="VKV-0P-ahg" secondAttribute="centerX" id="3CG-pQ-ehM"/>
+                                    <constraint firstItem="wWB-gF-97i" firstAttribute="top" secondItem="VKV-0P-ahg" secondAttribute="top" constant="15" id="ART-Uf-t9D"/>
+                                    <constraint firstAttribute="height" constant="160" id="Dyd-2o-qnU"/>
+                                    <constraint firstItem="5aW-27-27g" firstAttribute="centerX" secondItem="VKV-0P-ahg" secondAttribute="centerX" id="R92-jt-N5x"/>
+                                    <constraint firstItem="5aW-27-27g" firstAttribute="top" secondItem="wWB-gF-97i" secondAttribute="bottom" constant="8" id="dU8-Im-CPD"/>
+                                    <constraint firstItem="wWB-gF-97i" firstAttribute="centerX" secondItem="VKV-0P-ahg" secondAttribute="centerX" id="iYt-ir-LGU"/>
                                     <constraint firstItem="5aW-27-27g" firstAttribute="top" secondItem="wWB-gF-97i" secondAttribute="bottom" constant="8" id="sUx-97-Mta"/>
+                                    <constraint firstAttribute="width" constant="270" id="xtp-OK-Hgo"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1W6-2X-srU" userLabel="JÚRI3">
-                                <rect key="frame" x="1613" y="612" width="265" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1W6-2X-srU" userLabel="JÚRI3">
+                                <rect key="frame" x="1608" y="607" width="270" height="160"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="1tf-jX-2AV">
-                                        <rect key="frame" x="0.0" y="0.0" width="265" height="155"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="1tf-jX-2AV">
+                                        <rect key="frame" x="3" y="3" width="265" height="155"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="265" id="51r-Mj-kPv"/>
-                                            <constraint firstAttribute="height" constant="306" id="Xuv-nT-HPA"/>
+                                            <constraint firstAttribute="height" constant="155" id="dFt-7o-xnh"/>
+                                            <constraint firstAttribute="width" constant="265" id="sQd-GL-hbP"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1V-J7-ORU">
-                                        <rect key="frame" x="48" y="18" width="170" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1V-J7-ORU" userLabel="É a vez de">
+                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
                                         <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="JÚRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36e-SN-sSs">
-                                        <rect key="frame" x="100" y="71" width="67" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JÚRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36e-SN-sSs">
+                                        <rect key="frame" x="102" y="68" width="67" height="45"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -772,6 +820,15 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="1tf-jX-2AV" firstAttribute="centerX" secondItem="1W6-2X-srU" secondAttribute="centerX" id="JDi-zq-l8r"/>
+                                    <constraint firstItem="36e-SN-sSs" firstAttribute="top" secondItem="c1V-J7-ORU" secondAttribute="bottom" constant="8" id="JtH-Fe-AO8"/>
+                                    <constraint firstItem="c1V-J7-ORU" firstAttribute="top" secondItem="1W6-2X-srU" secondAttribute="top" constant="15" id="O0h-Ak-ed7"/>
+                                    <constraint firstAttribute="width" constant="270" id="OWI-Rr-mxL"/>
+                                    <constraint firstItem="36e-SN-sSs" firstAttribute="centerX" secondItem="1W6-2X-srU" secondAttribute="centerX" id="TfU-jM-rDM"/>
+                                    <constraint firstItem="1tf-jX-2AV" firstAttribute="centerY" secondItem="1W6-2X-srU" secondAttribute="centerY" id="Uce-sm-aAJ"/>
+                                    <constraint firstItem="c1V-J7-ORU" firstAttribute="centerX" secondItem="1W6-2X-srU" secondAttribute="centerX" id="eP5-5U-e9J"/>
+                                    <constraint firstItem="36e-SN-sSs" firstAttribute="top" secondItem="c1V-J7-ORU" secondAttribute="bottom" constant="8" id="snD-n5-92i"/>
+                                    <constraint firstAttribute="height" constant="160" id="vRJ-F7-td7"/>
                                     <constraint firstItem="36e-SN-sSs" firstAttribute="top" secondItem="c1V-J7-ORU" secondAttribute="bottom" constant="8" id="yR7-9d-571"/>
                                 </constraints>
                             </view>
@@ -813,7 +870,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOz-Yg-EOR" userLabel="viewQtdVotos">
-                                        <rect key="frame" x="477" y="126" width="80" height="80"/>
+                                        <rect key="frame" x="503" y="102" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZq-LW-vqP">
@@ -829,79 +886,111 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2zh-H5-Gry" userLabel="ViewTestemunha2">
-                                <rect key="frame" x="263" y="612" width="265" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zh-H5-Gry" userLabel="ViewTestemunha2">
+                                <rect key="frame" x="260" y="607" width="270" height="160"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-ql-mHE">
-                                        <rect key="frame" x="0.0" y="0.0" width="265" height="155"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-ql-mHE">
+                                        <rect key="frame" x="3" y="3" width="265" height="155"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="265" id="khY-rU-ux9"/>
+                                            <constraint firstAttribute="height" constant="155" id="yeM-p1-R4I"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEJ-h6-WNf">
-                                        <rect key="frame" x="47" y="14" width="170" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEJ-h6-WNf" userLabel="É a vez de">
+                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
                                         <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TESTEMUNHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-i5-zgR">
-                                        <rect key="frame" x="27" y="67" width="211" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTEMUNHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-i5-zgR">
+                                        <rect key="frame" x="30" y="68" width="211" height="45"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAN-TW-4S4" userLabel="ViewTestemunha2.1">
-                                        <rect key="frame" x="216" y="0.0" width="265" height="155"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="drl-ge-ZAw">
-                                                <rect key="frame" x="1" y="-1" width="265" height="155"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yP-cG-uBL">
-                                                <rect key="frame" x="49" y="13" width="170" height="45"/>
-                                                <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
-                                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TESTEMUNHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oq-Dg-7Yy">
-                                                <rect key="frame" x="28" y="65" width="211" height="45"/>
-                                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
-                                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="2Oq-Dg-7Yy" firstAttribute="top" secondItem="8yP-cG-uBL" secondAttribute="bottom" constant="8" id="mDk-Pc-qVW"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7Nx-ql-mHE" firstAttribute="centerY" secondItem="2zh-H5-Gry" secondAttribute="centerY" id="EFo-7I-dDC"/>
+                                    <constraint firstItem="CEJ-h6-WNf" firstAttribute="top" secondItem="2zh-H5-Gry" secondAttribute="top" constant="15" id="UfV-Rl-unm"/>
+                                    <constraint firstItem="hqX-i5-zgR" firstAttribute="centerX" secondItem="2zh-H5-Gry" secondAttribute="centerX" id="XVV-Nl-ReG"/>
+                                    <constraint firstItem="7Nx-ql-mHE" firstAttribute="centerX" secondItem="2zh-H5-Gry" secondAttribute="centerX" id="e2D-N4-nIe"/>
+                                    <constraint firstItem="CEJ-h6-WNf" firstAttribute="centerX" secondItem="2zh-H5-Gry" secondAttribute="centerX" id="oeP-rw-r6V"/>
+                                    <constraint firstAttribute="width" constant="270" id="sgE-8I-gyY"/>
+                                    <constraint firstAttribute="height" constant="160" id="vgx-6x-rgF"/>
+                                    <constraint firstItem="hqX-i5-zgR" firstAttribute="top" secondItem="CEJ-h6-WNf" secondAttribute="bottom" constant="8" id="wha-EP-oOg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAN-TW-4S4" userLabel="ViewTestemunha2.1">
+                                <rect key="frame" x="499" y="607" width="270" height="160"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balao" translatesAutoresizingMaskIntoConstraints="NO" id="drl-ge-ZAw">
+                                        <rect key="frame" x="3" y="3" width="265" height="155"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="265" id="5cm-t8-rTg"/>
+                                            <constraint firstAttribute="height" constant="155" id="f6s-jW-KlJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yP-cG-uBL">
+                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
+                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                        <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTEMUNHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oq-Dg-7Yy">
+                                        <rect key="frame" x="30" y="68" width="211" height="45"/>
+                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
+                                        <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="0N0-07-JNr"/>
+                                    <constraint firstItem="8yP-cG-uBL" firstAttribute="centerX" secondItem="XAN-TW-4S4" secondAttribute="centerX" id="F4E-lQ-fat"/>
+                                    <constraint firstItem="drl-ge-ZAw" firstAttribute="centerY" secondItem="XAN-TW-4S4" secondAttribute="centerY" id="Odf-I4-V5q"/>
+                                    <constraint firstItem="drl-ge-ZAw" firstAttribute="centerX" secondItem="XAN-TW-4S4" secondAttribute="centerX" id="PHq-XT-YqM"/>
+                                    <constraint firstItem="2Oq-Dg-7Yy" firstAttribute="centerX" secondItem="XAN-TW-4S4" secondAttribute="centerX" id="jPT-eu-StA"/>
+                                    <constraint firstItem="8yP-cG-uBL" firstAttribute="top" secondItem="XAN-TW-4S4" secondAttribute="top" constant="15" id="lUu-bX-ksh"/>
+                                    <constraint firstItem="2Oq-Dg-7Yy" firstAttribute="top" secondItem="8yP-cG-uBL" secondAttribute="bottom" constant="8" id="mDk-Pc-qVW"/>
+                                    <constraint firstItem="2Oq-Dg-7Yy" firstAttribute="top" secondItem="8yP-cG-uBL" secondAttribute="bottom" constant="8" id="toT-oo-TIm"/>
+                                    <constraint firstAttribute="width" constant="270" id="zSn-K3-IhK"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="leading" secondItem="AP3-LX-Tre" secondAttribute="trailing" constant="25" id="0eI-yk-fCb"/>
                             <constraint firstItem="6ag-5o-iH0" firstAttribute="bottom" secondItem="MPf-Kq-DF1" secondAttribute="bottom" id="5DI-rW-dHl"/>
                             <constraint firstItem="rGC-LQ-2b4" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="6Vh-Ve-IrB"/>
+                            <constraint firstItem="WOl-ta-sTA" firstAttribute="centerY" secondItem="Zvo-7c-g77" secondAttribute="centerY" id="9Qc-8x-FM1"/>
                             <constraint firstItem="YmH-wn-vPA" firstAttribute="height" secondItem="Kct-90-Z6s" secondAttribute="height" id="A5u-Gi-7eX"/>
+                            <constraint firstItem="VKV-0P-ahg" firstAttribute="centerX" secondItem="MPf-Kq-DF1" secondAttribute="centerX" id="Din-9C-lhe"/>
+                            <constraint firstItem="2zh-H5-Gry" firstAttribute="centerX" secondItem="Bxd-cc-73o" secondAttribute="centerX" id="Eod-eS-cmN"/>
                             <constraint firstItem="rfT-7x-KMM" firstAttribute="leading" secondItem="HSl-5b-nWA" secondAttribute="trailing" constant="8" id="F3l-HD-Lmi"/>
+                            <constraint firstItem="XAN-TW-4S4" firstAttribute="centerY" secondItem="7Nx-ql-mHE" secondAttribute="centerY" id="HQA-f9-7Y5"/>
                             <constraint firstItem="LrA-RW-Q6k" firstAttribute="leading" secondItem="Kct-90-Z6s" secondAttribute="leading" constant="70" id="Hz0-nc-t8o"/>
+                            <constraint firstItem="XAN-TW-4S4" firstAttribute="centerX" secondItem="xnf-Yt-1Mj" secondAttribute="centerX" id="J4U-Yq-n43"/>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="bottom" secondItem="AP3-LX-Tre" secondAttribute="bottom" id="JG0-u8-qNB"/>
+                            <constraint firstItem="WOl-ta-sTA" firstAttribute="centerX" secondItem="rfT-7x-KMM" secondAttribute="centerX" id="JdG-bK-JVp"/>
                             <constraint firstItem="rGC-LQ-2b4" firstAttribute="top" secondItem="Kct-90-Z6s" secondAttribute="top" constant="-425" id="NOt-sD-SHF"/>
                             <constraint firstItem="hNh-Dh-KWj" firstAttribute="top" secondItem="xnf-Yt-1Mj" secondAttribute="bottom" constant="27" id="Pr9-c5-I2y"/>
                             <constraint firstItem="FhT-GH-rbJ" firstAttribute="bottom" secondItem="rfT-7x-KMM" secondAttribute="bottom" id="S9E-kw-Wp9"/>
-                            <constraint firstItem="HSl-5b-nWA" firstAttribute="top" secondItem="RRZ-ul-ASm" secondAttribute="bottom" constant="45" id="SCq-cY-nVx"/>
+                            <constraint firstItem="HSl-5b-nWA" firstAttribute="top" secondItem="RRZ-ul-ASm" secondAttribute="bottom" constant="115" id="SCq-cY-nVx"/>
                             <constraint firstItem="AP3-LX-Tre" firstAttribute="leading" secondItem="Bxd-cc-73o" secondAttribute="trailing" constant="5" id="Skv-s4-e5J"/>
+                            <constraint firstItem="wKk-KG-2NC" firstAttribute="centerX" secondItem="LrA-RW-Q6k" secondAttribute="centerX" id="Tu2-qJ-QYJ"/>
                             <constraint firstItem="RRZ-ul-ASm" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="VTp-7a-Reb"/>
                             <constraint firstItem="YmH-wn-vPA" firstAttribute="width" secondItem="Kct-90-Z6s" secondAttribute="width" id="Y3w-9l-5fX"/>
+                            <constraint firstItem="fhD-WO-DBc" firstAttribute="centerY" secondItem="EmQ-EM-QQl" secondAttribute="centerY" id="YZZ-fx-Mnh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1W6-2X-srU" secondAttribute="trailing" constant="-68" id="ZOS-6L-6iZ"/>
+                            <constraint firstItem="Bxd-cc-73o" firstAttribute="top" secondItem="wKk-KG-2NC" secondAttribute="bottom" constant="26" id="azD-uu-UL4"/>
+                            <constraint firstItem="VKV-0P-ahg" firstAttribute="centerY" secondItem="NOF-AN-op5" secondAttribute="centerY" id="b8h-GK-rTK"/>
                             <constraint firstItem="Bxd-cc-73o" firstAttribute="bottom" secondItem="LrA-RW-Q6k" secondAttribute="bottom" id="fg5-AC-V8b"/>
                             <constraint firstItem="6ag-5o-iH0" firstAttribute="leading" secondItem="MPf-Kq-DF1" secondAttribute="trailing" constant="30" id="gYL-pZ-Ljj"/>
                             <constraint firstItem="xnf-Yt-1Mj" firstAttribute="leading" secondItem="Bxd-cc-73o" secondAttribute="trailing" constant="39" id="hU0-OK-ne7"/>
@@ -910,9 +999,14 @@
                             <constraint firstItem="YmH-wn-vPA" firstAttribute="centerY" secondItem="Kct-90-Z6s" secondAttribute="centerY" id="kex-PC-A8t"/>
                             <constraint firstItem="hNh-Dh-KWj" firstAttribute="top" secondItem="LrA-RW-Q6k" secondAttribute="bottom" constant="27" id="kxf-QY-UuU"/>
                             <constraint firstItem="rfT-7x-KMM" firstAttribute="bottom" secondItem="HSl-5b-nWA" secondAttribute="bottom" id="miV-ga-SZc"/>
+                            <constraint firstItem="1W6-2X-srU" firstAttribute="bottom" secondItem="VKV-0P-ahg" secondAttribute="bottom" id="nRf-Dx-HHl"/>
+                            <constraint firstItem="2zh-H5-Gry" firstAttribute="centerY" secondItem="7Ci-XT-yYj" secondAttribute="centerY" id="o5f-NV-RjS"/>
                             <constraint firstItem="xnf-Yt-1Mj" firstAttribute="bottom" secondItem="Bxd-cc-73o" secondAttribute="bottom" id="qhl-fE-xeV"/>
+                            <constraint firstItem="fhD-WO-DBc" firstAttribute="centerX" secondItem="FhT-GH-rbJ" secondAttribute="centerX" id="rd2-Kb-2Cj"/>
                             <constraint firstItem="AP3-LX-Tre" firstAttribute="bottom" secondItem="Bxd-cc-73o" secondAttribute="bottom" id="rdu-zH-vvY"/>
                             <constraint firstItem="FhT-GH-rbJ" firstAttribute="leading" secondItem="rfT-7x-KMM" secondAttribute="trailing" constant="44" id="tjL-81-XoJ"/>
+                            <constraint firstItem="f3P-NJ-1Bk" firstAttribute="centerX" secondItem="HSl-5b-nWA" secondAttribute="centerX" id="vW2-CT-liu"/>
+                            <constraint firstItem="f3P-NJ-1Bk" firstAttribute="centerY" secondItem="drl-ge-ZAw" secondAttribute="centerY" id="wAo-NV-AnL"/>
                             <constraint firstItem="Bxd-cc-73o" firstAttribute="leading" secondItem="LrA-RW-Q6k" secondAttribute="trailing" constant="25" id="zjk-eP-LVI"/>
                             <constraint firstItem="YmH-wn-vPA" firstAttribute="centerX" secondItem="Kct-90-Z6s" secondAttribute="centerX" id="zmo-kn-1gK"/>
                         </constraints>
