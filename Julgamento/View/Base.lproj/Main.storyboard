@@ -1017,7 +1017,7 @@
                                     <constraint firstItem="36e-SN-sSs" firstAttribute="top" secondItem="c1V-J7-ORU" secondAttribute="bottom" constant="8" id="yR7-9d-571"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-GN-XND">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-GN-XND" userLabel="ViewDecisãoDoJúri">
                                 <rect key="frame" x="511" y="166" width="914" height="484"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -1054,7 +1054,7 @@
                                         <color key="textColor" red="0.96951931719999995" green="0.94742757079999995" blue="0.79694074390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOz-Yg-EOR">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOz-Yg-EOR" userLabel="viewQtdVotos">
                                         <rect key="frame" x="477" y="126" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -1132,6 +1132,7 @@
                         <outlet property="pranchetaView" destination="rGC-LQ-2b4" id="fUl-vZ-dW0"/>
                         <outlet property="promButtonOut" destination="kSx-jQ-aaO" id="kRQ-B6-RIA"/>
                         <outlet property="promotoria" destination="rfT-7x-KMM" id="ANY-1Q-lRG"/>
+                        <outlet property="qtdVotosLabel" destination="YZq-LW-vqP" id="sVE-qb-8Jn"/>
                         <outlet property="reu" destination="HSl-5b-nWA" id="Ose-qJ-d1y"/>
                         <outlet property="reuButtonOut" destination="RhT-Lm-yzl" id="0Sd-rN-o9P"/>
                         <outlet property="startButton" destination="RRZ-ul-ASm" id="V2w-6s-IOZ"/>
@@ -1142,10 +1143,12 @@
                         <outlet property="testemunha2" destination="LrA-RW-Q6k" id="Mvc-JK-xM3"/>
                         <outlet property="testemunhaCase4" destination="xnf-Yt-1Mj" id="4LF-vD-gfB"/>
                         <outlet property="timerLabel" destination="oKb-BM-zze" id="1mz-np-Gh7"/>
+                        <outlet property="viewDecisãoDoJúri" destination="sTT-GN-XND" id="Str-Df-XyX"/>
                         <outlet property="viewJuri3" destination="1W6-2X-srU" id="EJu-tG-MZl"/>
                         <outlet property="viewJúri" destination="fhD-WO-DBc" id="4uI-5c-tw7"/>
                         <outlet property="viewJúri2" destination="VKV-0P-ahg" id="BJU-gg-ohT"/>
                         <outlet property="viewPromotoria" destination="WOl-ta-sTA" id="e8v-ms-nM8"/>
+                        <outlet property="viewQtdVotos" destination="zOz-Yg-EOR" id="MWl-ak-KpQ"/>
                         <outlet property="viewRéu" destination="f3P-NJ-1Bk" id="dOT-bc-RRK"/>
                         <outlet property="viewTestemunha1" destination="wKk-KG-2NC" id="h1I-Gy-xgz"/>
                         <outlet property="viewTestemunha2" destination="2zh-H5-Gry" id="Gkm-QW-Dxr"/>

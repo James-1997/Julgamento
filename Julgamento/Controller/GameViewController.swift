@@ -25,17 +25,20 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var testemunhaCase4: UIImageView!
     
+
+  //Decisão Do juri
+    
+    @IBOutlet weak var viewDecisãoDoJúri: UIView!
+    @IBOutlet weak var viewQtdVotos: UIView!
+    @IBOutlet weak var qtdVotosLabel: UILabel!
+    
     
   // default
     
     @IBOutlet weak var testemunha1: UIImageView!
-    
     @IBOutlet weak var juri1: UIImageView!
-    
     @IBOutlet weak var reu: UIImageView!
-    
     @IBOutlet weak var advgDefesa: UIImageView!
-    
     @IBOutlet weak var promotoria: UIImageView!
     @IBOutlet weak var backGroudImage: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
@@ -181,7 +184,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
       
       
-      
+        
         backGroudImage.image = históriaSelecionada.image
         rounds = 1
         gerentBubble()
@@ -216,7 +219,7 @@ class GameViewController: UIViewController {
         
         switch indexArray {
         case 0 :
-            
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -240,7 +243,8 @@ class GameViewController: UIViewController {
                 
         
         case 2 :
-                
+            
+               viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 if numDeJogadores == 4 {
@@ -258,7 +262,8 @@ class GameViewController: UIViewController {
            
             
         case 3 :
-        
+            
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -273,7 +278,8 @@ class GameViewController: UIViewController {
                 
                 
                 //namePerson.text = "DEFESA"
-                
+            
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = false
@@ -289,6 +295,7 @@ class GameViewController: UIViewController {
                 
                 
                 // namePerson.text = "JURI"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = false
@@ -301,6 +308,7 @@ class GameViewController: UIViewController {
         case 6 :
   
                 // namePerson.text = "TESTEMUNHA"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = false
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -313,6 +321,7 @@ class GameViewController: UIViewController {
         case 7 :
                 
                 // namePerson.text = "PROMOTORIA"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -326,6 +335,7 @@ class GameViewController: UIViewController {
         case 8 :
                 
                 // namePerson.text = "DEFESA"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = false
@@ -339,6 +349,7 @@ class GameViewController: UIViewController {
         case 9 :
                 
                 // namePerson.text = "JURI"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -352,6 +363,7 @@ class GameViewController: UIViewController {
         case 10:
             
                 // namePerson.text = "Promotoria"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -365,6 +377,7 @@ class GameViewController: UIViewController {
         case 11 :
                 
                 // namePerson.text = "defesa"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = false
@@ -378,6 +391,7 @@ class GameViewController: UIViewController {
         case 12 :
                 
                 // namePerson.text = "juri"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -392,6 +406,7 @@ class GameViewController: UIViewController {
         case 13 :
                
                 // namePerson.text = "Promotoria"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
@@ -404,6 +419,7 @@ class GameViewController: UIViewController {
         case 14 :
                 
                 // namePerson.text = "defesa"
+                viewDecisãoDoJúri.isHidden = true
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = false
@@ -416,6 +432,7 @@ class GameViewController: UIViewController {
         case 15 :
                 
                 // namePerson.text = "juri"
+                viewDecisãoDoJúri.isHidden = false
                 viewTestemunha1.isHidden = true
                 viewTestemunha2.isHidden = true
                 viewTestemunha2_1.isHidden = true
