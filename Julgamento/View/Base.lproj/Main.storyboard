@@ -40,31 +40,16 @@
                                     <constraint firstAttribute="width" constant="1920" id="pNL-Ll-ZGM"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXi-Nr-o13">
                                 <rect key="frame" x="1281" y="345" width="463" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" backgroundImage="botao_sem">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="JOGAR">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="38" name="Splatch"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <state key="normal" title="JOGAR" backgroundImage="botao_sem">
+                                    <color key="titleColor" red="0.0" green="0.1803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="selected" backgroundImage="Selcted"/>
-                                <state key="focused" backgroundImage="botao_menuXX">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="JOGAR">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="smallSystem"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                                <state key="focused" backgroundImage="botao_menuXX"/>
                                 <connections>
                                     <segue destination="UR6-f9-KfD" kind="show" id="VkZ-f6-pMV"/>
                                 </connections>
@@ -599,7 +584,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-ul-ASm">
-                                <rect key="frame" x="721" y="582" width="479" height="151"/>
+                                <rect key="frame" x="721" y="465" width="479" height="151"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -648,25 +633,13 @@
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz0-eK-Web">
-                                        <rect key="frame" x="60" y="148" width="151" height="86"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
-                                        <connections>
-                                            <action selector="test1Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="gPP-T7-54e"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="7Ci-XT-yYj" firstAttribute="centerX" secondItem="wKk-KG-2NC" secondAttribute="centerX" id="947-L5-C3n"/>
                                     <constraint firstAttribute="width" constant="270" id="Axq-3Q-p2R"/>
-                                    <constraint firstItem="pz0-eK-Web" firstAttribute="top" secondItem="uMB-FL-L4H" secondAttribute="bottom" constant="15" id="CKp-1Q-TpT"/>
                                     <constraint firstItem="nYa-gb-yBl" firstAttribute="centerX" secondItem="7Ci-XT-yYj" secondAttribute="centerX" id="DHD-Sl-UUw"/>
                                     <constraint firstItem="uMB-FL-L4H" firstAttribute="top" secondItem="nYa-gb-yBl" secondAttribute="bottom" constant="8" id="T1K-dd-EIr"/>
-                                    <constraint firstItem="pz0-eK-Web" firstAttribute="centerX" secondItem="wKk-KG-2NC" secondAttribute="centerX" id="coS-7T-WxL"/>
                                     <constraint firstAttribute="height" constant="310" id="ifl-CS-5gc"/>
                                     <constraint firstItem="7Ci-XT-yYj" firstAttribute="centerY" secondItem="wKk-KG-2NC" secondAttribute="centerY" id="iq4-wF-50h"/>
                                     <constraint firstItem="uMB-FL-L4H" firstAttribute="centerX" secondItem="wKk-KG-2NC" secondAttribute="centerX" id="r7W-Kt-wQq"/>
@@ -697,16 +670,6 @@
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rZ-8u-qoq">
-                                        <rect key="frame" x="60" y="148" width="151" height="86"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
-                                        <connections>
-                                            <action selector="test2Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="ydm-vJ-ldW"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -716,10 +679,8 @@
                                     <constraint firstItem="hqX-i5-zgR" firstAttribute="centerX" secondItem="2zh-H5-Gry" secondAttribute="centerX" id="Tev-NK-0M4"/>
                                     <constraint firstItem="hqX-i5-zgR" firstAttribute="top" secondItem="CEJ-h6-WNf" secondAttribute="bottom" constant="8" id="Ulu-pl-Xgu"/>
                                     <constraint firstItem="7Nx-ql-mHE" firstAttribute="centerX" secondItem="2zh-H5-Gry" secondAttribute="centerX" id="fNd-xL-BEo"/>
-                                    <constraint firstItem="9rZ-8u-qoq" firstAttribute="centerX" secondItem="2zh-H5-Gry" secondAttribute="centerX" id="geq-ki-Ukk"/>
                                     <constraint firstAttribute="height" constant="310" id="mwq-Wh-3zn"/>
                                     <constraint firstItem="CEJ-h6-WNf" firstAttribute="top" secondItem="2zh-H5-Gry" secondAttribute="top" constant="35" id="nNO-ZP-JCv"/>
-                                    <constraint firstItem="9rZ-8u-qoq" firstAttribute="top" secondItem="hqX-i5-zgR" secondAttribute="bottom" constant="15" id="qCP-Yp-fU8"/>
                                     <constraint firstItem="7Nx-ql-mHE" firstAttribute="centerY" secondItem="2zh-H5-Gry" secondAttribute="centerY" id="w0o-0W-lWg"/>
                                 </constraints>
                             </view>
@@ -746,25 +707,13 @@
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvZ-vJ-dkg">
-                                        <rect key="frame" x="60" y="148" width="151" height="86"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
-                                        <connections>
-                                            <action selector="test3DefAction:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="9e3-da-tyf"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="LvZ-vJ-dkg" firstAttribute="top" secondItem="2Oq-Dg-7Yy" secondAttribute="bottom" constant="15" id="2I9-1C-Upp"/>
                                     <constraint firstItem="8yP-cG-uBL" firstAttribute="top" secondItem="XAN-TW-4S4" secondAttribute="top" constant="35" id="82P-zm-AD1"/>
                                     <constraint firstAttribute="width" constant="270" id="9Ne-gU-ZIA"/>
                                     <constraint firstItem="2Oq-Dg-7Yy" firstAttribute="centerX" secondItem="XAN-TW-4S4" secondAttribute="centerX" id="GHD-rP-m6l"/>
-                                    <constraint firstItem="LvZ-vJ-dkg" firstAttribute="centerX" secondItem="XAN-TW-4S4" secondAttribute="centerX" id="MBV-0r-GaF"/>
                                     <constraint firstAttribute="height" constant="310" id="UVj-39-xbX"/>
                                     <constraint firstItem="drl-ge-ZAw" firstAttribute="centerX" secondItem="XAN-TW-4S4" secondAttribute="centerX" id="flL-kz-n1X"/>
                                     <constraint firstItem="2Oq-Dg-7Yy" firstAttribute="top" secondItem="8yP-cG-uBL" secondAttribute="bottom" constant="8" id="mDk-Pc-qVW"/>
@@ -795,16 +744,6 @@
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhT-Lm-yzl">
-                                        <rect key="frame" x="59" y="148" width="151" height="86"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
-                                        <connections>
-                                            <action selector="reuAction:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="z70-Da-pm0"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -812,11 +751,9 @@
                                     <constraint firstItem="Zvo-7c-g77" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="8uQ-WK-Y3B"/>
                                     <constraint firstAttribute="height" constant="310" id="9QZ-gC-wby"/>
                                     <constraint firstItem="axE-v5-kqb" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="Anm-jy-JA6"/>
-                                    <constraint firstItem="RhT-Lm-yzl" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="C6x-qq-BmS"/>
                                     <constraint firstItem="80f-ib-pCm" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="Cdq-Rh-hB4"/>
                                     <constraint firstItem="80f-ib-pCm" firstAttribute="top" secondItem="axE-v5-kqb" secondAttribute="bottom" constant="8" id="EDX-DQ-3bI"/>
                                     <constraint firstItem="axE-v5-kqb" firstAttribute="top" secondItem="f3P-NJ-1Bk" secondAttribute="top" constant="35" id="Opd-Gk-3lE"/>
-                                    <constraint firstItem="RhT-Lm-yzl" firstAttribute="top" secondItem="80f-ib-pCm" secondAttribute="bottom" constant="15" id="Rld-Yw-Qs3"/>
                                     <constraint firstAttribute="width" constant="270" id="Rme-rb-B8u"/>
                                     <constraint firstItem="Zvo-7c-g77" firstAttribute="centerY" secondItem="f3P-NJ-1Bk" secondAttribute="centerY" id="lag-77-E0A"/>
                                 </constraints>
@@ -844,25 +781,11 @@
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSx-jQ-aaO">
-                                        <rect key="frame" x="60" y="148" width="151" height="86"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Vai!" backgroundImage="BVD"/>
-                                        <state key="selected" backgroundImage="BotãoVai-1"/>
-                                        <state key="focused" backgroundImage="BotãoVai-1"/>
-                                        <connections>
-                                            <action selector="promAction:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="QlK-PR-S0W"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="U9J-mz-kdh" firstAttribute="centerX" secondItem="WOl-ta-sTA" secondAttribute="centerX" id="BlK-0C-Bo5"/>
-                                    <constraint firstItem="kSx-jQ-aaO" firstAttribute="top" secondItem="U9J-mz-kdh" secondAttribute="bottom" constant="15" id="EBM-9p-egP"/>
-                                    <constraint firstItem="kSx-jQ-aaO" firstAttribute="centerX" secondItem="WOl-ta-sTA" secondAttribute="centerX" id="IuA-LM-AO1"/>
                                     <constraint firstAttribute="width" constant="270" id="R9H-h9-OkT"/>
                                     <constraint firstItem="EmQ-EM-QQl" firstAttribute="centerY" secondItem="WOl-ta-sTA" secondAttribute="centerY" id="URI-XI-wDR"/>
                                     <constraint firstItem="EmQ-EM-QQl" firstAttribute="centerX" secondItem="WOl-ta-sTA" secondAttribute="centerX" id="guS-hR-WHK"/>
@@ -895,25 +818,13 @@
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7c-oI-IsF">
-                                        <rect key="frame" x="60" y="148" width="151" height="86"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
-                                        <connections>
-                                            <action selector="juri1Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="dd1-Q4-ufg"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="310" id="0Y0-Nw-1rT"/>
                                     <constraint firstItem="NOF-AN-op5" firstAttribute="centerX" secondItem="fhD-WO-DBc" secondAttribute="centerX" id="5O7-zb-I3b"/>
-                                    <constraint firstItem="H7c-oI-IsF" firstAttribute="centerX" secondItem="fhD-WO-DBc" secondAttribute="centerX" id="C85-hc-LxK"/>
                                     <constraint firstAttribute="width" constant="270" id="F1K-Eo-JAM"/>
-                                    <constraint firstItem="H7c-oI-IsF" firstAttribute="top" secondItem="zpc-da-MQj" secondAttribute="bottom" constant="15" id="bXU-Kg-kjB"/>
                                     <constraint firstItem="NOF-AN-op5" firstAttribute="centerY" secondItem="fhD-WO-DBc" secondAttribute="centerY" id="cfi-QX-mRg"/>
                                     <constraint firstItem="Dgr-x0-acJ" firstAttribute="centerX" secondItem="fhD-WO-DBc" secondAttribute="centerX" id="gI0-1e-ZsB"/>
                                     <constraint firstItem="zpc-da-MQj" firstAttribute="centerX" secondItem="fhD-WO-DBc" secondAttribute="centerX" id="j2C-fk-vQi"/>
@@ -944,16 +855,6 @@
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuR-PD-5Fu">
-                                        <rect key="frame" x="60" y="148" width="151" height="86"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
-                                        <connections>
-                                            <action selector="juri2Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="QZn-os-md2"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -961,10 +862,8 @@
                                     <constraint firstItem="5aW-27-27g" firstAttribute="centerX" secondItem="VKV-0P-ahg" secondAttribute="centerX" id="7ti-tN-BTP"/>
                                     <constraint firstItem="7T4-P8-EDv" firstAttribute="centerX" secondItem="VKV-0P-ahg" secondAttribute="centerX" id="85M-aG-KDg"/>
                                     <constraint firstAttribute="height" constant="310" id="BEf-KW-288"/>
-                                    <constraint firstItem="AuR-PD-5Fu" firstAttribute="top" secondItem="5aW-27-27g" secondAttribute="bottom" constant="15" id="Q2k-Kh-UAQ"/>
                                     <constraint firstItem="wWB-gF-97i" firstAttribute="centerX" secondItem="VKV-0P-ahg" secondAttribute="centerX" id="esK-UX-fm7"/>
                                     <constraint firstItem="wWB-gF-97i" firstAttribute="top" secondItem="VKV-0P-ahg" secondAttribute="top" constant="35" id="fkY-k4-mS9"/>
-                                    <constraint firstItem="AuR-PD-5Fu" firstAttribute="centerX" secondItem="VKV-0P-ahg" secondAttribute="centerX" id="kpT-LQ-mKG"/>
                                     <constraint firstAttribute="width" constant="270" id="pC0-Jr-flA"/>
                                     <constraint firstItem="5aW-27-27g" firstAttribute="top" secondItem="wWB-gF-97i" secondAttribute="bottom" constant="8" id="sUx-97-Mta"/>
                                     <constraint firstItem="7T4-P8-EDv" firstAttribute="centerY" secondItem="VKV-0P-ahg" secondAttribute="centerY" id="ywM-Wc-k4O"/>
@@ -993,16 +892,6 @@
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuG-Ez-aFy">
-                                        <rect key="frame" x="60" y="148" width="151" height="86"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" title="Vai!" backgroundImage="BotãoVai-1"/>
-                                        <connections>
-                                            <action selector="juri3Action:" destination="lE1-si-hiT" eventType="primaryActionTriggered" id="NH6-51-yb7"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1012,9 +901,7 @@
                                     <constraint firstItem="c1V-J7-ORU" firstAttribute="top" secondItem="1W6-2X-srU" secondAttribute="top" constant="35" id="FWw-GQ-BZ5"/>
                                     <constraint firstItem="1tf-jX-2AV" firstAttribute="centerY" secondItem="1W6-2X-srU" secondAttribute="centerY" id="IH2-In-kyG"/>
                                     <constraint firstItem="c1V-J7-ORU" firstAttribute="centerX" secondItem="1W6-2X-srU" secondAttribute="centerX" id="Q3t-qf-dq7"/>
-                                    <constraint firstItem="wuG-Ez-aFy" firstAttribute="centerX" secondItem="1W6-2X-srU" secondAttribute="centerX" id="TiR-T9-PdC"/>
                                     <constraint firstItem="36e-SN-sSs" firstAttribute="centerX" secondItem="1W6-2X-srU" secondAttribute="centerX" id="bly-Db-ZH7"/>
-                                    <constraint firstItem="wuG-Ez-aFy" firstAttribute="top" secondItem="36e-SN-sSs" secondAttribute="bottom" constant="15" id="lx8-7t-VjZ"/>
                                     <constraint firstItem="1tf-jX-2AV" firstAttribute="centerX" secondItem="1W6-2X-srU" secondAttribute="centerX" id="rVi-Fo-5sP"/>
                                     <constraint firstItem="36e-SN-sSs" firstAttribute="top" secondItem="c1V-J7-ORU" secondAttribute="bottom" constant="8" id="yR7-9d-571"/>
                                 </constraints>
@@ -1089,9 +976,9 @@
                             <constraint firstItem="LrA-RW-Q6k" firstAttribute="leading" secondItem="Kct-90-Z6s" secondAttribute="leading" constant="70" id="Hz0-nc-t8o"/>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="bottom" secondItem="AP3-LX-Tre" secondAttribute="bottom" id="JG0-u8-qNB"/>
                             <constraint firstItem="rGC-LQ-2b4" firstAttribute="top" secondItem="Kct-90-Z6s" secondAttribute="top" constant="-425" id="NOt-sD-SHF"/>
+                            <constraint firstItem="RRZ-ul-ASm" firstAttribute="centerY" secondItem="Kct-90-Z6s" secondAttribute="centerY" id="OkH-re-FSL"/>
                             <constraint firstItem="hNh-Dh-KWj" firstAttribute="top" secondItem="xnf-Yt-1Mj" secondAttribute="bottom" constant="27" id="Pr9-c5-I2y"/>
                             <constraint firstItem="FhT-GH-rbJ" firstAttribute="bottom" secondItem="rfT-7x-KMM" secondAttribute="bottom" id="S9E-kw-Wp9"/>
-                            <constraint firstItem="HSl-5b-nWA" firstAttribute="top" secondItem="RRZ-ul-ASm" secondAttribute="bottom" constant="45" id="SCq-cY-nVx"/>
                             <constraint firstItem="WOl-ta-sTA" firstAttribute="centerX" secondItem="rfT-7x-KMM" secondAttribute="centerX" id="SIf-Ru-V73"/>
                             <constraint firstItem="AP3-LX-Tre" firstAttribute="leading" secondItem="Bxd-cc-73o" secondAttribute="trailing" constant="5" id="Skv-s4-e5J"/>
                             <constraint firstItem="f3P-NJ-1Bk" firstAttribute="bottom" secondItem="drl-ge-ZAw" secondAttribute="bottom" id="Tw3-sY-Oan"/>
@@ -1126,21 +1013,13 @@
                         <outlet property="advgDefesa" destination="AP3-LX-Tre" id="6iT-zf-NyA"/>
                         <outlet property="backGroudImage" destination="YmH-wn-vPA" id="cqQ-GE-eLh"/>
                         <outlet property="juri1" destination="FhT-GH-rbJ" id="4rC-Lw-Zxz"/>
-                        <outlet property="juri1ButtonOut" destination="H7c-oI-IsF" id="2bE-Nh-8Vn"/>
                         <outlet property="juri2" destination="MPf-Kq-DF1" id="Bma-fL-Db4"/>
-                        <outlet property="juri2ButtonOut" destination="AuR-PD-5Fu" id="Rak-m7-Qd6"/>
                         <outlet property="juri3" destination="6ag-5o-iH0" id="OLV-P4-Jhv"/>
-                        <outlet property="juri3ButtonOut" destination="wuG-Ez-aFy" id="Pbo-DF-c6n"/>
                         <outlet property="pranchetaView" destination="rGC-LQ-2b4" id="fUl-vZ-dW0"/>
-                        <outlet property="promButtonOut" destination="kSx-jQ-aaO" id="kRQ-B6-RIA"/>
                         <outlet property="promotoria" destination="rfT-7x-KMM" id="ANY-1Q-lRG"/>
                         <outlet property="qtdVotosLabel" destination="YZq-LW-vqP" id="sVE-qb-8Jn"/>
                         <outlet property="reu" destination="HSl-5b-nWA" id="Ose-qJ-d1y"/>
-                        <outlet property="reuButtonOut" destination="RhT-Lm-yzl" id="0Sd-rN-o9P"/>
                         <outlet property="startButton" destination="RRZ-ul-ASm" id="V2w-6s-IOZ"/>
-                        <outlet property="test1ButtonOut" destination="pz0-eK-Web" id="guo-E3-tRN"/>
-                        <outlet property="test2ButtonOut" destination="9rZ-8u-qoq" id="IX3-ph-KX8"/>
-                        <outlet property="testAndDefButtonOut" destination="LvZ-vJ-dkg" id="aIF-3A-izq"/>
                         <outlet property="testemunha1" destination="Bxd-cc-73o" id="Oyz-lN-oPd"/>
                         <outlet property="testemunha2" destination="LrA-RW-Q6k" id="Mvc-JK-xM3"/>
                         <outlet property="testemunhaCase4" destination="xnf-Yt-1Mj" id="4LF-vD-gfB"/>
@@ -1405,9 +1284,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BVD" width="151" height="72"/>
         <image name="Botao_SemFoco" width="479" height="151"/>
-        <image name="BotãoVai-1" width="151" height="72"/>
         <image name="Selcted" width="533" height="171"/>
         <image name="UnicornioRéu" width="214" height="214"/>
         <image name="background_menu" width="1920" height="1080"/>
