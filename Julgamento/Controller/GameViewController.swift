@@ -101,6 +101,8 @@ class GameViewController: UIViewController {
     var numDeVotosCulpado: Int = 0
     var totalDeVotos: Int = 0
     
+    var isHiddenForEl: Bool = false
+    
     var decisãoFinal: String?
     
     
@@ -225,7 +227,7 @@ class GameViewController: UIViewController {
     
     //MARK: POP-UP FUNCTIONS
     
-    func powerUpPopUP(){
+    @objc func powerUpPopUP(){
         
         // Mark: Passando Data para processar em tela do Pop-Up
         globalRound = indexArray
@@ -252,6 +254,7 @@ class GameViewController: UIViewController {
         let test = storyboard.instantiateViewController(withIdentifier: "ProvaDoCrimeViewController")
         
         self.present(test, animated: true) {
+            self.isHiddenForEl = true
             self.timer.invalidate()
         }
     
@@ -402,33 +405,36 @@ class GameViewController: UIViewController {
         
         
         
-        if indexArray == 0{
-            
-            //namePerson.text = "PREPARE SEU ARGUMENTO!"
-            //funcPerson.text = "Advogados terão 15 segundos para preparar suas apresentacões"
-            time = tempoDosJogadores[indexArray]
+        if indexArray == 0 {
+                self.time = tempoDosJogadores[self.indexArray]
 //          startButton.isHidden = false
-            activeButton = false
-            gerentBubble()
-            powerUpPopUP()
+                self.activeButton = false
+                self.gerentBubble()
+            
         }
     
         if indexArray == 1 {
-           
-            //Round 1
-            // exemplo de como colocar os sons em cada pop up NomeDaClass.sharedHelper.playBackgroundMusic()
-            Turnos.sharedHelper.playBackgroundMusic()
             powerUpPopUP()
-            gerentBubble()
-            timerLabel.text = ("0:30")
-            startButton.isHidden = false
-            activeButton = false
-            time = tempoDosJogadores[indexArray]
+            //Round 1
+            
+            
+            powerUpPopUP()
+            DispatchQueue.main.asyncAfter(deadline: .now()+5.0) {
+                self.gerentBubble()
+                self.timerLabel.text = ("0:30")
+                self.startButton.isHidden = false
+                self.activeButton = false
+                self.time = tempoDosJogadores[self.indexArray]
+                
+            }
             
             
         }
         else if indexArray == 2 {
             
+            DispatchQueue.main.asyncAfter(deadline: .now()+4.0) {
+                self.powerUpPopUP()
+            }
             gerentBubble()
             timerLabel.text = ("0:30")
             startButton.isHidden = false
@@ -438,7 +444,7 @@ class GameViewController: UIViewController {
             
             
             //Acabou o tempo
-            powerUpPopUP()
+            
         }
         
         
@@ -662,11 +668,9 @@ class GameViewController: UIViewController {
                 
             }
        
-            
            // powerUpPopUP()
             indexArray += 1
             self.timer.invalidate()
-            
             gerRound()
             
         }

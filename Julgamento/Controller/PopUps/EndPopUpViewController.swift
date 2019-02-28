@@ -22,14 +22,14 @@ class EndPopUpViewController: UIViewController {
         super.viewDidLoad()
         
         // Mark: Aqui seta as labels
-        
+        Turnos.sharedHelper.playBackgroundMusic()
         setLabels()
         
         EndOfTurnView.layer.cornerRadius = 67.5
         EndOfTurnView.clipsToBounds = true
         
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.dismiss(animated: false)
         }
   
