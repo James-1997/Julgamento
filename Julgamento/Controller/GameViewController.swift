@@ -859,7 +859,7 @@ class GameViewController: UIViewController {
             
 
             viewDecisãoDoJúri.isHidden = true
-            viewTestemunha1.isHidden = false
+            viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
             viewRéu.isHidden = true
             viewTestemunha2_1.isHidden = true
