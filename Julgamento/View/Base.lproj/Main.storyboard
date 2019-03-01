@@ -531,7 +531,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tráfico de pó mágico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPF-CW-KZ1">
-                                        <rect key="frame" x="258" y="252" width="277" height="50"/>
+                                        <rect key="frame" x="258" y="252" width="325" height="50"/>
                                         <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="42"/>
                                         <color key="textColor" red="0.0" green="0.27450980390000002" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -744,6 +744,10 @@
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RéuLabel" translatesAutoresizingMaskIntoConstraints="NO" id="VbK-hV-mH2">
+                                        <rect key="frame" x="99" y="57" width="71" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -896,7 +900,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-GN-XND" userLabel="ViewDecisãoDoJúri">
                                 <rect key="frame" x="503" y="160" width="914" height="484"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UnicornioRéu" translatesAutoresizingMaskIntoConstraints="NO" id="6zJ-q4-LaO">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UnicornioRéu" translatesAutoresizingMaskIntoConstraints="NO" id="6zJ-q4-LaO">
                                         <rect key="frame" x="357" y="142" width="200" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="59C-Gp-SXw"/>
@@ -1052,10 +1056,6 @@
                                     <constraint firstAttribute="width" constant="270" id="zSn-K3-IhK"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RéuLabel" translatesAutoresizingMaskIntoConstraints="NO" id="VbK-hV-mH2">
-                                <rect key="frame" x="797" y="694" width="71" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="leading" secondItem="AP3-LX-Tre" secondAttribute="trailing" constant="25" id="0eI-yk-fCb"/>
@@ -1406,7 +1406,7 @@
         <image name="1ºTurno" width="873" height="179"/>
         <image name="JuriLabel" width="78" height="41"/>
         <image name="RéuLabel" width="62" height="40"/>
-        <image name="UnicornioRéu" width="214" height="214"/>
+        <image name="UnicornioRéu" width="214" height="214"/>
         <image name="background_menu" width="1920" height="1080"/>
         <image name="balao" width="188" height="115"/>
         <image name="botao_menuXX" width="529" height="167"/>
