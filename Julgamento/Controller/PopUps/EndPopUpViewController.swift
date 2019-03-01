@@ -116,7 +116,7 @@ class EndPopUpViewController: UIViewController {
             //Promotoria
         case 10:
             
-            powerUpDaVez = arrayPowerUp[8]
+            powerUpDaVez = arrayPowerUp[5]
             popUpImage.image = powerUpDaVez!.backgroundImage
            
             //Defesa
@@ -130,7 +130,7 @@ class EndPopUpViewController: UIViewController {
             //promotoria
         case 12:
             
-            powerUpDaVez = arrayPowerUp[4]
+            powerUpDaVez = arrayPowerUp[5]
             popUpImage.image = powerUpDaVez!.backgroundImage
             
             //Defesa
@@ -138,7 +138,6 @@ class EndPopUpViewController: UIViewController {
             
             powerUpDaVez = arrayPowerUp[5]
             popUpImage.image = powerUpDaVez!.backgroundImage
-            
             //Juri
         case 14:
             

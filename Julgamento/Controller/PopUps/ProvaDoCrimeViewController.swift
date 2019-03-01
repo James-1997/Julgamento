@@ -50,7 +50,7 @@ class ProvaDoCrimeViewController: UIViewController {
   
         case 11:
 
-            powerUpDaVez = arrayPowerUp[randoPUp()]
+            powerUpDaVez = arrayPowerUp[8]
             powerUpBackground.image = powerUpDaVez!.backgroundImage
             
 

@@ -16,7 +16,7 @@ import UIKit
 // 0 -> é o juri (que nao tem tempo)
 
 //let tempoDosJogadores = [15,30,30,90,90,0,15,90,90,0,90,90,0, 30,30,0]
-
+//
 let tempoDosJogadores = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 
 func DivForGame (qtdJogadores: Int) -> [Int?] {

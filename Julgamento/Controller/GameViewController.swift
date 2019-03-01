@@ -136,8 +136,9 @@ class GameViewController: UIViewController {
                 numDeVotosCulpado += 1
                 
                 totalDeVotos = numDeVotosInocente + numDeVotosCulpado
-                qtdVotosLabel.text = "\(numDeVotosInocente)"
-                if numDeVotosCulpado + numDeVotosCulpado == 3 {
+                qtdVotosLabel.text = "\(numDeVotosInocente + numDeVotosCulpado)"
+                if numDeVotosCulpado + numDeVotosInocente == 3 {
+                    
                     reuNamePranch.isHidden = true
                     localNamePranch.isHidden = true
                     incidenteNamePranch.isHidden = true
@@ -161,8 +162,9 @@ class GameViewController: UIViewController {
                 numDeVotosInocente += 1
                 
                 totalDeVotos = numDeVotosInocente + numDeVotosCulpado
-                qtdVotosLabel.text = "\(numDeVotosInocente)"
-                if numDeVotosCulpado + numDeVotosCulpado == 3 {
+                qtdVotosLabel.text = "\(numDeVotosInocente + numDeVotosCulpado )"
+                
+                if numDeVotosCulpado + numDeVotosInocente == 3 {
                     reuNamePranch.isHidden = true
                     localNamePranch.isHidden = true
                     incidenteNamePranch.isHidden = true
@@ -173,7 +175,7 @@ class GameViewController: UIViewController {
                     icidenteTitleLabel.isHidden = true
                     result.isHidden = false
                     result.text = "INOCENTE"
-                    downView()
+                    upView()
                 }
                 
             }
@@ -383,10 +385,10 @@ class GameViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 320})
+        UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 350})
         animationPranchete = true
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-            UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y -= 320
+            UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y -= 350
                                                         self.startButton.isHidden = false
             })
         }
@@ -396,12 +398,14 @@ class GameViewController: UIViewController {
     
     func downView(){
         UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 320})
+        animationPranchete = true
     }
     
     // MARK: Animacao de subir prancheta
     
     func upView(){
         UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y -= 320})
+        animationPranchete = true
     }
     
     

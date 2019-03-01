@@ -198,7 +198,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itx-Tk-399">
-                                <rect key="frame" x="1076" y="934" width="104" height="86"/>
+                                <rect key="frame" x="1057" y="934" width="104" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.96951931715011597" green="0.94742757081985474" blue="0.79694074392318726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,7 +208,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqn-xj-qzH">
-                                <rect key="frame" x="1710" y="934" width="135" height="86"/>
+                                <rect key="frame" x="1691" y="934" width="154" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="133" id="GoL-0M-UEK"/>
                                     <constraint firstAttribute="height" constant="86" id="vF2-Oy-iFa"/>
@@ -271,20 +271,20 @@
                                     <constraint firstAttribute="width" constant="200" id="T4N-QJ-gSv"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-MA-Bup">
-                                <rect key="frame" x="565" y="496" width="112" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogador 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-MA-Bup">
+                                <rect key="frame" x="558" y="496" width="127" height="38"/>
                                 <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jro-H1-b8E">
-                                <rect key="frame" x="1101" y="796" width="112" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogador 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jro-H1-b8E">
+                                <rect key="frame" x="1088" y="796" width="138" height="38"/>
                                 <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibn-yy-Zqj">
-                                <rect key="frame" x="1248" y="496" width="112" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogador 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibn-yy-Zqj">
+                                <rect key="frame" x="1236" y="496" width="137" height="38"/>
                                 <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -293,7 +293,7 @@
                                 <rect key="frame" x="804" y="554" width="100" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orl-we-vHG">
-                                        <rect key="frame" x="39" y="28" width="22" height="45"/>
+                                        <rect key="frame" x="35" y="11" width="31" height="78"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                         <color key="textColor" red="0.54024279119999996" green="0.60900753740000002" blue="0.061043292280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -311,7 +311,7 @@
                                 <rect key="frame" x="648" y="254" width="100" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHB-WW-nov">
-                                        <rect key="frame" x="39" y="28" width="22" height="45"/>
+                                        <rect key="frame" x="35" y="11" width="31" height="78"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                         <color key="textColor" red="0.54024279117584229" green="0.60900753736495972" blue="0.061043292284011841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -329,7 +329,7 @@
                                 <rect key="frame" x="1181" y="554" width="100" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rk7-E0-H0S">
-                                        <rect key="frame" x="39" y="28" width="22" height="45"/>
+                                        <rect key="frame" x="35" y="11" width="31" height="78"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                         <color key="textColor" red="0.54024279119999996" green="0.60900753740000002" blue="0.061043292280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -347,7 +347,7 @@
                                 <rect key="frame" x="1323" y="254" width="100" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imi-ab-NOT">
-                                        <rect key="frame" x="39" y="28" width="22" height="45"/>
+                                        <rect key="frame" x="35" y="11" width="31" height="78"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                         <color key="textColor" red="0.54024279119999996" green="0.60900753740000002" blue="0.061043292280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -365,7 +365,7 @@
                                 <rect key="frame" x="983" y="254" width="100" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eth-ZY-M3F">
-                                        <rect key="frame" x="39" y="28" width="22" height="45"/>
+                                        <rect key="frame" x="35" y="11" width="31" height="78"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="38"/>
                                         <color key="textColor" red="0.54024279119999996" green="0.60900753740000002" blue="0.061043292280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -387,7 +387,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-9p-Vmf">
-                                <rect key="frame" x="941" y="935" width="39" height="85"/>
+                                <rect key="frame" x="925" y="935" width="71" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="pN4-yf-KiL"/>
                                 </constraints>
@@ -395,14 +395,14 @@
                                 <color key="textColor" red="0.96951931715011597" green="0.94742757081985474" blue="0.79694074392318726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1y-Nq-tBc">
-                                <rect key="frame" x="726" y="796" width="112" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogador 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1y-Nq-tBc">
+                                <rect key="frame" x="714" y="796" width="136" height="38"/>
                                 <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3G-np-A6I">
-                                <rect key="frame" x="904" y="496" width="112" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogador 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3G-np-A6I">
+                                <rect key="frame" x="891" y="496" width="138" height="38"/>
                                 <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -531,50 +531,50 @@
                                         <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="32"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RÉU:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8j-Dg-C66">
-                                        <rect key="frame" x="39" y="191" width="75" height="50"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="50"/>
+                                        <rect key="frame" x="39" y="191" width="86" height="51"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="42"/>
                                         <color key="textColor" red="0.0" green="0.18431372549019609" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Unicórnio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2n-az-MSy">
-                                        <rect key="frame" x="129" y="199" width="127" height="42"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="42"/>
+                                        <rect key="frame" x="140" y="201" width="136" height="41"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="34"/>
                                         <color key="textColor" red="0.0" green="0.27450980392156865" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INCIDENTE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOY-3d-hWU">
-                                        <rect key="frame" x="39" y="261" width="199" height="50"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="50"/>
+                                        <rect key="frame" x="39" y="262" width="208" height="51"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="42"/>
                                         <color key="textColor" red="0.0" green="0.1843137255" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tráfico de pó mágico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPF-CW-KZ1">
-                                        <rect key="frame" x="253" y="269" width="290" height="42"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="42"/>
+                                        <rect key="frame" x="262" y="272" width="315" height="41"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="34"/>
                                         <color key="textColor" red="0.0" green="0.27450980390000002" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VÍTIMA:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZT-Vq-LiZ">
-                                        <rect key="frame" x="39" y="322" width="136" height="50"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="50"/>
+                                        <rect key="frame" x="39" y="324" width="145" height="51"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="42"/>
                                         <color key="textColor" red="0.0" green="0.1843137255" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" População mágica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKI-Ew-Vhi">
-                                        <rect key="frame" x="190" y="330" width="254" height="42"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="42"/>
+                                        <rect key="frame" x="199" y="334" width="262" height="41"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="34"/>
                                         <color key="textColor" red="0.0" green="0.27450980390000002" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCAL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jR-vi-Q7B">
-                                        <rect key="frame" x="39" y="374" width="111" height="50"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="50"/>
+                                        <rect key="frame" x="39" y="377" width="148" height="51"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="42"/>
                                         <color key="textColor" red="0.0" green="0.1843137255" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lago dos Duendes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5C-7w-xFW">
-                                        <rect key="frame" x="165" y="382" width="251" height="42"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="42"/>
+                                        <rect key="frame" x="202" y="387" width="259" height="41"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="34"/>
                                         <color key="textColor" red="0.0" green="0.27450980390000002" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -720,13 +720,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYa-gb-yBl">
-                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                        <rect key="frame" x="35" y="15" width="200" height="48"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="40"/>
                                         <color key="textColor" red="0.011764705882352941" green="0.1764705882352941" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTEMUNHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-FL-L4H">
-                                        <rect key="frame" x="30" y="68" width="211" height="45"/>
+                                        <rect key="frame" x="30" y="71" width="211" height="45"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -758,22 +758,26 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axE-v5-kqb">
-                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                        <rect key="frame" x="35" y="15" width="200" height="48"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="40"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RéuLabel" translatesAutoresizingMaskIntoConstraints="NO" id="VbK-hV-mH2">
-                                        <rect key="frame" x="99" y="57" width="71" height="45"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixy-TW-zp2">
+                                        <rect key="frame" x="104" y="78" width="62" height="45"/>
+                                        <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
+                                        <color key="textColor" red="0.00042777220369316638" green="0.19087976217269897" blue="0.27000653743743896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.011868986301124096" green="0.15534341335296631" blue="0.23849940299987793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Zvo-7c-g77" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="3Tx-2b-K4r"/>
+                                    <constraint firstItem="ixy-TW-zp2" firstAttribute="top" secondItem="axE-v5-kqb" secondAttribute="bottom" constant="15" id="6JE-xM-1pW"/>
                                     <constraint firstItem="axE-v5-kqb" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="9L7-qa-pRF"/>
                                     <constraint firstAttribute="height" constant="160" id="CVS-TI-Ain"/>
+                                    <constraint firstItem="ixy-TW-zp2" firstAttribute="centerX" secondItem="f3P-NJ-1Bk" secondAttribute="centerX" id="KWJ-oh-BWM"/>
                                     <constraint firstItem="Zvo-7c-g77" firstAttribute="centerY" secondItem="f3P-NJ-1Bk" secondAttribute="centerY" id="Z5D-6K-CGk"/>
                                     <constraint firstAttribute="width" constant="270" id="fUY-Hk-Njx"/>
                                     <constraint firstItem="axE-v5-kqb" firstAttribute="top" secondItem="f3P-NJ-1Bk" secondAttribute="top" constant="15" id="l95-qJ-sxR"/>
@@ -791,13 +795,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1T-OE-1VO" userLabel="É a vez de">
-                                        <rect key="frame" x="69" y="15" width="132" height="35"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="35"/>
+                                        <rect key="frame" x="35" y="15" width="200" height="48"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="40"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROMOTORIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9J-mz-kdh">
-                                        <rect key="frame" x="44" y="58" width="183" height="41"/>
+                                        <rect key="frame" x="44" y="71" width="183" height="41"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="20"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -829,8 +833,8 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunte:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgr-x0-acJ" userLabel="É a vez de">
-                                        <rect key="frame" x="68" y="15" width="135" height="45"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                        <rect key="frame" x="59" y="15" width="153" height="48"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="40"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -862,8 +866,8 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunte:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWB-gF-97i">
-                                        <rect key="frame" x="68" y="15" width="135" height="45"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                        <rect key="frame" x="59" y="15" width="153" height="48"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="40"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -895,8 +899,8 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pergunte:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1V-J7-ORU" userLabel="É a vez de">
-                                        <rect key="frame" x="68" y="15" width="135" height="45"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                        <rect key="frame" x="59" y="15" width="153" height="48"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="40"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1012,13 +1016,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEJ-h6-WNf" userLabel="É a vez de">
-                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                        <rect key="frame" x="35" y="15" width="200" height="48"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="40"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTEMUNHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-i5-zgR">
-                                        <rect key="frame" x="30" y="68" width="211" height="45"/>
+                                        <rect key="frame" x="30" y="71" width="211" height="45"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1049,13 +1053,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É a vez de " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yP-cG-uBL">
-                                        <rect key="frame" x="50" y="15" width="170" height="45"/>
-                                        <fontDescription key="fontDescription" name="LettersforLearners" family="Letters for Learners" pointSize="45"/>
+                                        <rect key="frame" x="35" y="15" width="200" height="48"/>
+                                        <fontDescription key="fontDescription" name="sagesans-Regular" family="sage sans" pointSize="40"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TESTEMUNHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oq-Dg-7Yy">
-                                        <rect key="frame" x="30" y="68" width="211" height="45"/>
+                                        <rect key="frame" x="30" y="71" width="211" height="45"/>
                                         <fontDescription key="fontDescription" name="Splatch" family="Splatch" pointSize="22"/>
                                         <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1434,7 +1438,6 @@
     <resources>
         <image name="1ºTurno" width="873" height="179"/>
         <image name="JuriLabel" width="78" height="41"/>
-        <image name="RéuLabel" width="62" height="40"/>
         <image name="UnicornioRéu" width="214" height="214"/>
         <image name="background_menu" width="1920" height="1080"/>
         <image name="balao" width="188" height="115"/>
