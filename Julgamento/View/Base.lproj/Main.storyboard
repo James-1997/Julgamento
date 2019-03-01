@@ -502,7 +502,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGC-LQ-2b4">
-                                <rect key="frame" x="608" y="-50" width="705" height="695"/>
+                                <rect key="frame" x="608" y="-432" width="705" height="695"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prancheta" translatesAutoresizingMaskIntoConstraints="NO" id="ydc-nt-xNz">
                                         <rect key="frame" x="0.0" y="58" width="715" height="579"/>
@@ -1073,7 +1073,7 @@
                             <constraint firstItem="XAN-TW-4S4" firstAttribute="centerX" secondItem="xnf-Yt-1Mj" secondAttribute="centerX" id="J4U-Yq-n43"/>
                             <constraint firstItem="HSl-5b-nWA" firstAttribute="bottom" secondItem="AP3-LX-Tre" secondAttribute="bottom" id="JG0-u8-qNB"/>
                             <constraint firstItem="WOl-ta-sTA" firstAttribute="centerX" secondItem="rfT-7x-KMM" secondAttribute="centerX" id="JdG-bK-JVp"/>
-                            <constraint firstItem="rGC-LQ-2b4" firstAttribute="top" secondItem="Kct-90-Z6s" secondAttribute="top" constant="-50" id="NOt-sD-SHF"/>
+                            <constraint firstItem="rGC-LQ-2b4" firstAttribute="top" secondItem="Kct-90-Z6s" secondAttribute="top" constant="-432" id="NOt-sD-SHF"/>
                             <constraint firstItem="hNh-Dh-KWj" firstAttribute="top" secondItem="xnf-Yt-1Mj" secondAttribute="bottom" constant="27" id="Pr9-c5-I2y"/>
                             <constraint firstItem="FhT-GH-rbJ" firstAttribute="bottom" secondItem="rfT-7x-KMM" secondAttribute="bottom" id="S9E-kw-Wp9"/>
                             <constraint firstItem="AP3-LX-Tre" firstAttribute="leading" secondItem="Bxd-cc-73o" secondAttribute="trailing" constant="5" id="Skv-s4-e5J"/>

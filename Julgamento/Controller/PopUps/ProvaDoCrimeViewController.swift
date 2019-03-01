@@ -27,7 +27,7 @@ class ProvaDoCrimeViewController: UIViewController {
         provaDoCrimeView.layer.cornerRadius = 67.5
         provaDoCrimeView.clipsToBounds = true
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.dismiss(animated: false)
         }
 
