@@ -861,14 +861,9 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = false
             viewTestemunha2.isHidden = true
-            
-            if numDeJogadores == 4 {
-viewRéu.isHidden = false
-            } else {
-                viewTestemunha2_1.isHidden = false
-            }
-            
-            viewPromotoria.isHidden = true
+            viewRéu.isHidden = true
+            viewTestemunha2_1.isHidden = true
+            viewPromotoria.isHidden = false
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
             viewJuri3.isHidden = true
@@ -879,11 +874,10 @@ viewRéu.isHidden = false
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            if numDeJogadores == 4 {
-                viewRéu.isHidden = false
-            } else {
-                viewTestemunha2_1.isHidden = false
-            }
+            
+            viewRéu.isHidden = true
+            viewTestemunha2_1.isHidden = true
+            
             viewPromotoria.isHidden = false
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
@@ -891,6 +885,108 @@ viewRéu.isHidden = false
             
             
         case 8 :
+            
+            
+            viewDecisãoDoJúri.isHidden = true
+            viewPromotoria.isHidden = true
+            viewJúri.isHidden = true
+            viewJúri2.isHidden = true
+            viewJuri3.isHidden = true
+            viewTestemunha1.isHidden = true
+            viewTestemunha2.isHidden = true
+            if numDeJogadores == 4 {
+                viewRéu.isHidden = false
+            } else {
+                viewTestemunha2_1.isHidden = false
+            }
+            
+            
+            
+        case 9 :
+            
+            
+            viewDecisãoDoJúri.isHidden = true
+            viewTestemunha1.isHidden = true
+            viewTestemunha2.isHidden = true
+            viewRéu.isHidden = true
+            viewTestemunha2_1.isHidden = true
+            viewPromotoria.isHidden = true
+            
+            if numDeJogadores == 4 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 5 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 6 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 7 {
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = false
+                viewJuri3.isHidden = false
+            }
+            
+            if numDeJogadores == 8 {
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = false
+                viewJuri3.isHidden = false
+            }
+            
+        case 10:
+            
+            
+            viewDecisãoDoJúri.isHidden = true
+            if numDeJogadores == 4 {
+                viewTestemunha2_1.isHidden = false
+            }
+            
+            if numDeJogadores == 5 {
+                viewTestemunha1.isHidden = false
+                
+            }
+            
+            if numDeJogadores == 6 {
+                viewTestemunha1.isHidden = false
+                viewTestemunha2.isHidden = false
+            }
+            
+            if numDeJogadores == 7 {
+                viewTestemunha1.isHidden = false
+            }
+            
+            if numDeJogadores == 8 {
+                viewTestemunha1.isHidden = false
+                viewTestemunha2.isHidden = false
+            }
+            
+            viewRéu.isHidden = true
+            viewPromotoria.isHidden = true
+            viewJúri.isHidden = true
+            viewJúri2.isHidden = true
+            viewJuri3.isHidden = true
+            
+            
+        case 11 :
+            
+            
+            viewDecisãoDoJúri.isHidden = true
+            viewTestemunha1.isHidden = true
+            viewTestemunha2.isHidden = true
+            viewRéu.isHidden = true
+           
+            viewTestemunha2_1.isHidden = true
+            
+            viewPromotoria.isHidden = false
+            viewJúri.isHidden = true
+            viewJúri2.isHidden = true
+            viewJuri3.isHidden = true
+            
+            
+        case 12 :
             
             
             viewDecisãoDoJúri.isHidden = true
@@ -907,12 +1003,14 @@ viewRéu.isHidden = false
             viewJuri3.isHidden = true
             
             
-        case 9 :
+            
+        case 13 :
             
             
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
+            
             viewRéu.isHidden = true
             viewTestemunha2_1.isHidden = true
             viewPromotoria.isHidden = true
@@ -940,87 +1038,18 @@ viewRéu.isHidden = false
                 viewJuri3.isHidden = false
             }
             
-            
-        case 10:
-            
-            
-            viewDecisãoDoJúri.isHidden = true
-            viewTestemunha1.isHidden = true
-            viewTestemunha2.isHidden = true
-            if numDeJogadores == 4 {
-                viewRéu.isHidden = false
-            } else {
-                viewTestemunha2_1.isHidden = false
-            }
-            viewPromotoria.isHidden = false
-            viewJúri.isHidden = true
-            viewJúri2.isHidden = true
-            viewJuri3.isHidden = true
-            
-            
-        case 11 :
-            
-            
-            viewDecisãoDoJúri.isHidden = true
-            viewTestemunha1.isHidden = true
-            viewTestemunha2.isHidden = true
-            if numDeJogadores == 4 {
-                viewRéu.isHidden = false
-            } else {
-                viewTestemunha2_1.isHidden = false
-            }
-            viewPromotoria.isHidden = true
-            viewJúri.isHidden = true
-            viewJúri2.isHidden = true
-            viewJuri3.isHidden = true
-            
-            
-        case 12 :
-            
-            
-            viewDecisãoDoJúri.isHidden = true
-            viewTestemunha1.isHidden = true
-            viewTestemunha2.isHidden = true
-            if numDeJogadores == 4 {
-                viewRéu.isHidden = false
-            } else {
-                viewTestemunha2_1.isHidden = false
-            }
-            viewPromotoria.isHidden = true
-            viewJúri.isHidden = false
-            viewJúri2.isHidden = true
-            viewJuri3.isHidden = true
-            
-            
-            
-        case 13 :
-            
-            
-            viewDecisãoDoJúri.isHidden = true
-            viewTestemunha1.isHidden = true
-            viewTestemunha2.isHidden = true
-            if numDeJogadores == 4 {
-                viewRéu.isHidden = false
-            } else {
-                viewTestemunha2_1.isHidden = false
-            }
-            viewPromotoria.isHidden = false
-            viewJúri.isHidden = true
-            viewJúri2.isHidden = true
-            viewJuri3.isHidden = true
-            
         case 14 :
             
             
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            if numDeJogadores == 4 {
-                viewRéu.isHidden = false
-            } else {
-                viewTestemunha2_1.isHidden = false
-            }
-            viewPromotoria.isHidden = true
+            
+            viewRéu.isHidden = true
+            
+            viewTestemunha2_1.isHidden = true
+            
+            viewPromotoria.isHidden = false
             viewJúri.isHidden = true
             viewJúri2.isHidden = true
             viewJuri3.isHidden = true
@@ -1028,7 +1057,7 @@ viewRéu.isHidden = false
         case 15 :
             
             
-            viewDecisãoDoJúri.isHidden = false
+            viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
             if numDeJogadores == 4 {
@@ -1037,9 +1066,41 @@ viewRéu.isHidden = false
                 viewTestemunha2_1.isHidden = false
             }
             viewPromotoria.isHidden = true
-            viewJúri.isHidden = false
+            viewJúri.isHidden = true
             viewJúri2.isHidden = true
             viewJuri3.isHidden = true
+            
+        case 16 :
+            viewDecisãoDoJúri.isHidden = true
+            viewTestemunha1.isHidden = true
+            viewTestemunha2.isHidden = true
+            
+            viewRéu.isHidden = true
+            viewTestemunha2_1.isHidden = true
+            viewPromotoria.isHidden = true
+            if numDeJogadores == 4 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 5 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 6 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 7 {
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = false
+                viewJuri3.isHidden = false
+            }
+            
+            if numDeJogadores == 8 {
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = false
+                viewJuri3.isHidden = false
+            }
             
         default:
             return
