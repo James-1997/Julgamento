@@ -62,8 +62,28 @@ class GameViewController: UIViewController {
     @IBOutlet weak var viewJuri3: UIView!
 
    
-   
-   
+   //Tela de Resultado
+    
+    @IBOutlet weak var pranchetaTitleLabel: UILabel!
+    
+    @IBOutlet weak var reuTitleLabel: UILabel!
+    
+    @IBOutlet weak var reuDescriptionLabel: UILabel!
+    
+    @IBOutlet weak var icidenteTitleLabel: UILabel!
+    
+    @IBOutlet weak var icidenteDescricaoLabel: UILabel!
+    
+    @IBOutlet weak var vitimaTitleLabel: UILabel!
+    
+    @IBOutlet weak var vitimaDescriptionLabel: UILabel!
+    
+    @IBOutlet weak var localTitleLabel: UILabel!
+    
+    @IBOutlet weak var localDescriptionLabel: UILabel!
+    
+
+    
     // Add the swipe gesture recognizer
 //    let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "rightSwipe")
 //    let direction = UISwipeGestureRecognizerDirection.Right
@@ -73,12 +93,7 @@ class GameViewController: UIViewController {
 //    func rightSwipe(swipeGestureRecognizer : UISwipeGestureRecognizer) {
 //        // Handle right swipe
 //    }
-    
-   
-    
-    
-    
-    
+
     
     //Botões 
  
@@ -151,17 +166,44 @@ class GameViewController: UIViewController {
 
     func decisãoFinal(totalDeVotos: Int, numDeVotosInocente: Int, numDeVotosCulpado: Int){
         
-        print("O total de votos foi: \(totalDeVotos)")
-        print("O total de votos para inocentação do Réu foi: \(numDeVotosInocente)")
-        print("O total de votos para culpa o Réu foi: \(numDeVotosCulpado)")
         
+       
         if numDeVotosInocente > numDeVotosCulpado{
+            
+            
+            localTitleLabel.isHidden = true
+            localDescriptionLabel.isHidden = true
             
             decisãoFinal = "O Únicornio foi considerado culpado!"
             
+            pranchetaTitleLabel.text = decisãoFinal
+            reuTitleLabel.text = "Total de Votos: "
+            reuDescriptionLabel.text = "\(totalDeVotos)"
+            
+            icidenteTitleLabel.text = "Votos para Inocentação: "
+            icidenteDescricaoLabel.text = "\(numDeVotosInocente)"
+            
+            vitimaTitleLabel.text = "Votos para culpa: "
+            vitimaDescriptionLabel.text = "\(numDeVotosCulpado)"
+            
+            
+            
         }else{
             
+            localTitleLabel.isHidden = true
+            localDescriptionLabel.isHidden = true
+            
             decisãoFinal = "O Únicornio foi inocentado!"
+            
+            pranchetaTitleLabel.text = decisãoFinal
+            reuTitleLabel.text = "Total de Votos: "
+            reuDescriptionLabel.text = "\(totalDeVotos)"
+            
+            icidenteTitleLabel.text = "Votos para Inocentação: "
+            icidenteDescricaoLabel.text = "\(numDeVotosInocente)"
+            
+            vitimaTitleLabel.text = "Votos para culpa: "
+            vitimaDescriptionLabel.text = "\(numDeVotosCulpado)"
             
         }
         
@@ -1079,7 +1121,8 @@ class GameViewController: UIViewController {
             viewJuri3.isHidden = true
             
         case 16 :
-            viewDecisãoDoJúri.isHidden = true
+            
+            viewDecisãoDoJúri.isHidden = false
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
             
