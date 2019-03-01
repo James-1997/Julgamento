@@ -224,9 +224,14 @@ class GameViewController: UIViewController {
     
     // funcao usada p/ dizer o que vai acontecer durante o decorrer do timer
     @objc func action1 () {
-        
-        temporizador()
-        
+        if tempoDosJogadores[indexArray] == 0 {
+            indexArray += 1
+            self.timer.invalidate()
+            zeraBubble()
+            gerRound()
+        } else {
+            temporizador()
+        }
     }
     
     //MARK: POP-UP FUNCTIONS
@@ -268,6 +273,12 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        reuNamePranch.text = "CID O UNICÓRNIO "
+        localNamePranch.text = " RIACHO DOS DUENDES"
+        incidenteNamePranch.text = " TRÁFICO DE PÓ MÁGICO "
+        vitimaNamePranch.text = " O POVO DO MUNDO MÁGICO "
+        
+        
         startButton.isHidden = true
         //gestureRecognizer
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
@@ -283,7 +294,7 @@ class GameViewController: UIViewController {
         backGroudImage.image = históriaSelecionada.image
         rounds = 1
         gerentBubble()
-        timerLabel.text = "00:15"
+        timerLabel.text = "00:00"
         gerRound()
         // Setando jogadores
         
@@ -814,18 +825,36 @@ class GameViewController: UIViewController {
             
             
             viewDecisãoDoJúri.isHidden = true
-            if numDeJogadores == 4 {
-                viewTestemunha2_1.isHidden = false
-
-            } else{
-                viewTestemunha1.isHidden = false
-                viewTestemunha2.isHidden = false
-            }
+            viewTestemunha2_1.isHidden = true
+            viewTestemunha1.isHidden = true
+            viewTestemunha2.isHidden = true
             viewPromotoria.isHidden = true
-            viewJúri.isHidden = true
-            viewJúri2.isHidden = true
-            viewJuri3.isHidden = true
             
+            
+            if numDeJogadores == 4 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 5 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 6 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 7 {
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = false
+                viewJuri3.isHidden = false
+            }
+            
+            if numDeJogadores == 8 {
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = false
+                viewJuri3.isHidden = false
+            }
+
         case 6 :
             
 
@@ -834,7 +863,7 @@ class GameViewController: UIViewController {
             viewTestemunha2.isHidden = true
             
             if numDeJogadores == 4 {
-                viewRéu.isHidden = false
+viewRéu.isHidden = false
             } else {
                 viewTestemunha2_1.isHidden = false
             }
@@ -884,15 +913,32 @@ class GameViewController: UIViewController {
             viewDecisãoDoJúri.isHidden = true
             viewTestemunha1.isHidden = true
             viewTestemunha2.isHidden = true
-            if numDeJogadores == 4 {
-                viewRéu.isHidden = false
-            } else {
-                viewTestemunha2_1.isHidden = false
-            }
+            viewRéu.isHidden = true
+            viewTestemunha2_1.isHidden = true
             viewPromotoria.isHidden = true
-            viewJúri.isHidden = false
-            viewJúri2.isHidden = true
-            viewJuri3.isHidden = true
+            if numDeJogadores == 4 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 5 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 6 {
+                viewJúri.isHidden = false
+            }
+            
+            if numDeJogadores == 7 {
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = false
+                viewJuri3.isHidden = false
+            }
+            
+            if numDeJogadores == 8 {
+                viewJúri.isHidden = false
+                viewJúri2.isHidden = false
+                viewJuri3.isHidden = false
+            }
             
             
         case 10:
@@ -1001,6 +1047,21 @@ class GameViewController: UIViewController {
         
     }
     
+    // Labels de Prancheta
     
-
+    @IBOutlet weak var reuNamePranch: UILabel!
+    
+    @IBOutlet weak var incidenteNamePranch: UILabel!
+    
+    @IBOutlet weak var vitimaNamePranch: UILabel!
+    
+    @IBOutlet weak var localNamePranch: UILabel!
+    
+    
+    
+    
+    
+    
+    
+    
 }
