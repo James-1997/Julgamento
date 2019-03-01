@@ -1108,16 +1108,23 @@
                     <connections>
                         <outlet property="advgDefesa" destination="AP3-LX-Tre" id="6iT-zf-NyA"/>
                         <outlet property="backGroudImage" destination="YmH-wn-vPA" id="cqQ-GE-eLh"/>
+                        <outlet property="icidenteDescricaoLabel" destination="kPF-CW-KZ1" id="OZQ-qp-leo"/>
+                        <outlet property="icidenteTitleLabel" destination="AOY-3d-hWU" id="ayh-Zt-NkK"/>
                         <outlet property="incidenteNamePranch" destination="kPF-CW-KZ1" id="Af5-xN-V4s"/>
                         <outlet property="juri1" destination="FhT-GH-rbJ" id="4rC-Lw-Zxz"/>
                         <outlet property="juri2" destination="MPf-Kq-DF1" id="Bma-fL-Db4"/>
                         <outlet property="juri3" destination="6ag-5o-iH0" id="OLV-P4-Jhv"/>
+                        <outlet property="localDescriptionLabel" destination="q5C-7w-xFW" id="8hf-8K-Sky"/>
                         <outlet property="localNamePranch" destination="q5C-7w-xFW" id="GeI-LP-4t9"/>
+                        <outlet property="localTitleLabel" destination="7jR-vi-Q7B" id="h01-0z-2Jg"/>
+                        <outlet property="pranchetaTitleLabel" destination="mff-CJ-dst" id="30w-wl-cNu"/>
                         <outlet property="pranchetaView" destination="rGC-LQ-2b4" id="fUl-vZ-dW0"/>
                         <outlet property="promotoria" destination="rfT-7x-KMM" id="ANY-1Q-lRG"/>
                         <outlet property="qtdVotosLabel" destination="YZq-LW-vqP" id="sVE-qb-8Jn"/>
                         <outlet property="reu" destination="HSl-5b-nWA" id="Ose-qJ-d1y"/>
+                        <outlet property="reuDescriptionLabel" destination="d2n-az-MSy" id="rrU-bO-XtE"/>
                         <outlet property="reuNamePranch" destination="d2n-az-MSy" id="Ea3-kN-BdF"/>
+                        <outlet property="reuTitleLabel" destination="h8j-Dg-C66" id="lwU-5P-5v2"/>
                         <outlet property="startButton" destination="RRZ-ul-ASm" id="V2w-6s-IOZ"/>
                         <outlet property="testemunha1" destination="Bxd-cc-73o" id="Oyz-lN-oPd"/>
                         <outlet property="testemunha2" destination="LrA-RW-Q6k" id="Mvc-JK-xM3"/>
@@ -1133,7 +1140,9 @@
                         <outlet property="viewTestemunha1" destination="wKk-KG-2NC" id="h1I-Gy-xgz"/>
                         <outlet property="viewTestemunha2" destination="2zh-H5-Gry" id="Gkm-QW-Dxr"/>
                         <outlet property="viewTestemunha2_1" destination="XAN-TW-4S4" id="o11-Q0-bB0"/>
+                        <outlet property="vitimaDescriptionLabel" destination="HKI-Ew-Vhi" id="rUG-pt-vhT"/>
                         <outlet property="vitimaNamePranch" destination="HKI-Ew-Vhi" id="O7f-pg-dXf"/>
+                        <outlet property="vitimaTitleLabel" destination="GZT-Vq-LiZ" id="2Dm-FM-LcC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKf-7x-4Uv" userLabel="First Responder" sceneMemberID="firstResponder"/>
