@@ -281,15 +281,7 @@ class GameViewController: UIViewController {
         
         startButton.isHidden = true
         //gestureRecognizer
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
-        leftSwipe.direction = .left
         
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
-        rightSwipe.direction = .right
-        
-        viewDecisãoDoJúri.addGestureRecognizer(leftSwipe)
-        viewDecisãoDoJúri.addGestureRecognizer(rightSwipe)
-        self.viewQtdVotos.layer.cornerRadius = viewQtdVotos.frame.size.height/2
         
         backGroudImage.image = históriaSelecionada.image
         rounds = 1
@@ -412,7 +404,10 @@ class GameViewController: UIViewController {
             
         case 5:
             round5()
-            
+          
+        case 6:
+            viewDecisãoDoJúri.isHidden = false
+            initVotosJuri()
         default:
             return
         }
@@ -420,10 +415,23 @@ class GameViewController: UIViewController {
     }
     
     
+    func initVotosJuri() {
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        leftSwipe.direction = .left
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        rightSwipe.direction = .right
+        
+        viewDecisãoDoJúri.addGestureRecognizer(leftSwipe)
+        viewDecisãoDoJúri.addGestureRecognizer(rightSwipe)
+        self.viewQtdVotos.layer.cornerRadius = viewQtdVotos.frame.size.height/2
+    }
+    
+    
+    
     // MARK: ROUND 1
     
     func round1 (){
-        
         
         
         if indexArray == 0 {
