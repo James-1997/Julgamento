@@ -137,8 +137,19 @@ class GameViewController: UIViewController {
                 
                 totalDeVotos = numDeVotosInocente + numDeVotosCulpado
                 qtdVotosLabel.text = "\(numDeVotosInocente)"
-                
-             print("O total de votos foi: \(totalDeVotos)")
+                if numDeVotosCulpado + numDeVotosCulpado == 3 {
+                    reuNamePranch.isHidden = true
+                    localNamePranch.isHidden = true
+                    incidenteNamePranch.isHidden = true
+                    vitimaNamePranch.isHidden = true
+                    reuTitleLabel.isHidden = true
+                    vitimaTitleLabel.isHidden = true
+                    localTitleLabel.isHidden = true
+                    icidenteTitleLabel.isHidden = true
+                    result.isHidden = false
+                    result.text = "CULPADO"
+                    downView()
+                }
                 
             }
             
@@ -151,8 +162,20 @@ class GameViewController: UIViewController {
                 
                 totalDeVotos = numDeVotosInocente + numDeVotosCulpado
                 qtdVotosLabel.text = "\(numDeVotosInocente)"
+                if numDeVotosCulpado + numDeVotosCulpado == 3 {
+                    reuNamePranch.isHidden = true
+                    localNamePranch.isHidden = true
+                    incidenteNamePranch.isHidden = true
+                    vitimaNamePranch.isHidden = true
+                    reuTitleLabel.isHidden = true
+                    vitimaTitleLabel.isHidden = true
+                    localTitleLabel.isHidden = true
+                    icidenteTitleLabel.isHidden = true
+                    result.isHidden = false
+                    result.text = "INOCENTE"
+                    downView()
+                }
                 
-                print("O total de votos foi: \(totalDeVotos)")
             }
            
            
@@ -315,6 +338,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        result.isHidden = true
         reuNamePranch.text = "CID O UNICÓRNIO "
         localNamePranch.text = " RIACHO DOS DUENDES"
         incidenteNamePranch.text = " TRÁFICO DE PÓ MÁGICO "
@@ -1170,10 +1194,6 @@ class GameViewController: UIViewController {
     @IBOutlet weak var localNamePranch: UILabel!
     
     
-    
-    
-    
-    
-    
+    @IBOutlet weak var result: UILabel!
     
 }
