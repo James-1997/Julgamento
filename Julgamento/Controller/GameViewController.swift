@@ -193,7 +193,7 @@ class GameViewController: UIViewController {
         
         
        
-        if numDeVotosInocente > numDeVotosCulpado{
+        if numDeVotosInocente > numDeVotosCulpado {
             
             
             localTitleLabel.isHidden = true
