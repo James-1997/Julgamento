@@ -10,6 +10,11 @@
 		1D2587662220A7F300EFF13A /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2587652220A7F300EFF13A /* ImageViewExtension.swift */; };
 		1D3B42E5221DADD2008489BF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B42E4221DADD2008489BF /* GameViewController.swift */; };
 		1D5E75222228946B00A6FD23 /* buttonFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E75212228946B00A6FD23 /* buttonFocus.swift */; };
+		1D5E752722315B6400A6FD23 /* ExtensioForTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E752622315B6400A6FD23 /* ExtensioForTime.swift */; };
+		1D5E752922315E4200A6FD23 /* ExtensionSetLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E752822315E4200A6FD23 /* ExtensionSetLabels.swift */; };
+		1D5E752B22315F0F00A6FD23 /* ExtensionGerenciaPersons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E752A22315F0F00A6FD23 /* ExtensionGerenciaPersons.swift */; };
+		1D5E752D2231616C00A6FD23 /* ExtensionGerenciadorRounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E752C2231616C00A6FD23 /* ExtensionGerenciadorRounds.swift */; };
+		1D5E752F2231633F00A6FD23 /* ExtensionFinalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E752E2231633F00A6FD23 /* ExtensionFinalScene.swift */; };
 		1D65F805222594B4007F30C1 /* tableCellRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D65F804222594B4007F30C1 /* tableCellRules.swift */; };
 		1DC822C9221C384300D56F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC822C8221C384300D56F00 /* AppDelegate.swift */; };
 		1DC822CB221C384300D56F00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC822CA221C384300D56F00 /* ViewController.swift */; };
@@ -50,6 +55,11 @@
 		1D2587652220A7F300EFF13A /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		1D3B42E4221DADD2008489BF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		1D5E75212228946B00A6FD23 /* buttonFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonFocus.swift; sourceTree = "<group>"; };
+		1D5E752622315B6400A6FD23 /* ExtensioForTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensioForTime.swift; sourceTree = "<group>"; };
+		1D5E752822315E4200A6FD23 /* ExtensionSetLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionSetLabels.swift; sourceTree = "<group>"; };
+		1D5E752A22315F0F00A6FD23 /* ExtensionGerenciaPersons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGerenciaPersons.swift; sourceTree = "<group>"; };
+		1D5E752C2231616C00A6FD23 /* ExtensionGerenciadorRounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGerenciadorRounds.swift; sourceTree = "<group>"; };
+		1D5E752E2231633F00A6FD23 /* ExtensionFinalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFinalScene.swift; sourceTree = "<group>"; };
 		1D65F804222594B4007F30C1 /* tableCellRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableCellRules.swift; sourceTree = "<group>"; };
 		1DC822C5221C384300D56F00 /* Julgamento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Julgamento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC822C8221C384300D56F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,10 +129,36 @@
 		1D5E7523222894DB00A6FD23 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1DC822C8221C384300D56F00 /* AppDelegate.swift */,
 				1D5E75212228946B00A6FD23 /* buttonFocus.swift */,
 			);
 			name = Resource;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		1D5E752422315A7A00A6FD23 /* GameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1D3B42E4221DADD2008489BF /* GameViewController.swift */,
+				1D5E752622315B6400A6FD23 /* ExtensioForTime.swift */,
+				1D5E752822315E4200A6FD23 /* ExtensionSetLabels.swift */,
+				1D5E752A22315F0F00A6FD23 /* ExtensionGerenciaPersons.swift */,
+				1D5E752C2231616C00A6FD23 /* ExtensionGerenciadorRounds.swift */,
+				1D5E752E2231633F00A6FD23 /* ExtensionFinalScene.swift */,
+			);
+			path = GameViewController;
+			sourceTree = "<group>";
+		};
+		1D5E752522315AD000A6FD23 /* OutGame */ = {
+			isa = PBXGroup;
+			children = (
+				1DC822CA221C384300D56F00 /* ViewController.swift */,
+				1DC822DD221C3FB400D56F00 /* RegrasViewController.swift */,
+				1DC822DF221C3FCF00D56F00 /* SelectPlayersViewController.swift */,
+				1DC822E5221C52A200D56F00 /* SelectMapViewController.swift */,
+				1F17385D221D8D150076C84F /* StoryViewController.swift */,
+			);
+			path = OutGame;
 			sourceTree = "<group>";
 		};
 		1D65F80322259499007F30C1 /* Cell */ = {
@@ -171,13 +207,8 @@
 				1D65F80322259499007F30C1 /* Cell */,
 				1D2587642220A7D200EFF13A /* Extensions */,
 				1F4C14A2221F13C600D8099A /* PopUps */,
-				1DC822C8221C384300D56F00 /* AppDelegate.swift */,
-				1DC822CA221C384300D56F00 /* ViewController.swift */,
-				1DC822DD221C3FB400D56F00 /* RegrasViewController.swift */,
-				1DC822DF221C3FCF00D56F00 /* SelectPlayersViewController.swift */,
-				1DC822E5221C52A200D56F00 /* SelectMapViewController.swift */,
-				1F17385D221D8D150076C84F /* StoryViewController.swift */,
-				1D3B42E4221DADD2008489BF /* GameViewController.swift */,
+				1D5E752522315AD000A6FD23 /* OutGame */,
+				1D5E752422315A7A00A6FD23 /* GameViewController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -342,7 +373,11 @@
 				1FE35E81221C567F004C7390 /* PerfilPersonagemModel.swift in Sources */,
 				5ED2D8482226CC8B0054FDCD /* Music.swift in Sources */,
 				1D3B42E5221DADD2008489BF /* GameViewController.swift in Sources */,
+				1D5E752D2231616C00A6FD23 /* ExtensionGerenciadorRounds.swift in Sources */,
 				1F4C14A1221F13C100D8099A /* EndPopUpViewController.swift in Sources */,
+				1D5E752722315B6400A6FD23 /* ExtensioForTime.swift in Sources */,
+				1D5E752B22315F0F00A6FD23 /* ExtensionGerenciaPersons.swift in Sources */,
+				1D5E752F2231633F00A6FD23 /* ExtensionFinalScene.swift in Sources */,
 				5E562F2D221F8DB200FF26FB /* ConfiguracoesModel.swift in Sources */,
 				1D2587662220A7F300EFF13A /* ImageViewExtension.swift in Sources */,
 				1DC822CB221C384300D56F00 /* ViewController.swift in Sources */,
@@ -350,6 +385,7 @@
 				1F4C14A8222201B800D8099A /* ProvaDoCrimeViewController.swift in Sources */,
 				1F17385E221D8D150076C84F /* StoryViewController.swift in Sources */,
 				1DC822C9221C384300D56F00 /* AppDelegate.swift in Sources */,
+				1D5E752922315E4200A6FD23 /* ExtensionSetLabels.swift in Sources */,
 				1D5E75222228946B00A6FD23 /* buttonFocus.swift in Sources */,
 				1F500E20221C59C200BC3139 /* StoryModel.swift in Sources */,
 				1D65F805222594B4007F30C1 /* tableCellRules.swift in Sources */,
