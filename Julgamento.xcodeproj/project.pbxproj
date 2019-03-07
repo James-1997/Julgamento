@@ -140,11 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				1D3B42E4221DADD2008489BF /* GameViewController.swift */,
-				1D5E752622315B6400A6FD23 /* ExtensioForTime.swift */,
-				1D5E752822315E4200A6FD23 /* ExtensionSetLabels.swift */,
-				1D5E752A22315F0F00A6FD23 /* ExtensionGerenciaPersons.swift */,
-				1D5E752C2231616C00A6FD23 /* ExtensionGerenciadorRounds.swift */,
-				1D5E752E2231633F00A6FD23 /* ExtensionFinalScene.swift */,
+				1D5E753022316CE500A6FD23 /* Extensions */,
 			);
 			path = GameViewController;
 			sourceTree = "<group>";
@@ -159,6 +155,18 @@
 				1F17385D221D8D150076C84F /* StoryViewController.swift */,
 			);
 			path = OutGame;
+			sourceTree = "<group>";
+		};
+		1D5E753022316CE500A6FD23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E752622315B6400A6FD23 /* ExtensioForTime.swift */,
+				1D5E752822315E4200A6FD23 /* ExtensionSetLabels.swift */,
+				1D5E752A22315F0F00A6FD23 /* ExtensionGerenciaPersons.swift */,
+				1D5E752C2231616C00A6FD23 /* ExtensionGerenciadorRounds.swift */,
+				1D5E752E2231633F00A6FD23 /* ExtensionFinalScene.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1D65F80322259499007F30C1 /* Cell */ = {
