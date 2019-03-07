@@ -9,6 +9,7 @@
 import UIKit
 
 extension GameViewController {
+
     
     // MARK: CUT 7
     
@@ -300,6 +301,7 @@ extension GameViewController {
 
 extension GameViewController {
     
+
     //MARK: POP-UP FUNCTIONS
     
     @objc func powerUpPopUP(){
