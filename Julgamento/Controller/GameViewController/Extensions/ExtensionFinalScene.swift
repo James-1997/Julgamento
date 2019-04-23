@@ -20,25 +20,20 @@ extension GameViewController {
         case .left:
             
             //culpado
-            if ((numDeVotosCulpado >= 0) && numDeVotosCulpado < 3){
+            if ((numDeVotosCulpado >= 0) && numDeVotosCulpado < numDeJogadores!-3){
                 
                 numDeVotosCulpado += 1
                 
                 totalDeVotos = numDeVotosInocente + numDeVotosCulpado
                 qtdVotosLabel.text = "\(numDeVotosInocente + numDeVotosCulpado)"
-                if numDeVotosCulpado + numDeVotosInocente == 3 {
+                if numDeVotosCulpado + numDeVotosInocente == numDeJogadores!-3 {
                     
-                    reuNamePranch.isHidden = true
-                    localNamePranch.isHidden = true
-                    incidenteNamePranch.isHidden = true
-                    vitimaNamePranch.isHidden = true
-                    reuTitleLabel.isHidden = true
-                    vitimaTitleLabel.isHidden = true
-                    localTitleLabel.isHidden = true
-                    icidenteTitleLabel.isHidden = true
-                    result.isHidden = false
-                    result.text = "CULPADO"
-                    downView()
+                    clearPranch()
+                    
+                    decisãoFinal(totalDeVotos: numDeVotosInocente + numDeVotosCulpado, numDeVotosInocente: numDeVotosInocente, numDeVotosCulpado: numDeVotosCulpado)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                        self.downView()
+                    }
                 }
                 
             }
@@ -46,25 +41,21 @@ extension GameViewController {
         case .right:
             
             //inocente
-            if ((numDeVotosInocente >= 0) && numDeVotosInocente < 3){
+            if ((numDeVotosInocente >= 0) && numDeVotosInocente < numDeJogadores!-3){
                 
                 numDeVotosInocente += 1
                 
                 totalDeVotos = numDeVotosInocente + numDeVotosCulpado
                 qtdVotosLabel.text = "\(numDeVotosInocente + numDeVotosCulpado )"
                 
-                if numDeVotosCulpado + numDeVotosInocente == 3 {
-                    reuNamePranch.isHidden = true
-                    localNamePranch.isHidden = true
-                    incidenteNamePranch.isHidden = true
-                    vitimaNamePranch.isHidden = true
-                    reuTitleLabel.isHidden = true
-                    vitimaTitleLabel.isHidden = true
-                    localTitleLabel.isHidden = true
-                    icidenteTitleLabel.isHidden = true
-                    result.isHidden = false
-                    result.text = "INOCENTE"
-                    upView()
+                if numDeVotosCulpado + numDeVotosInocente == numDeJogadores!-3 {
+                    
+                    clearPranch()
+                   
+                    decisãoFinal(totalDeVotos: numDeVotosInocente + numDeVotosCulpado, numDeVotosInocente: numDeVotosInocente, numDeVotosCulpado: numDeVotosCulpado)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                        self.downView()
+                    }
                 }
                 
             }
@@ -81,44 +72,72 @@ extension GameViewController {
         
         if numDeVotosInocente > numDeVotosCulpado {
             
-            
-            localTitleLabel.isHidden = true
-            localDescriptionLabel.isHidden = true
-            
-            decisãoFinal = "O Únicornio foi considerado culpado!"
-            
-            pranchetaTitleLabel.text = decisãoFinal
-            reuTitleLabel.text = "Total de Votos: "
-            reuDescriptionLabel.text = "\(totalDeVotos)"
-            
-            icidenteTitleLabel.text = "Votos para Inocentação: "
-            icidenteDescricaoLabel.text = "\(numDeVotosInocente)"
-            
-            vitimaTitleLabel.text = "Votos para culpa: "
-            vitimaDescriptionLabel.text = "\(numDeVotosCulpado)"
-            
-            
+            culpado()
             
         }else{
             
-            localTitleLabel.isHidden = true
-            localDescriptionLabel.isHidden = true
-            
-            decisãoFinal = "O Únicornio foi inocentado!"
-            
-            pranchetaTitleLabel.text = decisãoFinal
-            reuTitleLabel.text = "Total de Votos: "
-            reuDescriptionLabel.text = "\(totalDeVotos)"
-            
-            icidenteTitleLabel.text = "Votos para Inocentação: "
-            icidenteDescricaoLabel.text = "\(numDeVotosInocente)"
-            
-            vitimaTitleLabel.text = "Votos para culpa: "
-            vitimaDescriptionLabel.text = "\(numDeVotosCulpado)"
+            inocentado()
             
         }
         
     }
     
+    
+    
+    func clearPranch(){
+        
+        reuNamePranch.isHidden = true
+        localNamePranch.isHidden = true
+        incidenteNamePranch.isHidden = true
+        vitimaNamePranch.isHidden = true
+        reuTitleLabel.isHidden = true
+        vitimaTitleLabel.isHidden = true
+        localTitleLabel.isHidden = true
+        icidenteTitleLabel.isHidden = true
+        result.isHidden = false
+        
+    }
+    
+    
+    
+    
+    
+    
+    func culpado(){
+        viewDecisãoDoJúri.isHidden = true
+        localTitleLabel.isHidden = true
+        localDescriptionLabel.isHidden = true
+        
+        decisãoFinal = "O Únicornio foi considerado culpado!"
+        
+        pranchetaTitleLabel.text = decisãoFinal
+        reuTitleLabel.text = "Total de Votos: "
+        reuDescriptionLabel.text = "\(totalDeVotos)"
+        
+        icidenteTitleLabel.text = "Votos para Inocentação: "
+        icidenteDescricaoLabel.text = "\(numDeVotosInocente)"
+        
+        vitimaTitleLabel.text = "Votos para culpa: "
+        vitimaDescriptionLabel.text = "\(numDeVotosCulpado)"
+        
+    }
+    
+    func inocentado(){
+        viewDecisãoDoJúri.isHidden = true
+        localTitleLabel.isHidden = true
+        localDescriptionLabel.isHidden = true
+        
+        decisãoFinal = "O Únicornio foi inocentado!"
+        
+        pranchetaTitleLabel.text = decisãoFinal
+        reuTitleLabel.text = "Total de Votos: "
+        reuDescriptionLabel.text = "\(totalDeVotos)"
+        
+        icidenteTitleLabel.text = "Votos para Inocentação: "
+        icidenteDescricaoLabel.text = "\(numDeVotosInocente)"
+        
+        vitimaTitleLabel.text = "Votos para culpa: "
+        vitimaDescriptionLabel.text = "\(numDeVotosCulpado)"
+    }
     
 }

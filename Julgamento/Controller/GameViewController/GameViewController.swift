@@ -175,7 +175,7 @@ class GameViewController: UIViewController {
         UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 350})
         animationPranchete = true
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-            UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y -= 350
+            UIView.animate(withDuration: 1, animations: { self.pranchetaView.frame.origin.y -= 350
                                                         self.startButton.isHidden = false
             })
         }
@@ -184,14 +184,14 @@ class GameViewController: UIViewController {
 
     
     func downView(){
-        UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 320})
+        UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y += 320}, completion: nil)
         animationPranchete = true
     }
     
     // MARK: Animacao de subir prancheta
     
     func upView(){
-        UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y -= 320})
+        UIView.animate(withDuration: 1, animations: {self.pranchetaView.frame.origin.y -= 320}, completion: nil)
         animationPranchete = true
     }
     
